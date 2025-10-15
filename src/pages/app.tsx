@@ -1,0 +1,45 @@
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom';
+import Main from './main/main.tsx'
+import Info from './tab1/info/main.tsx'
+import Reservation from './tab1/reservation/main.tsx'
+import Directions from './tab1/directions/main.tsx'
+
+import Pdisplay from './tab2/pdisplay/main.tsx'
+import Sdisplay from './tab2/sdisplay/main.tsx'
+import Fdisplay from './tab2/fdisplay/main.tsx'
+import Museum from './tab2/museum/main.tsx'
+import Video from './tab2/video/main.tsx'
+
+import Greetings from './tab7/greetings/main.tsx'
+import History from './tab7/history/main.tsx'
+import Facilities from './tab7/facilities/main.tsx'
+import Notice from './tab7/notice/main.tsx'
+import NoticeDetail from './tab7/noticeDetail/main.tsx'
+
+createRoot(document.getElementById('root')!).render(
+    <StrictMode>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Main />} />
+                <Route path="/info" element={<Info />} />
+                <Route path="/reservation" element={<Reservation />} />
+                <Route path="/directions" element={<Directions />} />
+
+                <Route path="/pdisplay" element={<Pdisplay />} />
+                <Route path="/sdisplay" element={<Sdisplay />} />
+                <Route path="/fdisplay" element={<Fdisplay />} />
+                <Route path="/museum" element={<Museum />} />
+                <Route path="/video" element={<Video />} />
+
+                <Route path="/greetings" element={<Greetings />} />
+                <Route path="/history" element={<History />} />
+                <Route path="/facilities" element={<Facilities />} />
+                <Route path="/notice" element={<Notice />} />
+                <Route path="/notice/:id" element={<NoticeDetail />} />
+            </Routes>
+        </BrowserRouter>
+    </StrictMode>,
+)
