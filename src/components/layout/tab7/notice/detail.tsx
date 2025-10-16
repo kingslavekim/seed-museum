@@ -76,7 +76,7 @@ const NoticeDetail = () => {
                 <Typography color="error">{error || '공지사항을 찾을 수 없습니다.'}</Typography>
                 <Button
                     variant="contained"
-                    onClick={() => navigate('/notice')}
+                    onClick={() => navigate('/seed/notice')}
                     sx={{ mt: 2 }}
                 >
                     목록으로 돌아가기
@@ -139,7 +139,7 @@ const NoticeDetail = () => {
                 <Box sx={{ mt: 3, display: 'flex', justifyContent: 'center' }}>
                     <Button
                         variant="contained"
-                        onClick={() => navigate('/notice')}
+                        onClick={() => navigate('/seed/notice')}
                         sx={{
                             minWidth: '120px',
                             bgcolor: '#333',

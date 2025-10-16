@@ -47,7 +47,7 @@ export const MainInfo = () => {
                         variant='text'
                         color='secondary'
                         sx={{ fontWeight: 'bold', fontSize: { xs: 'h5.fontSize', sm: 'h4.fontSize' }}}
-                        onClick={() => {navigate('/directions');}}
+                        onClick={() => {navigate('/seed/directions');}}
                     >
                         오시는 길
                     </Button>

@@ -12,7 +12,7 @@ const Greetings = () => {
 
 
     const breadcrumbs = [
-        <Link underline="hover" key="1" color="inherit" href="/" onClick={() => {navigate('/');}}>
+        <Link underline="hover" key="1" color="inherit" href="/" onClick={() => {navigate('/seed/');}}>
             Home
         </Link>,
         <Typography key="2" sx={{ color: 'text.primary' }}>
