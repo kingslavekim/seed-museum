@@ -1,4 +1,4 @@
-import {Box, Divider} from '@mui/material';
+import {Box, Divider, Typography} from '@mui/material';
 import { Header } from '../../components/layout/common/header.tsx';
 import { Banner } from '../../components/layout/main/banner.tsx';
 import {Display} from "../../components/layout/main/display.tsx";
@@ -40,6 +40,8 @@ function Main() {
 
                 <MainInfo2/>
 
+                <Typography sx={{ fontWeight: 'bold', fontSize: 'h4.fontSize', mt: 3}}>박물관 둘러보기</Typography>
+
                 <Box
                     sx={{
                         width: '100%',
@@ -47,7 +49,6 @@ function Main() {
                         overflow: 'hidden',
                         border: '1px solid #ccc',
                         borderRadius: '8px',
-                        mt: 3
                     }}
                 >
                     <iframe
