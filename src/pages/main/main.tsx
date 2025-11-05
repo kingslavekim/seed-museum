@@ -15,7 +15,9 @@ function Main() {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',
-                width: '100%'
+                width: '100%',
+                // background: 'linear-gradient(to right, #001f3f60, #ffffff)',
+                minHeight: '100vh',
             }}
         >
             <Box
@@ -37,6 +39,27 @@ function Main() {
                 <Display/>
 
                 <MainInfo2/>
+
+                <Box
+                    sx={{
+                        width: '100%',
+                        aspectRatio: '4 / 3',
+                        overflow: 'hidden',
+                        border: '1px solid #ccc',
+                        borderRadius: '8px',
+                        mt: 3
+                    }}
+                >
+                    <iframe
+                        src="http://3.36.174.240/index.htm"
+                        style={{
+                            width: '100%',
+                            height: '100%',
+                            border: 'none',
+                        }}
+                        title="Museum External Content"
+                    />
+                </Box>
 
                 <Footer />
             </Box>

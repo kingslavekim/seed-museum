@@ -12,7 +12,7 @@ function Main() {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',
-                width: '100%'
+                width: '100%',
             }}
         >
             <Box

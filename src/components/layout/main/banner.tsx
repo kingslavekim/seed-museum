@@ -1,6 +1,6 @@
 import { Box, IconButton, Typography } from '@mui/material';
 import { ArrowBack, ArrowForward } from '@mui/icons-material';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export const Banner = () => {
     const bannerImages = [
@@ -10,18 +10,42 @@ export const Banner = () => {
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [isAnimating, setIsAnimating] = useState(false);
 
     const handlePrevious = () => {
+        if (isAnimating) return; // 애니메이션 중에는 클릭 방지
+        setIsAnimating(true);
         setCurrentIndex((prevIndex) =>
             prevIndex === 0 ? bannerImages.length - 1 : prevIndex - 1
         );
     };
 
     const handleNext = () => {
+        if (isAnimating) return; // 애니메이션 중에는 클릭 방지
+        setIsAnimating(true);
         setCurrentIndex((prevIndex) =>
             prevIndex === bannerImages.length - 1 ? 0 : prevIndex + 1
         );
     };
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            handleNext();
+        }, 8000);
+
+        return () => {
+            clearInterval(interval);
+        };
+    }, []);
+
+    useEffect(() => {
+        // 애니메이션 완료 후, 상태 초기화
+        const timeout = setTimeout(() => {
+            setIsAnimating(false);
+        }, 500); // 이미지 변환 트랜지션 시간과 맞추기
+
+        return () => clearTimeout(timeout);
+    }, [currentIndex]);
 
     return (
         <Box
@@ -33,19 +57,32 @@ export const Banner = () => {
                 mb: 2,
             }}
         >
+            {/* 슬라이드 컨테이너 */}
             <Box
-                component='img'
-                src={bannerImages[currentIndex]}
-                alt={`Banner ${currentIndex + 1}`}
                 sx={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'fill',
-                    objectPosition: 'center',
+                    display: 'flex',
+                    width: `${bannerImages.length * 100}%`,
+                    transform: `translateX(-${currentIndex * (100 / bannerImages.length)}%)`,
                     transition: 'transform 0.5s ease-in-out',
                 }}
-            />
+            >
+                {bannerImages.map((image, index) => (
+                    <Box
+                        key={index}
+                        component="img"
+                        src={image}
+                        alt={`Banner ${index + 1}`}
+                        sx={{
+                            width: `${100 / bannerImages.length}%`,
+                            height: { xs: '200px', sm: '300px', md: '600px' },
+                            objectFit: 'fit',
+                            objectPosition: 'center',
+                        }}
+                    />
+                ))}
+            </Box>
 
+            {/* 이전 버튼 */}
             <IconButton
                 onClick={handlePrevious}
                 sx={{
@@ -62,6 +99,7 @@ export const Banner = () => {
                 <ArrowBack />
             </IconButton>
 
+            {/* 다음 버튼 */}
             <IconButton
                 onClick={handleNext}
                 sx={{
@@ -78,6 +116,7 @@ export const Banner = () => {
                 <ArrowForward />
             </IconButton>
 
+            {/* 하단 인디케이터 */}
             <Box
                 sx={{
                     position: 'absolute',
@@ -91,7 +130,7 @@ export const Banner = () => {
                 {bannerImages.map((_, index) => (
                     <Box
                         key={index}
-                        onClick={() => setCurrentIndex(index)}
+                        onClick={() => !isAnimating && setCurrentIndex(index)}
                         sx={{
                             width: 8,
                             height: 8,
@@ -109,6 +148,7 @@ export const Banner = () => {
                 ))}
             </Box>
 
+            {/* 인덱스 표기 */}
             <Typography
                 sx={{
                     position: 'absolute',
