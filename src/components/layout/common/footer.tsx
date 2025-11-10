@@ -19,10 +19,10 @@ export const Footer = () => {
                     rowGap: 0.5,
                 }}>
                     <Typography sx={{ fontSize: 'body1.fontSize'}}>대표자 : 강희진</Typography>
-                    <Typography sx={{ fontSize: 'body1.fontSize'}}>사업자등록번호 : 302-82-73308</Typography>
-                    <Typography sx={{ fontSize: 'body1.fontSize'}}>주소 : 충청남도 예산군 대술면 시산동길 68</Typography>
-                    <Typography sx={{ fontSize: 'body1.fontSize'}}>이메일 : sisan2022@naver.com</Typography>
-                    <Typography sx={{ fontSize: 'body1.fontSize'}}>Copyright © 2022. 씨앗박물관. All right reserved.</Typography>
+                    <Typography sx={{ fontSize: 'body1.fontSize'}}>사업자등록번호 : 143-90-15456</Typography>
+                    <Typography sx={{ fontSize: 'body1.fontSize'}}>주소 : 충남 에산군 대술면 시산 서길 64-11</Typography>
+                    <Typography sx={{ fontSize: 'body1.fontSize'}}>이메일 : fs-ac@hanmail.net</Typography>
+                    <Typography sx={{ fontSize: 'body1.fontSize'}}>Copyright © 2015. 씨앗박물관. All right reserved.</Typography>
                 </Stack>
                 <Box sx={{
                     flex: '1 1 50%',
@@ -33,7 +33,7 @@ export const Footer = () => {
                     color: 'white',
                 }}>
                     <CallIcon sx={{ fontSize: 'h4.fontSize', pr: 2 }}/>
-                    <Typography sx={{ fontWeight: 'bold', fontSize: 'h4.fontSize'}}>041-333-2022</Typography>
+                    <Typography sx={{ fontWeight: 'bold', fontSize: 'h4.fontSize'}}>041-333-5613</Typography>
                 </Box>
             </Stack>
         </Box>

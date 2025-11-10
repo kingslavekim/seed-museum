@@ -16,7 +16,7 @@ const Info = () => {
 
 
     const breadcrumbs = [
-        <Link underline="hover" key="1" color="inherit" href="/" onClick={() => {navigate('/seed/');}}>
+        <Link underline="hover" key="1" color="inherit" href="/seed/" onClick={() => {navigate('/seed/');}}>
             Home
         </Link>,
         <Typography key="2" sx={{ color: 'text.primary' }}>
@@ -66,10 +66,10 @@ const Info = () => {
                                 <TableCell>
                                     <Stack spacing={2}>
                                         <Typography>
-                                            월, 화, 목, 금, 일요일: 10:00 ~ 18:00 (입장 마감: 17:30)
+                                            화, 수, 목, 금, 토, 일요일: 09:00 ~ 18:00
                                         </Typography>
                                         <Typography >
-                                            수, 토요일: 10:00 ~ 21:00 (입장 마감: 20:30)
+                                            * 예약일 경우 월요일도 관람 가능
                                         </Typography>
                                         <Typography>
                                             옥외 전시장(정원)은 오전 7시부터 오후 10시까지 관람하실 수 있습니다.
@@ -94,17 +94,10 @@ const Info = () => {
                                 <TableCell>
                                     <Stack spacing={2}>
                                         <Typography>
-                                            휴관일: 1월1일, 설날(1.29.), 추석(10.6.)
+                                            휴관일: 1월1일, 설날, 추석
                                         </Typography>
                                         <Typography>
-                                            상설전시관 정기휴실일: 매년 4월, 11월(첫째 월요일)
-                                        </Typography>
-                                        <Typography>
-                                            상설전시관 내 특별전시실 2 휴실<br/>
-                                            특별전시실 1(특별전시 미운영시 휴실), 야외전시장은 정상 개관
-                                        </Typography>
-                                        <Typography>
-                                            2025년 휴실일: 4.7.(월), 11.3.(월)
+                                            * 야외전시관은 연중 개관
                                         </Typography>
                                     </Stack>
                                 </TableCell>
@@ -126,7 +119,7 @@ const Info = () => {
                                 <TableCell>
                                     <Stack spacing={2}>
                                         <Typography>
-                                            무료
+                                            5,000 원
                                         </Typography>
                                     </Stack>
                                 </TableCell>

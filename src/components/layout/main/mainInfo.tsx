@@ -21,15 +21,15 @@ export const MainInfo = () => {
                         >
                             <AccessTimeIcon sx={{ fontSize: 'h4.fontSize' }}/>
                             <Typography sx={{ fontWeight: 'bold', fontSize: 'h5.fontSize'}}>관람시간</Typography>
-                            <Typography sx={{ fontWeight: 'bold', fontSize: 'h6.fontSize'}}>월/화/수/목/금</Typography>
+                            <Typography sx={{ fontWeight: 'bold', fontSize: 'h6.fontSize'}}>화 / 수 / 목 / 금 / 토 / 일</Typography>
                         </Stack>
                         <Stack
                             direction='row'
                             spacing={2}
                             sx={{textAlign: 'center', alignItems: 'center' }}
                         >
-                            <Typography sx={{ fontWeight: 'bold', fontSize: 'h6.fontSize'}}>10:00 ~ 18:00</Typography>
-                            <Typography sx={{ fontSize: 'body3.fontSize'}}>* 입장 마감은 폐관 30분 전까지</Typography>
+                            <Typography sx={{ fontWeight: 'bold', fontSize: 'h6.fontSize'}}>09:00 ~ 18:00</Typography>
+                            <Typography sx={{ fontSize: 'body3.fontSize'}}>* 예약일 경우 월요일도 관람 가능</Typography>
                         </Stack>
                     </Stack>
                     <Stack
@@ -39,7 +39,7 @@ export const MainInfo = () => {
                     >
                         <ConfirmationNumberOutlinedIcon sx={{ fontSize: 'h4.fontSize' }}/>
                         <Typography sx={{ fontWeight: 'bold', fontSize: 'h5.fontSize'}}>관람료</Typography>
-                        <Typography sx={{ fontWeight: 'bold', fontSize: 'h6.fontSize'}}>무료</Typography>
+                        <Typography sx={{ fontWeight: 'bold', fontSize: 'h6.fontSize'}}>5,000 원</Typography>
                     </Stack>
                 </Stack>
                 <Box sx={{ pr: { xs: 0, sm: 5 }}}>
