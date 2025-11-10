@@ -307,7 +307,7 @@ export const Header = () => {
                             }
                         }}
                     >
-                        <Tab label='체험 프로그램' onMouseEnter={() => {setValue2(0)}}/>
+                        <Tab label='체험 프로그램' onMouseEnter={() => {setValue2(0)}} onClick={() => {navigate('/seed/experience');}}/>
                         <Tab label='사회적 농장 프로그램' onMouseEnter={() => {setValue2(1)}}/>
                         <Tab label='치유 프로그램' onMouseEnter={() => {setValue2(2)}}/>
                     </Tabs>

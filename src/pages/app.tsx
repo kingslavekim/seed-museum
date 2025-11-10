@@ -19,6 +19,8 @@ import Facilities from './tab7/facilities/main.tsx'
 import Notice from './tab7/notice/main.tsx'
 import NoticeDetail from './tab7/noticeDetail/main.tsx'
 
+import Experience from './tab3/experience/main.tsx'
+
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
         <BrowserRouter>
@@ -33,6 +35,8 @@ createRoot(document.getElementById('root')!).render(
                 <Route path="/seed/fdisplay" element={<Fdisplay />} />
                 <Route path="/seed/museum" element={<Museum />} />
                 <Route path="/seed/video" element={<Video />} />
+
+                <Route path="/seed/experience" element={<Experience />} />
 
                 <Route path="/seed/greetings" element={<Greetings />} />
                 <Route path="/seed/history" element={<History />} />
