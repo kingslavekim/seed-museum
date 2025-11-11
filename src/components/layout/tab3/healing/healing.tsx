@@ -77,11 +77,11 @@ const Healing = () => {
                         맛과 향으로 추억을 회상하며 정서적 안정을 찾습니다.
                     </Typography>
                     <Typography variant="body1" sx={{ mt: 1 }}>
-                        📌 대상: 65세 이상 어르신, 경도인지장애(MCI) 단계, 복지관·요양시설 이용자
+                        대상: 65세 이상 어르신, 경도인지장애(MCI) 단계, 복지관·요양시설 이용자
                     </Typography>
-                    <Typography variant="body1">📌 운영: 회기당 60~90분, 총 12회</Typography>
-                    <Typography variant="body1">📌 효과: 인지자극, 정서 안정, 자존감 회복, 사회적 교류</Typography>
-                    <Typography variant="body1">📌 참여비: 회당 12,000원</Typography>
+                    <Typography variant="body1">운영: 회기당 60~90분, 총 12회</Typography>
+                    <Typography variant="body1">효과: 인지자극, 정서 안정, 자존감 회복, 사회적 교류</Typography>
+                    <Typography variant="body1">참여비: 회당 12,000원</Typography>
                 </Box>
 
                 <Box sx={{ mt: 4, pl: 4 }}>
@@ -93,12 +93,12 @@ const Healing = () => {
                         스트레스를 완화하고 마음의 균형을 되찾습니다.
                     </Typography>
                     <Typography variant="body1" sx={{ mt: 1 }}>
-                        📌 주요 활동: 라벤더 향주머니 만들기, 장미 오일 만들기, 허브 미스트 제작
+                        주요 활동: 라벤더 향주머니 만들기, 장미 오일 만들기, 허브 미스트 제작
                     </Typography>
-                    <Typography variant="body1">📌 대상: 어르신, 심신의 안정이 필요한 성인</Typography>
-                    <Typography variant="body1">📌 운영: 회기당 90분 / 실내외 병행</Typography>
-                    <Typography variant="body1">📌 효과: 정서 안정, 기억력 향상, 활력 회복</Typography>
-                    <Typography variant="body1">📌 참여비: 회당 10,000원</Typography>
+                    <Typography variant="body1">대상: 어르신, 심신의 안정이 필요한 성인</Typography>
+                    <Typography variant="body1">운영: 회기당 90분 / 실내외 병행</Typography>
+                    <Typography variant="body1">효과: 정서 안정, 기억력 향상, 활력 회복</Typography>
+                    <Typography variant="body1">참여비: 회당 10,000원</Typography>
                 </Box>
 
                 <Box sx={{ mt: 4, pl: 4 }}>
@@ -110,12 +110,12 @@ const Healing = () => {
                         내면의 기억을 회상합니다.
                     </Typography>
                     <Typography variant="body1" sx={{ mt: 1 }}>
-                        📌 주요 활동: 씨앗 만다라 만들기, 씨앗 시식, 씨앗 간식 만들기
+                        주요 활동: 씨앗 만다라 만들기, 씨앗 시식, 씨앗 간식 만들기
                     </Typography>
-                    <Typography variant="body1">📌 대상: 어르신, 정서불안 성인, 감각회복이 필요한 참여자</Typography>
-                    <Typography variant="body1">📌 운영: 월 2회, 총 8~10회 (회당 90분)</Typography>
-                    <Typography variant="body1">📌 효과: 미각 자극, 기억 회상, 인지기능 강화, 문화적 자긍심 회복</Typography>
-                    <Typography variant="body1">📌 참여비: 회당 12,000원</Typography>
+                    <Typography variant="body1">대상: 어르신, 정서불안 성인, 감각회복이 필요한 참여자</Typography>
+                    <Typography variant="body1">운영: 월 2회, 총 8~10회 (회당 90분)</Typography>
+                    <Typography variant="body1">효과: 미각 자극, 기억 회상, 인지기능 강화, 문화적 자긍심 회복</Typography>
+                    <Typography variant="body1">참여비: 회당 12,000원</Typography>
                 </Box>
 
                 <Box sx={{ mt: 4, pl: 4 }}>
@@ -127,12 +127,12 @@ const Healing = () => {
                         회복하는 프로그램입니다.
                     </Typography>
                     <Typography variant="body1" sx={{ mt: 1 }}>
-                        📌 주요 활동: 식물·곤충 관찰, 기후카드 감정연결, 미니텃밭 만들기
+                        주요 활동: 식물·곤충 관찰, 기후카드 감정연결, 미니텃밭 만들기
                     </Typography>
-                    <Typography variant="body1">📌 대상: 아동·청소년, 가족 단위 체험객, 환경교육 관심자</Typography>
-                    <Typography variant="body1">📌 운영: 총 3회 / 회당 90분</Typography>
-                    <Typography variant="body1">📌 효과: 정서적 안정, 기후 인식 향상, 창의력·관찰력 증진</Typography>
-                    <Typography variant="body1">📌 참여비: 15,000원</Typography>
+                    <Typography variant="body1">대상: 아동·청소년, 가족 단위 체험객, 환경교육 관심자</Typography>
+                    <Typography variant="body1">운영: 총 3회 / 회당 90분</Typography>
+                    <Typography variant="body1">효과: 정서적 안정, 기후 인식 향상, 창의력·관찰력 증진</Typography>
+                    <Typography variant="body1">참여비: 15,000원</Typography>
                 </Box>
 
                 <Box sx={{ mt: 4, pl: 4 }}>
@@ -143,12 +143,12 @@ const Healing = () => {
                         속담과 격언을 낱말카드로 풀어보며 기억을 되살리고 감정을 표현합니다.
                     </Typography>
                     <Typography variant="body1" sx={{ mt: 1 }}>
-                        📌 주요 활동: 속담 퍼즐 맞추기, 속담 엽서 만들기, 기억의 말 전시회
+                        주요 활동: 속담 퍼즐 맞추기, 속담 엽서 만들기, 기억의 말 전시회
                     </Typography>
-                    <Typography variant="body1">📌 대상: 65세 이상 어르신, 경도인지장애(MCI) 어르신</Typography>
-                    <Typography variant="body1">📌 운영: 주 1회 / 총 8회 (회당 60~80분)</Typography>
-                    <Typography variant="body1">📌 효과: 인지력 유지, 언어 자극, 정서 회복, 사회적 교류</Typography>
-                    <Typography variant="body1">📌 참여비: 회당 8,000원</Typography>
+                    <Typography variant="body1">대상: 65세 이상 어르신, 경도인지장애(MCI) 어르신</Typography>
+                    <Typography variant="body1">운영: 주 1회 / 총 8회 (회당 60~80분)</Typography>
+                    <Typography variant="body1">효과: 인지력 유지, 언어 자극, 정서 회복, 사회적 교류</Typography>
+                    <Typography variant="body1">참여비: 회당 8,000원</Typography>
                 </Box>
             </Box>
 
@@ -167,10 +167,10 @@ const Healing = () => {
                     <strong>신청 방법:</strong>
                 </Typography>
                 <Typography variant="body1" sx={{ ml: 2 }}>
-                    ① 전화: ☎️ 041-333-5613
+                    전화: 041-333-5613
                 </Typography>
                 <Typography variant="body1" sx={{ ml: 2 }}>
-                    ② 이메일: 📧 fs-ac@hanmail.net
+                    이메일: fs-ac@hanmail.net
                 </Typography>
                 <Typography variant="body1" sx={{ lineHeight: 1.8, mt: 1 }}>
                     <strong>모집 인원:</strong> 프로그램별 10~15명 내외
