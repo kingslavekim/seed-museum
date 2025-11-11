@@ -52,16 +52,23 @@ const Experience = () => {
                 “쌀 한 톨의 이름, 맛으로 만나는 기억”
             </Typography>
 
-            <Typography variant="body1" sx={{ lineHeight: 1.8, mt: 2 }}>
-                대한민국 유일의 토종씨앗박물관에서만 만날 수 있는 특별한 체험,
-                <strong> ‘토종벼 미각체험’</strong>은 다섯 가지 토종벼의 밥을 맛보며
-                쌀이 가진 고유한 맛, 색, 질감, 향기를 오감으로 느끼는 시간입니다.
-            </Typography>
+            {/* 체험 소개 */}
+            <Box sx={{ mt: 4 }}>
+                <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2 }}>
+                    🚩 체험 소개
+                </Typography>
+                <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
+                    대한민국 유일의 토종씨앗박물관에서만 만날 수 있는 특별한 체험,
+                    <strong> ‘토종벼 미각체험’</strong>은 다섯 가지 토종벼의 밥을 맛보며
+                    쌀이 가진 고유한 맛, 색, 질감, 향기를 오감으로 느끼는 시간입니다.
+                </Typography>
 
-            <Typography variant="body1" sx={{ lineHeight: 1.8, mt: 2 }}>
-                단순한 시식이 아닌, 씨앗과 사람, 그리고 지역이 이어지는 미각의 여정을 통해
-                맛으로 기억을 발견하고, 이야기로 씨앗의 시간을 이어갑니다.
-            </Typography>
+                <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
+                    단순한 시식이 아닌, 씨앗과 사람, 그리고 지역이 이어지는 미각의 여정을 통해
+                    맛으로 기억을 발견하고, 이야기로 씨앗의 시간을 이어갑니다.
+                </Typography>
+            </Box>
+
 
             <Box sx={{ mt: 4 }}>
                 <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2 }}>
@@ -153,22 +160,21 @@ const Experience = () => {
                 “콩 한 알, 이야기와 맛으로 피어나다”
             </Typography>
 
-            <Typography variant="body1" sx={{ lineHeight: 1.8, mt: 2 }}>
-                대한민국이 원산지인 콩, 그 깊은 맛과 오랜 서사를 오감으로 만나는 토종콩 미각체험입니다.
-            </Typography>
-            <Typography variant="body1" sx={{ lineHeight: 1.8, mt: 1 }}>
-                밥 속의 콩, 꼬투리 속의 콩, 그리고 기억 속의 콩까지—이 체험은 <strong>‘콩의 나라, 대한민국’</strong>을 다시 만나는 미각의 여정입니다.
-            </Typography>
-
             <Box sx={{ mt: 4 }}>
                 <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2 }}>
                     🚩 체험 소개
                 </Typography>
-                <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
+                <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
+                    대한민국이 원산지인 콩, 그 깊은 맛과 오랜 서사를 오감으로 만나는 토종콩 미각체험입니다.
+                </Typography>
+                <Typography variant="body1" sx={{ lineHeight: 1.8}}>
+                    밥 속의 콩, 꼬투리 속의 콩, 그리고 기억 속의 콩까지—이 체험은 <strong>‘콩의 나라, 대한민국’</strong>을 다시 만나는 미각의 여정입니다.
+                </Typography>
+                <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
                     여섯 가지 토종콩을 이용해 콩밥, 삶은 콩, 볶은 콩, 콩나물, 인절미, 구운 꼬투리 등
                     다양한 방식으로 조리된 콩의 맛을 체험합니다.
                 </Typography>
-                <Typography variant="body2" sx={{ lineHeight: 1.8, mt: 1 }}>
+                <Typography variant="body1" sx={{ lineHeight: 1.8}}>
                     각 콩의 이름의 유래, 품종의 서사, 농부의 삶이 함께 어우러진 감성형 미각 체험입니다.
                 </Typography>
             </Box>
@@ -305,13 +311,20 @@ const Experience = () => {
             <Typography variant="body1" sx={{ fontStyle: "italic", lineHeight: 1.8, mt: 1 }}>
                 “기후위기 시대, 나만의 작은 정원을 상상하다”
             </Typography>
-            <Typography variant="body1" sx={{ lineHeight: 1.8, mt: 2 }}>
-                초등학생을 위한 환경·예술 융합 체험 프로그램입니다.
-                탄소중립과 기후위기에 대해 배우고, 직접 나만의 생명의 정원 키트를 꾸며보는 특별한 시간!
-            </Typography>
-            <Typography variant="body1" sx={{ lineHeight: 1.8, mt: 1 }}>
-                아이들이 즐겁게 놀며 배우는 가운데, 자연과 생명, 그리고 지구를 지키는 마음을 키워갑니다.
-            </Typography>
+
+            {/* 체험 소개 */}
+            <Box sx={{ mt: 4 }}>
+                <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2 }}>
+                    🚩 체험 소개
+                </Typography>
+                <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
+                    초등학생을 위한 환경·예술 융합 체험 프로그램입니다.
+                    탄소중립과 기후위기에 대해 배우고, 직접 나만의 생명의 정원 키트를 꾸며보는 특별한 시간!
+                </Typography>
+                <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
+                    아이들이 즐겁게 놀며 배우는 가운데, 자연과 생명, 그리고 지구를 지키는 마음을 키워갑니다.
+                </Typography>
+            </Box>
 
             {/* 체험 흐름 */}
             <Box sx={{ mt: 4 }}>
@@ -442,11 +455,6 @@ const Experience = () => {
             <Typography variant="body1" sx={{ fontStyle: "italic", lineHeight: 1.8, mt: 1 }}>
                 “씨앗으로 그리는 나만의 그림”
             </Typography>
-            <Typography variant="body1" sx={{ lineHeight: 1.8, mt: 2 }}>
-                🌱 씨앗을 관찰하고, 그림을 그리고, 예술로 표현하는 특별한 시간!
-                작고 다양한 씨앗을 통해 생명의 아름다움과 유전적 다양성을 배우며
-                손끝에서 ‘살아 있는 예술’을 완성합니다.
-            </Typography>
 
             {/* 체험 소개 */}
             <Box sx={{ mt: 4 }}>
@@ -454,9 +462,14 @@ const Experience = () => {
                     🚩 체험 소개
                 </Typography>
                 <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
+                    🌱 씨앗을 관찰하고, 그림을 그리고, 예술로 표현하는 특별한 시간!
+                    작고 다양한 씨앗을 통해 생명의 아름다움과 유전적 다양성을 배우며
+                    손끝에서 ‘살아 있는 예술’을 완성합니다.
+                </Typography>
+                <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
                     이 프로그램은 씨앗의 형태와 색을 관찰하고 그 씨앗들을 활용해 <strong>나만의 예술 작품(씨앗 액자)</strong>을 만드는 융합형 체험입니다.
                 </Typography>
-                <Typography variant="body1" sx={{ lineHeight: 1.8, mt: 1 }}>
+                <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
                     과학적 관찰력과 예술적 감성을 함께 키우며, 아이들이 직접 보고 만지며
                     생명의 다양성을 자연스럽게 이해할 수 있습니다.
                 </Typography>
@@ -681,6 +694,143 @@ const Experience = () => {
         </Paper>
     );
 
+    const Exhibit6 = () => (
+        <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+            <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
+                🌱 콩나물 기르기 키트 체험
+            </Typography>
+            <Typography variant="body1" sx={{ fontStyle: "italic", lineHeight: 1.8, mt: 1 }}>
+                “시간을 키우는 씨앗 한 알”
+            </Typography>
+            <Box sx={{ mt: 4 }}>
+                <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2 }}>
+                    🚩 체험 소개
+                </Typography>
+                <Typography variant="body1" sx={{ lineHeight: 1.8, mt: 2 }}>
+                    🏺 신석기 토기에 콩을 담다, 생명을 기르다.
+                    이 체험은 토종 쥐눈이콩을 직접 심고 기르며 씨앗의 성장과 생명의 과정을 체험하는 교육형 프로그램입니다.
+                    신석기 토기를 재현한 콩나물 시루를 활용해 역사·과학·예술이 결합된 융합 체험으로,
+                    아이들이 ‘생명’과 ‘시간’의 가치를 손끝으로 느낄 수 있도록 구성하였습니다.
+                </Typography>
+            </Box>
+
+            {/* 체험 구성 */}
+            <Box sx={{ mt: 4 }}>
+                <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2 }}>
+                    📜 체험 구성
+                </Typography>
+
+                {/* 오프닝 */}
+                <Typography variant="body2" sx={{ fontWeight: 'bold', mt: 1 }}>
+                    1️⃣ 오프닝 – “콩, 너는 어디서 왔니?”
+                </Typography>
+                <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
+                    - 진행자가 들려주는 콩의 역사와 전설
+                </Typography>
+                <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
+                    - 선비잡이콩 이야기, 쥐눈이콩의 유래 등
+                </Typography>
+                <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
+                    - 콩의 다양성과 상징성을 이해
+                </Typography>
+
+                {/* 전시 카드 탐색 */}
+                <Typography variant="body2" sx={{ fontWeight: 'bold', mt: 2 }}>
+                    2️⃣ 전시 카드 탐색 – 콩 카드를 들여다봐요!
+                </Typography>
+                <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
+                    - 10종의 콩 카드로 콩의 종류와 특징 탐색
+                </Typography>
+                <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
+                    - “내가 기르고 싶은 콩은?” 짝 토론 진행
+                </Typography>
+
+                {/* 콩나물 시루 만들기 */}
+                <Typography variant="body2" sx={{ fontWeight: 'bold', mt: 2 }}>
+                    3️⃣ 콩나물 시루 만들기 – 우리만의 콩나물 시루
+                </Typography>
+                <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
+                    - 신석기 빗살무늬 토기의 의미를 학습
+                </Typography>
+                <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
+                    - 재현 토기 꾸미기 → 쥐눈이콩 넣기 + 물 주기 + 거름망 덮기
+                </Typography>
+                <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
+                    - 어둠 속 생장 원리를 배우며 콩을 기르기 시작
+                </Typography>
+
+                {/* 콩나물 기르기 설명 */}
+                <Typography variant="body2" sx={{ fontWeight: 'bold', mt: 2 }}>
+                    4️⃣ 콩나물 기르기 설명 – 씨앗을 키우는 비밀
+                </Typography>
+                <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
+                    - 물주기, 관찰 방법, 냄새와 길이 변화 체크법 안내
+                </Typography>
+                <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
+                    - 일주일간의 관찰 활동을 시작하며 관찰일지 작성
+                </Typography>
+
+                {/* 마무리 활동 */}
+                <Typography variant="body2" sx={{ fontWeight: 'bold', mt: 2 }}>
+                    5️⃣ 마무리 활동 – 씨앗으로 이어지는 이야기
+                </Typography>
+                <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
+                    - 내가 기른 콩나물 발표 및 공유
+                </Typography>
+                <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
+                    - 쥐눈이콩 요리 소개 (예: 콩나물무침, 국 등)
+                </Typography>
+            </Box>
+
+            {/* 체험 포인트 */}
+            <Box sx={{ mt: 4 }}>
+                <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2 }}>
+                    ✨ 체험 포인트
+                </Typography>
+                <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
+                    - 역사 + 생명 + 예술이 융합된 특별한 체험
+                </Typography>
+                <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
+                    - 콩의 전설과 유래를 통해 문화적 상징성 학습
+                </Typography>
+                <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
+                    - 재현 토기 제작으로 고대인의 지혜와 기술 이해
+                </Typography>
+                <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
+                    - 생명의 순환과 성장 원리를 직접 체득
+                </Typography>
+                <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
+                    - 가정 후속 활동(관찰일지)로 학습 지속 가능
+                </Typography>
+            </Box>
+
+            {/* 체험 정보 */}
+            <Box sx={{ mt: 4 }}>
+                <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2 }}>
+                    📌 체험 정보
+                </Typography>
+                <Stack spacing={1}>
+                    <Typography variant="body2">- 운영 인원: 10명 이상</Typography>
+                    <Typography variant="body2">- 체험 시간: 약 60~90분 + 후속 활동(가정 관찰)</Typography>
+                    <Typography variant="body2">- 체험비: 20,000원 (재료 포함)</Typography>
+                    <Typography variant="body2">- 대상: 초등학생 (10명 이상 단체 진행)</Typography>
+                    <Typography variant="body2">- 제공 구성품: 재현 빗살무늬 토기형 시루, 쥐눈이콩, 거름망, 색펜, 콩 카드, 안내서, 관찰일지</Typography>
+                </Stack>
+            </Box>
+
+            {/* 마무리 */}
+            <Box>
+                <Divider sx={{ my: 3 }} />
+                <Typography
+                    variant="body1"
+                    sx={{ textAlign: 'center', fontWeight: 'bold', fontStyle: "italic" }}
+                >
+                    “콩나물 시루에서 생명을 키우며 시간과 이야기를 함께 길러요.”
+                </Typography>
+            </Box>
+        </Paper>
+    );
+
     return (
         <Box sx={{ p: 2 }}>
             <Stack spacing={2}>
@@ -725,6 +875,7 @@ const Experience = () => {
                     {mainTab === 2 && <Exhibit3 />}
                     {mainTab === 3 && <Exhibit4 />}
                     {mainTab === 4 && <Exhibit5 />}
+                    {mainTab === 5 && <Exhibit6 />}
                 </Box>
             </Box>
         </Box>

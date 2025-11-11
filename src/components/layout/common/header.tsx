@@ -308,8 +308,8 @@ export const Header = () => {
                         }}
                     >
                         <Tab label='체험 프로그램' onMouseEnter={() => {setValue2(0)}} onClick={() => {navigate('/seed/experience');}}/>
-                        <Tab label='사회적 농장 프로그램' onMouseEnter={() => {setValue2(1)}}/>
-                        <Tab label='치유 프로그램' onMouseEnter={() => {setValue2(2)}}/>
+                        <Tab label='사회적 농장 프로그램' onMouseEnter={() => {setValue2(1)}} onClick={() => {navigate('/seed/socialFarm');}}/>
+                        <Tab label='치유 프로그램' onMouseEnter={() => {setValue2(2)}} onClick={() => {navigate('/seed/healing');}}/>
                     </Tabs>
                 </Box>
             </CustomTabPanel>

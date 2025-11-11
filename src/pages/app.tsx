@@ -20,6 +20,8 @@ import Notice from './tab7/notice/main.tsx'
 import NoticeDetail from './tab7/noticeDetail/main.tsx'
 
 import Experience from './tab3/experience/main.tsx'
+import SocialFarm from './tab3/socialFarm/main.tsx'
+import Healing from './tab3/healing/main.tsx'
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
@@ -37,6 +39,8 @@ createRoot(document.getElementById('root')!).render(
                 <Route path="/seed/video" element={<Video />} />
 
                 <Route path="/seed/experience" element={<Experience />} />
+                <Route path="/seed/socialFarm" element={<SocialFarm />} />
+                <Route path="/seed/healing" element={<Healing />} />
 
                 <Route path="/seed/greetings" element={<Greetings />} />
                 <Route path="/seed/history" element={<History />} />
