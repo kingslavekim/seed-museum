@@ -327,26 +327,6 @@ export const Header = () => {
                         height: '48px',
                     }}
                 >
-                    <Tabs
-                        value={value2}
-                        onChange={handleChange2}
-                        sx={{
-                            '& .MuiTab-root': {
-                                color: 'grey.300',
-                                '&:hover': {
-                                    color: green[400],
-                                    transition: 'color 0.3s',
-                                },
-                                '&.Mui-selected': {
-                                    color: green[400],
-                                }
-                            }
-                        }}
-                    >
-                        <Tab label='화류' onMouseEnter={() => {setValue2(0)}}/>
-                        <Tab label='맥류' onMouseEnter={() => {setValue2(1)}}/>
-                        <Tab label='두류' onMouseEnter={() => {setValue2(2)}}/>
-                    </Tabs>
                 </Box>
             </CustomTabPanel>
             <CustomTabPanel value={value1} index={4}>

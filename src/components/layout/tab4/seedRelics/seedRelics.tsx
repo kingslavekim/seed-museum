@@ -1,19 +1,19 @@
-import React, { useState, useMemo } from 'react';
+import React, {useMemo, useState} from 'react';
 
 import {
-    Typography,
-    Stack,
     Box,
     Breadcrumbs,
-    Divider,
-    Link,
     Checkbox,
+    Divider,
     FormControlLabel,
     FormGroup,
+    Link,
     Pagination,
+    Stack,
+    Typography,
 } from "@mui/material";
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import { useNavigate } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 
 const imageList: { [key: string]: string[] } = {
@@ -83,10 +83,9 @@ const SeedRelics = () => {
         const selectedKeys = Object.keys(checkedItems).filter(
             (key) => key !== '00' && checkedItems[key]
         );
-        const images = selectedKeys.flatMap((key) => {
+        return selectedKeys.flatMap((key) => {
             return imageList[key]?.map((file) => `/seedRelics/${key}/${file}`) || [];
         });
-        return images;
     }, [checkedItems]);
 
     const paginatedImages = useMemo(() => {
@@ -217,7 +216,7 @@ const SeedRelics = () => {
                 </Box>
 
                 {filteredImages.length === 0 && (
-                    <Typography sx={{ mt: 3 }}>선택된 이미지가 없습니다.</Typography>
+                    <Box sx={{height: 600}}/>
                 )}
             </Box>
 
