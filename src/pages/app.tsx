@@ -23,8 +23,11 @@ import Experience from './tab3/experience/main.tsx'
 import SocialFarm from './tab3/socialFarm/main.tsx'
 import Healing from './tab3/healing/main.tsx'
 
+<<<<<<< HEAD
 import SeedRelics from './tab4/seedRelics/main.tsx'
 
+=======
+>>>>>>> fa46557f8380b73cb38a40e1892984fae0eae3c5
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
         <BrowserRouter>
@@ -44,8 +47,11 @@ createRoot(document.getElementById('root')!).render(
                 <Route path="/seed/socialFarm" element={<SocialFarm />} />
                 <Route path="/seed/healing" element={<Healing />} />
 
+<<<<<<< HEAD
                 <Route path="/seed/seedRelics" element={<SeedRelics />} />
 
+=======
+>>>>>>> fa46557f8380b73cb38a40e1892984fae0eae3c5
                 <Route path="/seed/greetings" element={<Greetings />} />
                 <Route path="/seed/history" element={<History />} />
                 <Route path="/seed/facilities" element={<Facilities />} />
