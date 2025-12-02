@@ -196,23 +196,59 @@ const SeedRelics = () => {
                 <Box
                     sx={{
                         display: 'grid',
-                        gridTemplateColumns: 'repeat(4, 1fr)',
+                        gridTemplateColumns: {
+                            xs: 'repeat(1, 1fr)', // 화면이 작을 때는 1개씩
+                            sm: 'repeat(2, 1fr)', // 작은 화면에서는 2개씩
+                            md: 'repeat(4, 1fr)', // 중간 이상 화면에서는 4개씩
+                        },
                         gap: 2
                     }}
                 >
-                    {paginatedImages.map((src, index) => (
-                        <img
-                            key={index}
-                            src={src}
-                            alt="씨앗유물"
-                            loading="lazy"
-                            style={{
-                                width: 260,
-                                height: 260,
-                                objectFit: 'cover',
-                            }}
-                        />
-                    ))}
+                    {paginatedImages.map((src, index) => {
+                        const fileName =
+                            src.split('/').pop()?.substring(0, src.split('/').pop()?.lastIndexOf('.')) || '';
+                        return (
+                            <Box
+                                key={index}
+                                sx={{
+                                    display: 'flex', // 세로로 배치 (flex column)
+                                    flexDirection: 'column',
+                                    alignItems: 'center', // 중앙 정렬
+                                    width: 260,
+                                }}
+                            >
+                                {/* 이미지 */}
+                                <Box
+                                    sx={{
+                                        width: 260,
+                                        height: 260,
+                                        backgroundImage: `url("${src}")`,
+                                        backgroundSize: 'cover',
+                                        backgroundPosition: 'center',
+                                        backgroundRepeat: 'no-repeat',
+                                    }}
+                                />
+                                <Box
+                                    sx={{
+                                        bgcolor: '#cccccc',
+                                        width: '100%',
+                                        textAlign: 'center',
+                                    }}
+                                >
+                                    <Typography
+                                        sx={{
+                                            p: 1,
+                                            whiteSpace: 'nowrap', // 줄바꿈 없이 한 줄로 표시
+                                            overflow: 'hidden', // 넘치는 내용 숨김
+                                            textOverflow: 'ellipsis', // 잘라낸 부분을 '...'으로 표시
+                                        }}
+                                    >
+                                        {fileName}
+                                    </Typography>
+                                </Box>
+                            </Box>
+                        );
+                    })}
                 </Box>
 
                 {filteredImages.length === 0 && (
