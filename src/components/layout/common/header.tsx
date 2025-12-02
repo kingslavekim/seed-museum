@@ -178,14 +178,10 @@ export const Header = () => {
                         />
                         <Tab
                             label="씨앗유물"
-<<<<<<< HEAD
                             onClick={() => {
                                 setValue2(0);
                                 navigate('/seed/seedRelics');
                             }}
-=======
-                            onClick={() => {setValue2(0)}}
->>>>>>> fa46557f8380b73cb38a40e1892984fae0eae3c5
                             onMouseEnter={() => {
                                 setValue1(3);
                                 setValue2(0);
@@ -327,13 +323,8 @@ export const Header = () => {
                             xs: 'none',
                             md: 'flex'
                         },
-<<<<<<< HEAD
                         backgroundColor: 'white',
                         height: '48px',
-                    }}
-                >
-=======
-                        backgroundColor: 'black',
                     }}
                 >
                     <Tabs
@@ -356,7 +347,6 @@ export const Header = () => {
                         <Tab label='맥류' onMouseEnter={() => {setValue2(1)}}/>
                         <Tab label='두류' onMouseEnter={() => {setValue2(2)}}/>
                     </Tabs>
->>>>>>> fa46557f8380b73cb38a40e1892984fae0eae3c5
                 </Box>
             </CustomTabPanel>
             <CustomTabPanel value={value1} index={4}>
@@ -547,8 +537,6 @@ export const Header = () => {
                             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                                 <Typography sx={{ fontWeight: 'bold', fontSize: 'h5.fontSize'}}>씨앗유물</Typography>
                             </AccordionSummary>
-<<<<<<< HEAD
-=======
                             <AccordionDetails>
                                 <Box
                                     sx={{
@@ -562,7 +550,6 @@ export const Header = () => {
                                     <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>두류</Typography>
                                 </Box>
                             </AccordionDetails>
->>>>>>> fa46557f8380b73cb38a40e1892984fae0eae3c5
                         </Accordion>
                         <Accordion sx={{width: '100%'}}>
                             <AccordionSummary>
