@@ -214,14 +214,14 @@ const SeedRelics = () => {
                                     display: 'flex', // 세로로 배치 (flex column)
                                     flexDirection: 'column',
                                     alignItems: 'center', // 중앙 정렬
-                                    width: 260,
+                                    width: 300,
                                 }}
                             >
                                 {/* 이미지 */}
                                 <Box
                                     sx={{
-                                        width: 260,
-                                        height: 260,
+                                        width: 300,
+                                        height: 300,
                                         backgroundImage: `url("${src}")`,
                                         backgroundSize: 'cover',
                                         backgroundPosition: 'center',

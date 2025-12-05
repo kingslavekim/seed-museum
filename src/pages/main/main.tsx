@@ -24,7 +24,7 @@ function Main() {
                 sx={{
                     width: {
                         xs: '100%',
-                        xl: '60%',
+                        xl: '70%',
                     },
                 }}
             >
