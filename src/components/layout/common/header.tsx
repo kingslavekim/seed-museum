@@ -189,7 +189,10 @@ export const Header = () => {
                         />
                         <Tab
                             label="씨앗이야기"
-                            onClick={() => {setValue2(0)}}
+                            onClick={() => {
+                                setValue2(0);
+                                navigate('/seed/seedStory');
+                            }}
                             onMouseEnter={() => {
                                 setValue1(4);
                                 setValue2(0);

@@ -22,7 +22,10 @@ import NoticeDetail from './tab7/noticeDetail/main.tsx'
 import Experience from './tab3/experience/main.tsx'
 import SocialFarm from './tab3/socialFarm/main.tsx'
 import Healing from './tab3/healing/main.tsx'
+
 import SeedRelics from './tab4/seedRelics/main.tsx'
+
+import SeedStory from './tab5/seedStory/main.tsx'
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
@@ -44,6 +47,8 @@ createRoot(document.getElementById('root')!).render(
                 <Route path="/seed/healing" element={<Healing />} />
 
                 <Route path="/seed/seedRelics" element={<SeedRelics />} />
+
+                <Route path="/seed/seedStory" element={<SeedStory />} />
 
                 <Route path="/seed/greetings" element={<Greetings />} />
                 <Route path="/seed/history" element={<History />} />
