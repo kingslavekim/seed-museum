@@ -79,6 +79,12 @@ const SeedStory = () => {
         )
     };
 
+    const Exhibit2 = () => {
+        return (
+            <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+            </Paper>
+        );
+    };
 
     const breadcrumbs = [
         <Link underline="hover" key="1" color="inherit" href="/seed/" onClick={() => { navigate('/seed/'); }}>
@@ -121,12 +127,10 @@ const SeedStory = () => {
                 >
                     <Tab label="수집 이야기 - 책" />
                     <Tab label="수집 이야기 - 수집 사진" />
-                    <Tab label="수집 이야기 - 지역별 수집" />
                 </Tabs>
                 <Box sx={{ mt: 2 }}>
                     {mainTab === 0 && <Exhibit1 />}
-                    {mainTab === 1 && <Exhibit1 />}
-                    {mainTab === 2 && <Exhibit1 />}
+                    {mainTab === 1 && <Exhibit2 />}
                 </Box>
             </Box>
         </Box>
