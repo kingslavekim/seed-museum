@@ -244,7 +244,7 @@ const SeedStory = () => {
                                             gap: 2, // 이미지 간 간격
                                             overflowX: 'auto', // 이미지들이 부모를 초과하면 가로 스크롤 적용
                                             padding: 2, // 공간 확보
-                                            width: '94%'
+                                            width: { xs: '80%', sm: '90%', md: '94%' },
                                         }}
                                     >
                                         {images.map((image, imgIndex) => (
