@@ -24,6 +24,7 @@ const Open = () => {
     const totalPages1 = Math.ceil(imageList1.length / itemsPerPage);
 
     const handlePaginationChange = (_event: React.ChangeEvent<unknown>, page: number) => {
+        window.scrollTo(0, 0);
         setCurrentPage(page);
     };
 
