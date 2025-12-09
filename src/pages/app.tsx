@@ -27,6 +27,8 @@ import SeedRelics from './tab4/seedRelics/main.tsx'
 
 import SeedStory from './tab5/seedStory/main.tsx'
 
+import Open from './tab6/open/main.tsx'
+
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
         <BrowserRouter>
@@ -49,6 +51,8 @@ createRoot(document.getElementById('root')!).render(
                 <Route path="/seed/seedRelics" element={<SeedRelics />} />
 
                 <Route path="/seed/seedStory" element={<SeedStory />} />
+
+                <Route path="/seed/open" element={<Open />} />
 
                 <Route path="/seed/greetings" element={<Greetings />} />
                 <Route path="/seed/history" element={<History />} />
