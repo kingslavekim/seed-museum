@@ -10,7 +10,7 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import {useNavigate} from "react-router-dom";
 import React, {useEffect, useState} from "react";
 
-const imageList1 = ['20170407_140446_Burst01_압축.pdf', '20170407_144546_압축.pdf', 'DSCF1129_압축.pdf', 'DSCF1131_압축.pdf', 'DSCF1132_압축.pdf', 'DSCF1133_압축.pdf', 'DSCF1135_압축.pdf', 'DSCF1136_압축.pdf', 'DSCF1137_압축.pdf', 'DSCF1138_압축.pdf', 'DSCF1139_압축.pdf', 'DSCF1140_압축.pdf', 'DSCF1141_압축.pdf', 'DSCF1142_압축.pdf', 'DSCF1143_압축.pdf', 'DSCF1144_압축.pdf', 'DSCF1145_압축.pdf', 'DSCF1146_압축.pdf', 'DSCF1147_압축.pdf', 'DSCF1149_압축.pdf', 'DSCF1150_압축.pdf', 'DSCF1151_압축.pdf', 'DSCF1152_압축.pdf', 'DSCF1153_압축.pdf', 'DSCF1154_압축.pdf', 'DSCF1155_압축.pdf', 'DSCF1157_압축.pdf', 'DSCF1158_압축.pdf', 'DSCF1159_압축.pdf', 'DSCF1160_압축.pdf', 'DSCF1161_압축.pdf', 'DSCF1162_압축.pdf', 'DSCF1163_압축.pdf', 'DSCF1164_압축.pdf', 'DSCF1165_압축.pdf', 'DSCF1166_압축.pdf', 'DSCF1168_압축.pdf', 'DSCF1169_압축.pdf', 'DSCF1170_압축.pdf', 'DSCF1171_압축.pdf', 'DSCF1172_압축.pdf', 'DSCF1173_압축.pdf', 'DSCF1174_압축.pdf', 'DSCF1175_압축.pdf', 'DSCF1176_압축.pdf', 'DSCF1177_압축.pdf', 'DSCF1178_압축.pdf', 'DSCF1179_압축.pdf', 'DSCF1180_압축.pdf', 'DSCF1181_압축.pdf', 'DSCF1182_압축.pdf', 'DSCF1183_압축.pdf', 'DSCF1184_압축.pdf', 'DSCF1185_압축.pdf', 'DSCF1186_압축.pdf', 'DSCF1187_압축.pdf', 'DSCF1188_압축.pdf', 'DSCF1189_압축.pdf', 'DSCF1190_압축.pdf', 'DSCF1191_압축.pdf', 'DSCF1192_압축.pdf', 'DSCF1193_압축.pdf', 'DSCF1194_압축.pdf', 'DSCF1195_압축.pdf', 'DSCF1196_압축.pdf', 'DSCF1197_압축.pdf', 'DSCF1198_압축.pdf', 'DSCF1199_압축.pdf', 'DSCF1200_압축.pdf', 'DSCF1201_압축.pdf', 'DSCF1202_압축.pdf', 'DSCF1203_압축.pdf', 'DSCF1204_압축.pdf', 'DSCF1205_압축.pdf', 'DSCF1206_압축.pdf', 'DSCF1207_압축.pdf', 'DSCF1208_압축.pdf', 'DSCF1209_압축.pdf', 'DSCF1210_압축.pdf', 'DSCF1211_압축.pdf', 'DSCF1212_압축.pdf', 'DSCF1213_압축.pdf', 'DSCF1214_압축.pdf', 'DSCF1215_압축.pdf', 'DSCF1216_압축.pdf', 'DSCF1218_압축.pdf', 'DSCF1219_압축.pdf', 'DSCF1220_압축.pdf', 'DSCF1221_압축.pdf', 'DSCF1223_압축.pdf', 'DSCF1224_압축.pdf', 'DSCF1225_압축.pdf', 'DSCF1226_압축.pdf', 'DSCF1227_압축.pdf', 'DSCF1228_압축.pdf', 'DSCF1229_압축.pdf', 'DSCF1230_압축.pdf', 'DSCF1231_압축.pdf', 'DSCF1232_압축.pdf', 'DSCF1233_압축.pdf', 'DSCF1234_압축.pdf', 'DSCF1235_압축.pdf', 'DSCF1236_압축.pdf', 'DSCF1237_압축.pdf', 'DSCF1238_압축.pdf', 'DSCF1239_압축.pdf', 'DSCF1240_압축.pdf', 'DSCF1242_압축.pdf', 'DSCF1244_압축.pdf', 'DSCF1245_압축.pdf', 'DSCF1246_압축.pdf', 'DSCF1247_압축.pdf', 'DSCF1248_압축.pdf', 'DSCF1249_압축.pdf', 'DSCF1250_압축.pdf', 'DSCF1251_압축.pdf', 'DSCF1252_압축.pdf', 'DSCF1253_압축.pdf', 'DSCF1254_압축.pdf', 'DSCF1255_압축.pdf', 'DSCF1256_압축.pdf', 'DSCF1257_압축.pdf', 'DSCF1258_압축.pdf', 'DSCF1259_압축.pdf', 'DSCF1260_압축.pdf', 'DSCF1261_압축.pdf', 'DSCF1262_압축.pdf', 'DSCF1264_압축.pdf', 'DSCF1266_압축.pdf', 'DSCF1267_압축.pdf', 'DSCF1268_압축.pdf', 'DSCF1269_압축.pdf', 'DSCF1270_압축.pdf', 'DSCF1272_압축.pdf', 'DSCF1274_압축.pdf', 'DSCF1275_압축.pdf', 'DSCF1276_압축.pdf', 'DSCF1277_압축.pdf', 'DSCF1278_압축.pdf', 'DSCF1279_압축.pdf', 'DSCF1281_압축.pdf', 'DSCF1282_압축.pdf', 'DSCF1284_압축.pdf', 'DSCF1285_압축.pdf', 'DSCF1286_압축.pdf', 'DSCF1287_압축.pdf', 'DSCF1290_압축.pdf', 'DSCF1292_압축.pdf', 'DSCF1293_압축.pdf', 'DSCF1295_압축.pdf', 'DSCF1297_압축.pdf', 'DSCF1299_압축.pdf', 'DSCF1301_압축.pdf', 'DSCF1302_압축.pdf', 'DSCF1303_압축.pdf', 'DSCF1304_압축.pdf', 'DSCF1305_압축.pdf', 'DSCF1306_압축.pdf', 'DSCF1307_압축.pdf', 'DSCF1308_압축.pdf', 'DSCF1310_압축.pdf', 'DSCF1312_압축.pdf', 'DSCF1313_압축.pdf', 'DSCF1314_압축.pdf', 'DSCF1316_압축.pdf'];
+const imageList1 = ['20170407_140446_Burst01.jpg', '20170407_144546_압축.jpg', 'DSCF1129_압축.jpg', 'DSCF1131_압축.jpg', 'DSCF1132_압축.jpg', 'DSCF1133_압축.jpg', 'DSCF1135_압축.jpg', 'DSCF1136_압축.jpg', 'DSCF1137_압축.jpg', 'DSCF1138_압축.jpg', 'DSCF1139_압축.jpg', 'DSCF1140_압축.jpg', 'DSCF1141_압축.jpg', 'DSCF1142_압축.jpg', 'DSCF1143_압축.jpg', 'DSCF1144_압축.jpg', 'DSCF1145_압축.jpg', 'DSCF1146_압축.jpg', 'DSCF1147_압축.jpg', 'DSCF1149_압축.jpg', 'DSCF1150_압축.jpg', 'DSCF1151_압축.jpg', 'DSCF1152_압축.jpg', 'DSCF1153_압축.jpg', 'DSCF1154_압축.jpg', 'DSCF1155_압축.jpg', 'DSCF1157_압축.jpg', 'DSCF1158_압축.jpg', 'DSCF1159_압축.jpg', 'DSCF1160_압축.jpg', 'DSCF1161_압축.jpg', 'DSCF1162_압축.jpg', 'DSCF1163_압축.jpg', 'DSCF1164_압축.jpg', 'DSCF1165_압축.jpg', 'DSCF1166_압축.jpg', 'DSCF1168_압축.jpg', 'DSCF1169_압축.jpg', 'DSCF1170_압축.jpg', 'DSCF1171_압축.jpg', 'DSCF1172_압축.jpg', 'DSCF1173_압축.jpg', 'DSCF1174_압축.jpg', 'DSCF1175_압축.jpg', 'DSCF1176_압축.jpg', 'DSCF1177_압축.jpg', 'DSCF1178_압축.jpg', 'DSCF1179_압축.jpg', 'DSCF1180_압축.jpg', 'DSCF1181_압축.jpg', 'DSCF1182_압축.jpg', 'DSCF1183_압축.jpg', 'DSCF1184_압축.jpg', 'DSCF1185_압축.jpg', 'DSCF1186_압축.jpg', 'DSCF1187_압축.jpg', 'DSCF1188_압축.jpg', 'DSCF1189_압축.jpg', 'DSCF1190_압축.jpg', 'DSCF1191_압축.jpg', 'DSCF1192_압축.jpg', 'DSCF1193_압축.jpg', 'DSCF1194_압축.jpg', 'DSCF1195_압축.jpg', 'DSCF1196_압축.jpg', 'DSCF1197_압축.jpg', 'DSCF1198_압축.jpg', 'DSCF1199_압축.jpg', 'DSCF1200_압축.jpg', 'DSCF1201_압축.jpg', 'DSCF1202_압축.jpg', 'DSCF1203_압축.jpg', 'DSCF1204_압축.jpg', 'DSCF1205_압축.jpg', 'DSCF1206_압축.jpg', 'DSCF1207_압축.jpg', 'DSCF1208_압축.jpg', 'DSCF1209_압축.jpg', 'DSCF1210_압축.jpg', 'DSCF1211_압축.jpg', 'DSCF1212_압축.jpg', 'DSCF1213_압축.jpg', 'DSCF1214_압축.jpg', 'DSCF1215_압축.jpg', 'DSCF1216_압축.jpg', 'DSCF1218_압축.jpg', 'DSCF1219_압축.jpg', 'DSCF1220_압축.jpg', 'DSCF1221_압축.jpg', 'DSCF1223_압축.jpg', 'DSCF1224_압축.jpg', 'DSCF1225_압축.jpg', 'DSCF1226_압축.jpg', 'DSCF1227_압축.jpg', 'DSCF1228_압축.jpg', 'DSCF1229_압축.jpg', 'DSCF1230_압축.jpg', 'DSCF1231_압축.jpg', 'DSCF1232_압축.jpg', 'DSCF1233_압축.jpg', 'DSCF1234_압축.jpg', 'DSCF1235_압축.jpg', 'DSCF1236_압축.jpg', 'DSCF1237_압축.jpg', 'DSCF1238_압축.jpg', 'DSCF1239_압축.jpg', 'DSCF1240_압축.jpg', 'DSCF1242_압축.jpg', 'DSCF1244_압축.jpg', 'DSCF1245_압축.jpg', 'DSCF1246_압축.jpg', 'DSCF1247_압축.jpg', 'DSCF1248_압축.jpg', 'DSCF1249_압축.jpg', 'DSCF1250_압축.jpg', 'DSCF1251_압축.jpg', 'DSCF1252_압축.jpg', 'DSCF1253_압축.jpg', 'DSCF1254_압축.jpg', 'DSCF1255_압축.jpg', 'DSCF1256_압축.jpg', 'DSCF1257_압축.jpg', 'DSCF1258_압축.jpg', 'DSCF1259_압축.jpg', 'DSCF1260_압축.jpg', 'DSCF1261_압축.jpg', 'DSCF1262_압축.jpg', 'DSCF1264_압축.jpg', 'DSCF1266_압축.jpg', 'DSCF1267_압축.jpg', 'DSCF1268_압축.jpg', 'DSCF1269_압축.jpg', 'DSCF1270_압축.jpg', 'DSCF1272_압축.jpg', 'DSCF1274_압축.jpg', 'DSCF1275_압축.jpg', 'DSCF1276_압축.jpg', 'DSCF1277_압축.jpg', 'DSCF1279_압축.jpg', 'DSCF1281_압축.jpg', 'DSCF1282_압축.jpg', 'DSCF1284_압축.jpg', 'DSCF1285_압축.jpg', 'DSCF1286_압축.jpg', 'DSCF1287_압축.jpg', 'DSCF1290_압축.jpg', 'DSCF1292_압축.jpg', 'DSCF1293_압축.jpg', 'DSCF1295_압축.jpg', 'DSCF1297_압축.jpg', 'DSCF1299_압축.jpg', 'DSCF1301_압축.jpg', 'DSCF1302_압축.jpg', 'DSCF1303_압축.jpg', 'DSCF1304_압축.jpg', 'DSCF1305_압축.jpg', 'DSCF1306_압축.jpg', 'DSCF1307_압축.jpg', 'DSCF1308_압축.jpg', 'DSCF1310_압축.jpg', 'DSCF1312_압축.jpg', 'DSCF1313_압축.jpg', 'DSCF1314_압축.jpg', 'DSCF1316_압축.jpg'];
 
 const Open = () => {
     const navigate = useNavigate();
@@ -93,17 +93,35 @@ const Open = () => {
                                             width: 280,
                                         }}
                                     >
-                                        {/* 이미지 */}
                                         <Box
+                                            key={index}
                                             sx={{
+                                                display: 'flex',
+                                                flexDirection: 'column',
+                                                alignItems: 'center',
                                                 width: 280,
-                                                height: 280,
-                                                backgroundImage: `url("/event/개관식/${src}")`,
-                                                backgroundSize: 'cover',
-                                                backgroundPosition: 'center',
-                                                backgroundRepeat: 'no-repeat',
                                             }}
-                                        />
+                                        >
+                                            {/* 이미지 */}
+                                            <a // 링크로 감싸기
+                                                href={`/event/개관식/${src}`} // 이미지 경로
+                                                target="_blank" // 새 탭에서 열리도록 설정
+                                                rel="noopener noreferrer" // 보안 속성
+                                                style={{ textDecoration: 'none' }} // 링크 스타일 제거
+                                            >
+                                                <img
+                                                    src={`/event/개관식/${src}`} // 이미지 경로
+                                                    alt={src} // 대체 텍스트 (접근성)
+                                                    loading="lazy" // lazy 속성 추가
+                                                    style={{
+                                                        width: 280,
+                                                        height: 280,
+                                                        objectFit: 'cover', // 이미지 크기 조정
+                                                        borderRadius: 8, // 원하는 경우 모서리 둥글게
+                                                    }}
+                                                />
+                                            </a>
+                                        </Box>
                                     </Box>
                                 );
                             })}
