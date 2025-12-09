@@ -372,8 +372,11 @@ export const Header = () => {
                             }
                         }}
                     >
-                        <Tab label='씨앗나눔' onMouseEnter={() => {setValue2(0)}}/>
-                        <Tab label='박/미 주간 행사' onMouseEnter={() => {setValue2(1)}}/>
+                        <Tab label='박물관 개관식' onMouseEnter={() => {setValue2(0)}}/>
+                        <Tab label='씨앗나눔' onMouseEnter={() => {setValue2(1)}}/>
+                        <Tab label='슬로푸드' onMouseEnter={() => {setValue2(2)}}/>
+                        <Tab label='예산을 담은 식탁' onMouseEnter={() => {setValue2(3)}}/>
+                        <Tab label='축제 / 팜파티' onMouseEnter={() => {setValue2(4)}}/>
                     </Tabs>
                 </Box>
             </CustomTabPanel>
