@@ -16,8 +16,8 @@ const Open = () => {
     const navigate = useNavigate();
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 12;
-    const startIndex = (currentPage - 1) * itemsPerPage; // 시작 인덱스
-    const endIndex = startIndex + itemsPerPage; // 끝 인덱스
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
     const paginatedData = imageList1.slice(startIndex, endIndex);
 
 
@@ -76,9 +76,9 @@ const Open = () => {
                             sx={{
                                 display: 'grid',
                                 gridTemplateColumns: {
-                                    xs: 'repeat(1, 1fr)', // 화면이 작을 때는 1개씩
-                                    sm: 'repeat(2, 1fr)', // 작은 화면에서는 2개씩
-                                    md: 'repeat(4, 1fr)', // 중간 이상 화면에서는 4개씩
+                                    xs: 'repeat(1, 1fr)',
+                                    sm: 'repeat(2, 1fr)',
+                                    md: 'repeat(4, 1fr)',
                                 },
                                 gap: 2
                             }}
@@ -88,9 +88,9 @@ const Open = () => {
                                     <Box
                                         key={index}
                                         sx={{
-                                            display: 'flex', // 세로로 배치 (flex column)
+                                            display: 'flex',
                                             flexDirection: 'column',
-                                            alignItems: 'center', // 중앙 정렬
+                                            alignItems: 'center',
                                             width: 280,
                                         }}
                                     >
@@ -104,21 +104,21 @@ const Open = () => {
                                             }}
                                         >
                                             {/* 이미지 */}
-                                            <a // 링크로 감싸기
-                                                href={`/event/개관식/${src}`} // 이미지 경로
-                                                target="_blank" // 새 탭에서 열리도록 설정
-                                                rel="noopener noreferrer" // 보안 속성
-                                                style={{ textDecoration: 'none' }} // 링크 스타일 제거
+                                            <a
+                                                href={`/event/개관식/${src}`}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                style={{ textDecoration: 'none' }}
                                             >
                                                 <img
-                                                    src={`/event/개관식/${src}`} // 이미지 경로
-                                                    alt={src} // 대체 텍스트 (접근성)
-                                                    loading="lazy" // lazy 속성 추가
+                                                    src={`/event/개관식/${src}`}
+                                                    alt={src}
+                                                    loading="lazy"
                                                     style={{
                                                         width: 280,
                                                         height: 280,
-                                                        objectFit: 'cover', // 이미지 크기 조정
-                                                        borderRadius: 8, // 원하는 경우 모서리 둥글게
+                                                        objectFit: 'cover',
+                                                        borderRadius: 8,
                                                     }}
                                                 />
                                             </a>
