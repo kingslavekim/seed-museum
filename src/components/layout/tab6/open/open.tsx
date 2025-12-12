@@ -71,7 +71,7 @@ const Open = () => {
 
             <Box sx={{ mt: 2 }}>
                 <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
-                    <Box sx={{ my: 3 }}>
+                    <Box>
                         <Box
                             sx={{
                                 display: 'grid',

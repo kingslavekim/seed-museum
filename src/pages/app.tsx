@@ -28,6 +28,10 @@ import SeedRelics from './tab4/seedRelics/main.tsx'
 import SeedStory from './tab5/seedStory/main.tsx'
 
 import Open from './tab6/open/main.tsx'
+import Sharing from './tab6/sharing/main.tsx'
+import SlowFood from './tab6/slowFood/main.tsx'
+import Table from './tab6/table/main.tsx'
+import Festival from './tab6/festival/main.tsx'
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
@@ -53,6 +57,10 @@ createRoot(document.getElementById('root')!).render(
                 <Route path="/seed/seedStory" element={<SeedStory />} />
 
                 <Route path="/seed/open" element={<Open />} />
+                <Route path="/seed/sharing" element={<Sharing />} />
+                <Route path="/seed/slowFood" element={<SlowFood />} />
+                <Route path="/seed/table" element={<Table />} />
+                <Route path="/seed/festival" element={<Festival />} />
 
                 <Route path="/seed/greetings" element={<Greetings />} />
                 <Route path="/seed/history" element={<History />} />

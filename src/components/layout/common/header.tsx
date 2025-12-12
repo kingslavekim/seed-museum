@@ -373,10 +373,10 @@ export const Header = () => {
                         }}
                     >
                         <Tab label='박물관 개관식' onMouseEnter={() => {setValue2(0)}} onClick={() => {navigate('/seed/open');}}/>
-                        <Tab label='씨앗나눔' onMouseEnter={() => {setValue2(1)}} onClick={() => {navigate('/seed/open');}}/>
-                        <Tab label='슬로푸드' onMouseEnter={() => {setValue2(2)}} onClick={() => {navigate('/seed/open');}}/>
-                        <Tab label='예산을 담은 식탁' onMouseEnter={() => {setValue2(3)}} onClick={() => {navigate('/seed/open');}}/>
-                        <Tab label='축제 / 팜파티' onMouseEnter={() => {setValue2(4)}} onClick={() => {navigate('/seed/open');}}/>
+                        <Tab label='씨앗 나눔' onMouseEnter={() => {setValue2(1)}} onClick={() => {navigate('/seed/sharing');}}/>
+                        <Tab label='슬로푸드' onMouseEnter={() => {setValue2(2)}} onClick={() => {navigate('/seed/slowFood');}}/>
+                        <Tab label='예산을 담은 식탁' onMouseEnter={() => {setValue2(3)}} onClick={() => {navigate('/seed/table');}}/>
+                        <Tab label='축제 / 팜파티' onMouseEnter={() => {setValue2(4)}} onClick={() => {navigate('/seed/festival');}}/>
                     </Tabs>
                 </Box>
             </CustomTabPanel>
