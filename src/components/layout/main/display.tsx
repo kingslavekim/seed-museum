@@ -29,6 +29,7 @@ export const Display = () => {
                         spacing={2}
                         sx={{
                             alignItems: 'left',
+                            pl: { xs: 8, md: 0 },
                         }}
                     >
                         <Box
