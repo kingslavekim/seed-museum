@@ -2,20 +2,23 @@ import { Box, IconButton, Typography, useMediaQuery } from '@mui/material';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { ArrowBack, ArrowForward } from '@mui/icons-material';
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const theme = createTheme();
 
 export const Banner = () => {
+    const navigate = useNavigate();
+
     const bannerImagesXs = [
-        '/banners/m_1.jpg',
-        '/banners/banner2.png',
-        '/banners/banner3.png',
+        {src: '/banners/m_1.jpg', link: ''},
+        {src: '/banners/m_2.jpg', link: '/seed/pdisplay'},
+        {src: '/banners/m_3.jpg', link: '/seed/fdisplay'},
     ];
 
     const bannerImagesDefault = [
-        '/banners/1.jpg',
-        '/banners/banner2.png',
-        '/banners/banner3.png',
+        {src: '/banners/1.jpg', link: ''},
+        {src: '/banners/2.jpg', link: '/seed/pdisplay'},
+        {src: '/banners/3.jpg', link: '/seed/fdisplay'},
     ];
 
     const isXs = useMediaQuery(theme.breakpoints.down('sm'));
@@ -84,7 +87,8 @@ export const Banner = () => {
                         <Box
                             key={index}
                             component="img"
-                            src={image}
+                            src={image.src}
+                            onClick={() => navigate(`${image.link}`)}
                             alt={`Banner ${index + 1}`}
                             sx={{
                                 width: `${100 / bannerImages.length}%`,

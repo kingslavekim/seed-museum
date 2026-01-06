@@ -5,10 +5,11 @@ export const Display = () => {
     const navigate = useNavigate();
 
     const displayInfo = [
-        {src: '/display/display1.png', text1: '상설전시', text2: '씨앗 박물관 상설전시 1', text3: '2025-01-01 ~ 2025-12-31', link: 'pdisplay'},
-        {src: '/display/display2.png', text1: '상설전시', text2: '씨앗 박물관 상설전시 2', text3: '2025-04-01 ~ 2025-12-31', link: 'pdisplay'},
-        {src: '/display/display3.png', text1: '특별전시', text2: '씨앗 박물관 특별전시 3', text3: '2025-07-01 ~ 2025-12-31', link: 'sdisplay'},
-        {src: '/display/display3.png', text1: '특별전시', text2: '씨앗 박물관 특별전시 3', text3: '2025-07-01 ~ 2025-12-31', link: 'sdisplay'},
+        {src: '/display/1.jpg', text1: '상설전시', text2: '상설전시', text3: '', link: '/seed/pdisplay'},
+        {src: '/display/2.jpg', text1: '상설전시', text2: '근대 농기구 전시', text3: '', link: '/seed/fdisplay'},
+        {src: '/display/3.jpg', text1: '상설전시', text2: '박물관 속의 박물관', text3: '', link: '/seed/museum'},
+        {src: '/display/4.jpg', text1: '상설전시', text2: '영상관', text3: '', link: '/seed/video'},
+        {src: '/display/5.jpg', text1: '특별전시', text2: '특별전시', text3: '', link: '/seed/sdisplay'},
     ];
 
     return (
@@ -19,7 +20,8 @@ export const Display = () => {
                 display: 'flex',
                 columnGap: 10,
                 rowGap: 5,
-                flexWrap: 'wrap'
+                flexWrap: 'wrap',
+                p: 2
             }}>
                 {displayInfo.map((display, index) => (
                     <Stack
@@ -33,54 +35,44 @@ export const Display = () => {
                         <Box
                             component='img'
                             src={display.src}
-                            onClick={() => navigate(`/${display.link}`)}
+                            onClick={() => navigate(`${display.link}`)}
                             sx={{
-                                width: 315,
-                                height: 450,
+                                width: 400,
+                                height: 356,
                                 objectFit: 'fill',
                                 objectPosition: 'center',
                                 transition: 'transform 0.5s ease-in-out',
                                 cursor: 'pointer'
                             }}
                         />
-                        <Button
-                            variant='contained'
-                            sx={{
-                                fontSize: 'body1.fontSize',
-                                p: '2px',
-                                width: 90,
-                                backgroundColor: 'black',
-                                '&:hover': {
-                                    backgroundColor: '#222'
-                                }
-                            }}
-                        >
-                            {display.text1}
-                        </Button>
-                        <Stack
-                            key={index}
-                            direction='column'
-                            spacing={0.3}
-                            sx={{
-                                alignItems: 'left',
-                            }}
-                        >
-                            <Typography
-                                sx={{
-                                    fontWeight: 'bold',
-                                    fontSize: 'body1.fontSize',
-                                }}
+                            <Stack
+                                direction='row'
+                                spacing={2}
+                                alignItems='center'
                             >
-                                {display.text2}
-                            </Typography>
-                            <Typography
-                                sx={{
-                                    fontSize: 'body1.fontSize',
-                                }}
-                            >
-                                {display.text3}
-                            </Typography>
-                        </Stack>
+                                <Button
+                                    variant='contained'
+                                    sx={{
+                                        fontSize: 'body1.fontSize',
+                                        p: '2px',
+                                        width: 90,
+                                        backgroundColor: 'black',
+                                        '&:hover': {
+                                            backgroundColor: '#222'
+                                        }
+                                    }}
+                                >
+                                    {display.text1}
+                                </Button>
+                                <Typography
+                                    sx={{
+                                        fontWeight: 'bold',
+                                        fontSize: 'body1.fontSize',
+                                    }}
+                                >
+                                    {display.text2}
+                                </Typography>
+                            </Stack>
                     </Stack>
                 ))}
             </Box>

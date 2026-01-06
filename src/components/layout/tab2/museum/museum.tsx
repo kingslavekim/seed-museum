@@ -404,7 +404,7 @@ const Museum = () => {
                 }}
             >
                 {[
-                    '/museum/4.jpg',
+                    '/museum/5.jpg',
                     '/museum/5.jpg',
                     '/museum/6.webp',
                     '/museum/7.jpg',
