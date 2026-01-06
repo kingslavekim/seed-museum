@@ -67,9 +67,9 @@ export const Banner = () => {
         <ThemeProvider theme={theme}> {/* ThemeProvider로 감싸기 */}
             <Box
                 sx={{
-                    width: '100%',
                     position: 'relative',
-                    height: { xs: '200px', sm: '300px', md: '600px' },
+                    width: '100%',
+                    height: { xs: 400, sm: 400, md: '600px' },
                     overflow: 'hidden',
                     mb: 2,
                 }}
@@ -92,7 +92,7 @@ export const Banner = () => {
                             alt={`Banner ${index + 1}`}
                             sx={{
                                 width: `${100 / bannerImages.length}%`,
-                                height: { xs: '200px', sm: '300px', md: '600px' },
+                                height: { xs: 400, sm: 400, md: 600 },
                                 objectFit: 'fit',
                                 objectPosition: 'center',
                             }}
