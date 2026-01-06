@@ -40,7 +40,7 @@ function Main() {
 
                 <MainInfo2/>
 
-                <Typography sx={{ fontWeight: 'bold', fontSize: 'h4.fontSize', mt: 3}}>박물관 둘러보기</Typography>
+                <Typography sx={{ fontWeight: 'bold', fontSize: 'h4.fontSize', mt: 5, mb: 2}}>박물관 둘러보기</Typography>
 
                 <Box
                     sx={{

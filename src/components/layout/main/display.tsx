@@ -8,20 +8,19 @@ export const Display = () => {
         {src: '/display/1.jpg', text1: '상설전시', text2: '상설전시', text3: '', link: '/seed/pdisplay'},
         {src: '/display/2.jpg', text1: '상설전시', text2: '근대 농기구 전시', text3: '', link: '/seed/fdisplay'},
         {src: '/display/3.jpg', text1: '상설전시', text2: '박물관 속의 박물관', text3: '', link: '/seed/museum'},
-        {src: '/display/4.jpg', text1: '상설전시', text2: '영상관', text3: '', link: '/seed/video'},
         {src: '/display/5.jpg', text1: '특별전시', text2: '특별전시', text3: '', link: '/seed/sdisplay'},
+        {src: '/display/4.jpg', text1: '상설전시', text2: '영상관', text3: '', link: '/seed/video'},
     ];
 
     return (
         <Box sx={{ mt: 5 }}>
             <Typography sx={{ fontWeight: 'bold', fontSize: 'h4.fontSize'}}>전시</Typography>
             <Box sx={{
-                mt: 3,
+                mt: 2,
                 display: 'flex',
                 columnGap: 10,
                 rowGap: 5,
                 flexWrap: 'wrap',
-                p: 2
             }}>
                 {displayInfo.map((display, index) => (
                     <Stack
@@ -37,8 +36,8 @@ export const Display = () => {
                             src={display.src}
                             onClick={() => navigate(`${display.link}`)}
                             sx={{
-                                width: 400,
-                                height: 356,
+                                width: 288,
+                                height: 256,
                                 objectFit: 'fill',
                                 objectPosition: 'center',
                                 transition: 'transform 0.5s ease-in-out',

@@ -72,7 +72,7 @@ export const MainInfo2 = () => {
                     flex: '1 1 50%',
                     minWidth: { xs: '100%', sm: '45%' }
                 }}>
-                    <Typography sx={{ fontWeight: 'bold', fontSize: 'h4.fontSize'}}>공지사항</Typography>
+                    <Typography sx={{ fontWeight: 'bold', fontSize: 'h4.fontSize', mb: 2}}>공지사항</Typography>
                     <DataGrid
                         rows={rows}
                         columns={columns}
@@ -104,7 +104,7 @@ export const MainInfo2 = () => {
                     flex: '1 1 50%',
                     minWidth: { xs: '100%', sm: '45%' }
                 }}>
-                    <Typography sx={{ fontWeight: 'bold', fontSize: 'h4.fontSize'}}>블로그</Typography>
+                    <Typography sx={{ fontWeight: 'bold', fontSize: 'h4.fontSize', mb: 2}}>블로그</Typography>
                     <Box
                         component='img'
                         src={'/main/blog.png'}
