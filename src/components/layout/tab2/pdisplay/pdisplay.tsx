@@ -1140,84 +1140,96 @@ const Pdisplay = () => {
     };
 
     return (
-        <Box sx={{ p: 2 }}>
-            <Stack spacing={2}>
-                <Breadcrumbs
-                    separator={<NavigateNextIcon fontSize="small" />}
-                    aria-label="breadcrumb"
-                >
-                    {breadcrumbs}
-                </Breadcrumbs>
-            </Stack>
+        <Box>
+            <Box
+                component="img"
+                src="/main/4.jpg"
+                sx={{
+                    display: {sm: 'none', md: 'flex'},
+                    width: '100%',
+                    height: 400,
+                    objectFit: 'fill'
+                }}
+            />
+            <Box sx={{ p: 2 }}>
+                <Stack spacing={2}>
+                    <Breadcrumbs
+                        separator={<NavigateNextIcon fontSize="small" />}
+                        aria-label="breadcrumb"
+                    >
+                        {breadcrumbs}
+                    </Breadcrumbs>
+                </Stack>
 
-            <Box sx={{ pt: 3 }}>
-                <Typography
-                    variant="h4"
-                    component="h1"
-                    gutterBottom
-                    sx={{ fontWeight: 'bold' }}
-                >
-                    상설 전시
-                </Typography>
-                <Divider sx={{ mt: 3, borderBottomWidth: 3, bgcolor: 'black' }} />
-            </Box>
+                <Box sx={{ pt: 3 }}>
+                    <Typography
+                        variant="h4"
+                        component="h1"
+                        gutterBottom
+                        sx={{ fontWeight: 'bold' }}
+                    >
+                        상설 전시
+                    </Typography>
+                    <Divider sx={{ mt: 3, borderBottomWidth: 3, bgcolor: 'black' }} />
+                </Box>
 
-            <Box sx={{ p: 3 }}>
-                {/* 상위 탭 */}
-                <Tabs value={mainTab} onChange={handleMainTabChange} centered>
-                    <Tab label="제 1 관" />
-                    <Tab label="제 2 관" />
-                    <Tab label="기증관" />
-                </Tabs>
-                <Box sx={{ mt: 2 }}>
-                    {mainTab === 0 && <Exhibit1 />}
-                    {mainTab === 1 && (
-                        <>
-                            {/* 제2관 하위 탭 */}
-                            <Tabs
-                                value={subTab}
-                                onChange={handleSubTabChange}
-                                variant="scrollable"
-                                scrollButtons="auto"
-                                sx={{
-                                    borderBottom: 1,
-                                    borderColor: "divider",
-                                    mb: 2,
-                                }}
-                            >
-                                <Tab label="콩" />
-                                <Tab label="이천여중 기증" />
-                                <Tab label="콩의나라 대한민국" />
-                                <Tab label="벼" />
-                                <Tab label="보리와 밀" />
-                                <Tab label="잡곡류" />
-                                <Tab label="동부" />
-                                <Tab label="엽경채류 및 근채류" />
-                                <Tab label="과채류 및 유지작물" />
-                            </Tabs>
-                            {Exhibit2[subTab]()}
-                        </>
-                    )}
-                    {mainTab === 2 && (
-                        <>
-                            {/* 제2관 하위 탭 */}
-                            <Tabs
-                                value={subTab}
-                                onChange={handleSubTabChange}
-                                variant="scrollable"
-                                scrollButtons="auto"
-                                sx={{
-                                    borderBottom: 1,
-                                    borderColor: "divider",
-                                    mb: 2,
-                                }}
-                            >
-                                <Tab label="강화도" />
-                                <Tab label="화성" />
-                            </Tabs>
-                            {Exhibit3[subTab]()}
-                        </>
-                    )}
+                <Box sx={{ p: 3 }}>
+                    {/* 상위 탭 */}
+                    <Tabs value={mainTab} onChange={handleMainTabChange} centered>
+                        <Tab label="제 1 관" />
+                        <Tab label="제 2 관" />
+                        <Tab label="기증관" />
+                    </Tabs>
+                    <Box sx={{ mt: 2 }}>
+                        {mainTab === 0 && <Exhibit1 />}
+                        {mainTab === 1 && (
+                            <>
+                                {/* 제2관 하위 탭 */}
+                                <Tabs
+                                    value={subTab}
+                                    onChange={handleSubTabChange}
+                                    variant="scrollable"
+                                    scrollButtons="auto"
+                                    sx={{
+                                        borderBottom: 1,
+                                        borderColor: "divider",
+                                        mb: 2,
+                                    }}
+                                >
+                                    <Tab label="콩" />
+                                    <Tab label="이천여중 기증" />
+                                    <Tab label="콩의나라 대한민국" />
+                                    <Tab label="벼" />
+                                    <Tab label="보리와 밀" />
+                                    <Tab label="잡곡류" />
+                                    <Tab label="동부" />
+                                    <Tab label="엽경채류 및 근채류" />
+                                    <Tab label="과채류 및 유지작물" />
+                                </Tabs>
+                                {Exhibit2[subTab]()}
+                            </>
+                        )}
+                        {mainTab === 2 && (
+                            <>
+                                {/* 제2관 하위 탭 */}
+                                <Tabs
+                                    value={subTab}
+                                    onChange={handleSubTabChange}
+                                    variant="scrollable"
+                                    scrollButtons="auto"
+                                    sx={{
+                                        borderBottom: 1,
+                                        borderColor: "divider",
+                                        mb: 2,
+                                    }}
+                                >
+                                    <Tab label="강화도" />
+                                    <Tab label="화성" />
+                                </Tabs>
+                                {Exhibit3[subTab]()}
+                            </>
+                        )}
+                    </Box>
                 </Box>
             </Box>
         </Box>

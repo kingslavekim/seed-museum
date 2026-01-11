@@ -281,7 +281,7 @@ export const Header = () => {
                         <Tab label='상설 전시' onMouseEnter={() => {setValue2(0)}} onClick={() => {navigate('/seed/pdisplay');}}/>
                         <Tab label='특별 전시' onMouseEnter={() => {setValue2(1)}} onClick={() => {navigate('/seed/sdisplay');}}/>
                         <Tab label='근대 농기구 전시' onMouseEnter={() => {setValue2(2)}} onClick={() => {navigate('/seed/fdisplay');}}/>
-                        <Tab label='박물관 속의 박물관' onMouseEnter={() => {setValue2(3)}} onClick={() => {navigate('/seed/museum');}}/>
+                        <Tab label='박물관 속 박물관' onMouseEnter={() => {setValue2(3)}} onClick={() => {navigate('/seed/museum');}}/>
                         <Tab label='영상관' onMouseEnter={() => {setValue2(4)}} onClick={() => {navigate('/seed/video');}}/>
                     </Tabs>
                 </Box>
@@ -496,7 +496,7 @@ export const Header = () => {
                                     <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>상설 전시</Typography>
                                     <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>특별 전시</Typography>
                                     <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>근대 농기구 전시</Typography>
-                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>박물관 속의 박물관</Typography>
+                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>박물관 속 박물관</Typography>
                                     <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>영상관</Typography>
                                 </Box>
                             </AccordionDetails>

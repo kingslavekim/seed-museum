@@ -44,9 +44,9 @@ export const MainInfo = () => {
                 </Stack>
                 <Box sx={{ pr: { xs: 0, sm: 5 }}}>
                     <Button
-                        variant='text'
-                        color='secondary'
-                        sx={{ fontWeight: 'bold', fontSize: { xs: 'h5.fontSize', sm: 'h4.fontSize' }}}
+                        variant='contained'
+                        color='primary'
+                        sx={{ fontWeight: 'bold', fontSize: { xs: 20, sm: 26 }, borderRadius: 4}}
                         onClick={() => {navigate('/seed/directions');}}
                     >
                         오시는 길

@@ -32,7 +32,7 @@ const Museum = () => {
             전시
         </Typography>,
         <Typography key="3" sx={{ color: 'text.primary' }}>
-            박물관 속의 박물관
+            박물관 속 박물관
         </Typography>,
     ];
 
@@ -742,40 +742,52 @@ const Museum = () => {
     );
 
     return (
-        <Box sx={{ p: 2 }}>
-            <Stack spacing={2}>
-                <Breadcrumbs
-                    separator={<NavigateNextIcon fontSize="small" />}
-                    aria-label="breadcrumb"
-                >
-                    {breadcrumbs}
-                </Breadcrumbs>
-            </Stack>
+        <Box>
+            <Box
+                component="img"
+                src="/main/7.jpg"
+                sx={{
+                    display: {sm: 'none', md: 'flex'},
+                    width: '100%',
+                    height: 400,
+                    objectFit: 'fill'
+                }}
+            />
+            <Box sx={{ p: 2 }}>
+                <Stack spacing={2}>
+                    <Breadcrumbs
+                        separator={<NavigateNextIcon fontSize="small" />}
+                        aria-label="breadcrumb"
+                    >
+                        {breadcrumbs}
+                    </Breadcrumbs>
+                </Stack>
 
-            <Box sx={{ pt: 3 }}>
-                <Typography
-                    variant="h4"
-                    component="h1"
-                    gutterBottom
-                    sx={{ fontWeight: 'bold' }}
-                >
-                    박물관 속의 박물관
-                </Typography>
-                <Divider sx={{ mt: 3, borderBottomWidth: 3, bgcolor: 'black' }} />
-            </Box>
+                <Box sx={{ pt: 3 }}>
+                    <Typography
+                        variant="h4"
+                        component="h1"
+                        gutterBottom
+                        sx={{ fontWeight: 'bold' }}
+                    >
+                        박물관 속 박물관
+                    </Typography>
+                    <Divider sx={{ mt: 3, borderBottomWidth: 3, bgcolor: 'black' }} />
+                </Box>
 
-            <Box sx={{ p: 3 }}>
-                {/* 상위 탭 */}
-                <Tabs value={mainTab} onChange={handleMainTabChange} centered>
-                    <Tab label="고대장미의 역사" />
-                    <Tab label="세계의 야생장미" />
-                    <Tab label="한국의 야생장미" />
-                    <Tab label="유물" />
-                </Tabs>
-                <Box sx={{ mt: 2 }}>
-                    {mainTab === 0 && <Exhibit1 />}
-                    {mainTab === 1 && <Exhibit2 />}
-                    {mainTab === 2 && <Exhibit3 />}
+                <Box sx={{ p: 3 }}>
+                    {/* 상위 탭 */}
+                    <Tabs value={mainTab} onChange={handleMainTabChange} centered>
+                        <Tab label="고대장미의 역사" />
+                        <Tab label="세계의 야생장미" />
+                        <Tab label="한국의 야생장미" />
+                        <Tab label="유물" />
+                    </Tabs>
+                    <Box sx={{ mt: 2 }}>
+                        {mainTab === 0 && <Exhibit1 />}
+                        {mainTab === 1 && <Exhibit2 />}
+                        {mainTab === 2 && <Exhibit3 />}
+                    </Box>
                 </Box>
             </Box>
         </Box>

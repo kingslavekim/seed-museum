@@ -13,15 +13,19 @@ export const Banner = () => {
         {src: '/banners/m_1.jpg', link: ''},
         {src: '/banners/m_2.jpg', link: '/seed/pdisplay'},
         {src: '/banners/m_3.jpg', link: '/seed/fdisplay'},
+        {src: '/banners/m_4.jpg', link: '/seed/museum'},
+        {src: '/banners/m_5.jpg', link: '/seed/experience'},
     ];
 
     const bannerImagesDefault = [
         {src: '/banners/1.jpg', link: ''},
         {src: '/banners/2.jpg', link: '/seed/pdisplay'},
         {src: '/banners/3.jpg', link: '/seed/fdisplay'},
+        {src: '/banners/4.jpg', link: '/seed/museum'},
+        {src: '/banners/5.jpg', link: '/seed/experience'},
     ];
 
-    const isXs = useMediaQuery(theme.breakpoints.down('sm'));
+    const isXs = useMediaQuery(theme.breakpoints.down('md'));
 
     const bannerImages = isXs ? bannerImagesXs : bannerImagesDefault;
 
@@ -69,7 +73,7 @@ export const Banner = () => {
                 sx={{
                     position: 'relative',
                     width: '100%',
-                    height: { xs: 400, sm: 400, md: '600px' },
+                    height: { xs: 380, md: 600 },
                     overflow: 'hidden',
                     mb: 2,
                 }}
@@ -85,18 +89,27 @@ export const Banner = () => {
                 >
                     {bannerImages.map((image, index) => (
                         <Box
-                            key={index}
-                            component="img"
-                            src={image.src}
-                            onClick={() => navigate(`${image.link}`)}
-                            alt={`Banner ${index + 1}`}
                             sx={{
-                                width: `${100 / bannerImages.length}%`,
-                                height: { xs: 400, sm: 400, md: 600 },
-                                objectFit: 'fit',
-                                objectPosition: 'center',
+                                width: '100%',
+                                display: 'flex',
+                                justifyContent: 'center',
+                                bgcolor: 'black',
                             }}
-                        />
+                        >
+                            <Box
+                                key={index}
+                                component="img"
+                                src={image.src}
+                                onClick={() => navigate(`${image.link}`)}
+                                alt={`Banner ${index + 1}`}
+                                sx={{
+                                    width: { xs: 360, md: 1400 },
+                                    height: { xs: 380, md: 600 },
+                                    objectFit: 'fit',
+                                    objectPosition: 'center',
+                                }}
+                            />
+                        </Box>
                     ))}
                 </Box>
 

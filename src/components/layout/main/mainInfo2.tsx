@@ -107,7 +107,7 @@ export const MainInfo2 = () => {
                     <Typography sx={{ fontWeight: 'bold', fontSize: 'h4.fontSize', mb: 2}}>블로그</Typography>
                     <Box
                         component='img'
-                        src={'/main/blog.png'}
+                        src={'/main/blog.jpg'}
                         sx={{
                             width: '100%',
                             height: 370,

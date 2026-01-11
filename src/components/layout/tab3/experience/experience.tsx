@@ -832,50 +832,62 @@ const Experience = () => {
     );
 
     return (
-        <Box sx={{ p: 2 }}>
-            <Stack spacing={2}>
-                <Breadcrumbs
-                    separator={<NavigateNextIcon fontSize="small" />}
-                    aria-label="breadcrumb"
-                >
-                    {breadcrumbs}
-                </Breadcrumbs>
-            </Stack>
+        <Box>
+            <Box
+                component="img"
+                src="/main/8.jpg"
+                sx={{
+                    display: {sm: 'none', md: 'flex'},
+                    width: '100%',
+                    height: 400,
+                    objectFit: 'fill'
+                }}
+            />
+            <Box sx={{ p: 2 }}>
+                <Stack spacing={2}>
+                    <Breadcrumbs
+                        separator={<NavigateNextIcon fontSize="small" />}
+                        aria-label="breadcrumb"
+                    >
+                        {breadcrumbs}
+                    </Breadcrumbs>
+                </Stack>
 
-            <Box sx={{ pt: 3 }}>
-                <Typography
-                    variant="h4"
-                    component="h1"
-                    gutterBottom
-                    sx={{ fontWeight: 'bold' }}
-                >
-                    체험 프로그램
-                </Typography>
-                <Divider sx={{ mt: 3, borderBottomWidth: 3, bgcolor: 'black' }} />
-            </Box>
+                <Box sx={{ pt: 3 }}>
+                    <Typography
+                        variant="h4"
+                        component="h1"
+                        gutterBottom
+                        sx={{ fontWeight: 'bold' }}
+                    >
+                        체험 프로그램
+                    </Typography>
+                    <Divider sx={{ mt: 3, borderBottomWidth: 3, bgcolor: 'black' }} />
+                </Box>
 
-            <Box sx={{ p: 3 }}>
-                {/* 상위 탭 */}
-                <Tabs
-                    value={mainTab}
-                    onChange={handleMainTabChange}
-                    variant="scrollable"
-                    scrollButtons="auto"
-                >
-                    <Tab label="토종벼 미각체험" />
-                    <Tab label="토종콩 미각체험" />
-                    <Tab label="생명의 정원 키트 꾸미기" />
-                    <Tab label="씨앗 예술 체험" />
-                    <Tab label="씨앗 떡 만들기 체험" />
-                    <Tab label="콩나물 기르기 키트 체험" />
-                </Tabs>
-                <Box sx={{ mt: 2 }}>
-                    {mainTab === 0 && <Exhibit1 />}
-                    {mainTab === 1 && <Exhibit2 />}
-                    {mainTab === 2 && <Exhibit3 />}
-                    {mainTab === 3 && <Exhibit4 />}
-                    {mainTab === 4 && <Exhibit5 />}
-                    {mainTab === 5 && <Exhibit6 />}
+                <Box sx={{ p: 3 }}>
+                    {/* 상위 탭 */}
+                    <Tabs
+                        value={mainTab}
+                        onChange={handleMainTabChange}
+                        variant="scrollable"
+                        scrollButtons="auto"
+                    >
+                        <Tab label="토종벼 미각체험" />
+                        <Tab label="토종콩 미각체험" />
+                        <Tab label="생명의 정원 키트 꾸미기" />
+                        <Tab label="씨앗 예술 체험" />
+                        <Tab label="씨앗 떡 만들기 체험" />
+                        <Tab label="콩나물 기르기 키트 체험" />
+                    </Tabs>
+                    <Box sx={{ mt: 2 }}>
+                        {mainTab === 0 && <Exhibit1 />}
+                        {mainTab === 1 && <Exhibit2 />}
+                        {mainTab === 2 && <Exhibit3 />}
+                        {mainTab === 3 && <Exhibit4 />}
+                        {mainTab === 4 && <Exhibit5 />}
+                        {mainTab === 5 && <Exhibit6 />}
+                    </Box>
                 </Box>
             </Box>
         </Box>

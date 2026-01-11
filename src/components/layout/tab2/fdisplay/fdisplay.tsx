@@ -212,37 +212,49 @@ const Fdisplay = () => {
     );
 
     return (
-        <Box sx={{ p: 2 }}>
-            <Stack spacing={2}>
-                <Breadcrumbs
-                    separator={<NavigateNextIcon fontSize="small" />}
-                    aria-label="breadcrumb"
-                >
-                    {breadcrumbs}
-                </Breadcrumbs>
-            </Stack>
+        <Box>
+            <Box
+                component="img"
+                src="/main/6.jpg"
+                sx={{
+                    display: {sm: 'none', md: 'flex'},
+                    width: '100%',
+                    height: 400,
+                    objectFit: 'fill'
+                }}
+            />
+            <Box sx={{ p: 2 }}>
+                <Stack spacing={2}>
+                    <Breadcrumbs
+                        separator={<NavigateNextIcon fontSize="small" />}
+                        aria-label="breadcrumb"
+                    >
+                        {breadcrumbs}
+                    </Breadcrumbs>
+                </Stack>
 
-            <Box sx={{ pt: 3 }}>
-                <Typography
-                    variant="h4"
-                    component="h1"
-                    gutterBottom
-                    sx={{ fontWeight: 'bold' }}
-                >
-                    근대 농기구 전시
-                </Typography>
-                <Divider sx={{ mt: 3, borderBottomWidth: 3, bgcolor: 'black' }} />
-            </Box>
+                <Box sx={{ pt: 3 }}>
+                    <Typography
+                        variant="h4"
+                        component="h1"
+                        gutterBottom
+                        sx={{ fontWeight: 'bold' }}
+                    >
+                        근대 농기구 전시
+                    </Typography>
+                    <Divider sx={{ mt: 3, borderBottomWidth: 3, bgcolor: 'black' }} />
+                </Box>
 
-            <Box sx={{ p: 3 }}>
-                {/* 상위 탭 */}
-                <Tabs value={mainTab} onChange={handleMainTabChange} centered>
-                    <Tab label="전시관" />
-                    <Tab label="농기구 이야기" />
-                </Tabs>
-                <Box sx={{ mt: 2 }}>
-                    {mainTab === 0 && <Exhibit1 />}
-                    {mainTab === 1 && <Exhibit2 />}
+                <Box sx={{ p: 3 }}>
+                    {/* 상위 탭 */}
+                    <Tabs value={mainTab} onChange={handleMainTabChange} centered>
+                        <Tab label="전시관" />
+                        <Tab label="농기구 이야기" />
+                    </Tabs>
+                    <Box sx={{ mt: 2 }}>
+                        {mainTab === 0 && <Exhibit1 />}
+                        {mainTab === 1 && <Exhibit2 />}
+                    </Box>
                 </Box>
             </Box>
         </Box>
