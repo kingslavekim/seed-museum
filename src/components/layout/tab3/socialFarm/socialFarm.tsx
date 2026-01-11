@@ -28,7 +28,7 @@ const SocialFarm = () => {
                 component="img"
                 src="/main/9.jpg"
                 sx={{
-                    display: {sm: 'none', md: 'flex'},
+                    display: {xs: 'none', sm: 'none', md: 'flex'},
                     width: '100%',
                     height: 400,
                     objectFit: 'fill'

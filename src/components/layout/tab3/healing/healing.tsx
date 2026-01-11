@@ -35,7 +35,7 @@ const Healing = () => {
                 component="img"
                 src="/main/10.jpg"
                 sx={{
-                    display: {sm: 'none', md: 'flex'},
+                    display: {xs: 'none', sm: 'none', md: 'flex'},
                     width: '100%',
                     height: 400,
                     objectFit: 'fill'
