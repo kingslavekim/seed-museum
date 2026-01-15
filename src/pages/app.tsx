@@ -33,12 +33,6 @@ import SlowFood from './tab6/slowFood/main.tsx'
 import Table from './tab6/table/main.tsx'
 import Festival from './tab6/festival/main.tsx'
 
-const currentHost = window.location.hostname;
-if (currentHost === 'xn--od5bkdz9hntn.com' || currentHost === 'www.xn--od5bkdz9hntn.com') {
-    const nativeURL = window.location.href.replace(currentHost, 'www.토종씨앗.com');
-    window.location.replace(nativeURL);
-}
-
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
         <BrowserRouter>
