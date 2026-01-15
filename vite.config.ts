@@ -7,6 +7,9 @@ export default defineConfig({
   server: {
     port: 80,
     host: true,
-    allowedHosts: ['www.xn--od5bkdz9hntn.com']
+    allowedHosts: [
+      'www.토종씨앗.com',
+      '토종씨앗.com'
+    ]
   }
 })
