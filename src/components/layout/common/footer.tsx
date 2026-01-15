@@ -20,7 +20,7 @@ export const Footer = () => {
                 }}>
                     <Typography sx={{ fontSize: 'body1.fontSize'}}>대표자 : 강희진</Typography>
                     <Typography sx={{ fontSize: 'body1.fontSize'}}>사업자등록번호 : 143-90-15456</Typography>
-                    <Typography sx={{ fontSize: 'body1.fontSize'}}>주소 : 충남 에산군 대술면 시산 서길 64-11</Typography>
+                    <Typography sx={{ fontSize: 'body1.fontSize'}}>주소 : 충남 예산군 대술면 시산 서길 64-11</Typography>
                     <Typography sx={{ fontSize: 'body1.fontSize'}}>이메일 : fs-ac@hanmail.net</Typography>
                     <Typography sx={{ fontSize: 'body1.fontSize'}}>Copyright © 2015. 씨앗박물관. All right reserved.</Typography>
                 </Stack>
