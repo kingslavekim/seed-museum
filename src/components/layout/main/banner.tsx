@@ -11,18 +11,18 @@ export const Banner = () => {
 
     const bannerImagesXs = [
         {src: '/banners/m_1.jpg', link: ''},
-        {src: '/banners/m_2.jpg', link: '/seed/pdisplay'},
-        {src: '/banners/m_3.jpg', link: '/seed/fdisplay'},
-        {src: '/banners/m_4.jpg', link: '/seed/museum'},
-        {src: '/banners/m_5.jpg', link: '/seed/experience'},
+        {src: '/banners/m_2.jpg', link: '/pdisplay'},
+        {src: '/banners/m_3.jpg', link: '/fdisplay'},
+        {src: '/banners/m_4.jpg', link: '/museum'},
+        {src: '/banners/m_5.jpg', link: '/experience'},
     ];
 
     const bannerImagesDefault = [
         {src: '/banners/1.jpg', link: ''},
-        {src: '/banners/2.jpg', link: '/seed/pdisplay'},
-        {src: '/banners/3.jpg', link: '/seed/fdisplay'},
-        {src: '/banners/4.jpg', link: '/seed/museum'},
-        {src: '/banners/5.jpg', link: '/seed/experience'},
+        {src: '/banners/2.jpg', link: '/pdisplay'},
+        {src: '/banners/3.jpg', link: '/fdisplay'},
+        {src: '/banners/4.jpg', link: '/museum'},
+        {src: '/banners/5.jpg', link: '/experience'},
     ];
 
     const isXs = useMediaQuery(theme.breakpoints.down('md'));

@@ -85,7 +85,7 @@ export const Header = () => {
                         component="img"
                         src="/common/seedLogo.jpg"
                         alt="씨앗 로고"
-                        onClick={() => {navigate('/seed/');}}
+                        onClick={() => {navigate('/');}}
                         sx={{
                             display: 'flex',
                             alignItems: 'center',
@@ -180,7 +180,7 @@ export const Header = () => {
                             label="씨앗유물"
                             onClick={() => {
                                 setValue2(0);
-                                navigate('/seed/seedRelics');
+                                navigate('/seedRelics');
                             }}
                             onMouseEnter={() => {
                                 setValue1(3);
@@ -191,7 +191,7 @@ export const Header = () => {
                             label="씨앗이야기"
                             onClick={() => {
                                 setValue2(0);
-                                navigate('/seed/seedStory');
+                                navigate('/seedStory');
                             }}
                             onMouseEnter={() => {
                                 setValue1(4);
@@ -245,9 +245,9 @@ export const Header = () => {
                             }
                         }}
                     >
-                        <Tab label='관람 안내' onMouseEnter={() => {setValue2(0)}} onClick={() => {navigate('/seed/info');}}/>
-                        <Tab label='예약 안내' onMouseEnter={() => {setValue2(1)}} onClick={() => {navigate('/seed/reservation');}}/>
-                        <Tab label='오시는 길' onMouseEnter={() => {setValue2(2)}} onClick={() => {navigate('/seed/directions');}}/>
+                        <Tab label='관람 안내' onMouseEnter={() => {setValue2(0)}} onClick={() => {navigate('/info');}}/>
+                        <Tab label='예약 안내' onMouseEnter={() => {setValue2(1)}} onClick={() => {navigate('/reservation');}}/>
+                        <Tab label='오시는 길' onMouseEnter={() => {setValue2(2)}} onClick={() => {navigate('/directions');}}/>
                     </Tabs>
                 </Box>
             </CustomTabPanel>
@@ -278,11 +278,11 @@ export const Header = () => {
                             }
                         }}
                     >
-                        <Tab label='상설 전시' onMouseEnter={() => {setValue2(0)}} onClick={() => {navigate('/seed/pdisplay');}}/>
-                        <Tab label='특별 전시' onMouseEnter={() => {setValue2(1)}} onClick={() => {navigate('/seed/sdisplay');}}/>
-                        <Tab label='근대 농기구 전시' onMouseEnter={() => {setValue2(2)}} onClick={() => {navigate('/seed/fdisplay');}}/>
-                        <Tab label='박물관 속 박물관' onMouseEnter={() => {setValue2(3)}} onClick={() => {navigate('/seed/museum');}}/>
-                        <Tab label='영상관' onMouseEnter={() => {setValue2(4)}} onClick={() => {navigate('/seed/video');}}/>
+                        <Tab label='상설 전시' onMouseEnter={() => {setValue2(0)}} onClick={() => {navigate('/pdisplay');}}/>
+                        <Tab label='특별 전시' onMouseEnter={() => {setValue2(1)}} onClick={() => {navigate('/sdisplay');}}/>
+                        <Tab label='근대 농기구 전시' onMouseEnter={() => {setValue2(2)}} onClick={() => {navigate('/fdisplay');}}/>
+                        <Tab label='박물관 속 박물관' onMouseEnter={() => {setValue2(3)}} onClick={() => {navigate('/museum');}}/>
+                        <Tab label='영상관' onMouseEnter={() => {setValue2(4)}} onClick={() => {navigate('/video');}}/>
                     </Tabs>
                 </Box>
             </CustomTabPanel>
@@ -313,9 +313,9 @@ export const Header = () => {
                             }
                         }}
                     >
-                        <Tab label='체험 프로그램' onMouseEnter={() => {setValue2(0)}} onClick={() => {navigate('/seed/experience');}}/>
-                        <Tab label='사회적 농장 프로그램' onMouseEnter={() => {setValue2(1)}} onClick={() => {navigate('/seed/socialFarm');}}/>
-                        <Tab label='치유 프로그램' onMouseEnter={() => {setValue2(2)}} onClick={() => {navigate('/seed/healing');}}/>
+                        <Tab label='체험 프로그램' onMouseEnter={() => {setValue2(0)}} onClick={() => {navigate('/experience');}}/>
+                        <Tab label='사회적 농장 프로그램' onMouseEnter={() => {setValue2(1)}} onClick={() => {navigate('/socialFarm');}}/>
+                        <Tab label='치유 프로그램' onMouseEnter={() => {setValue2(2)}} onClick={() => {navigate('/healing');}}/>
                     </Tabs>
                 </Box>
             </CustomTabPanel>
@@ -372,11 +372,11 @@ export const Header = () => {
                             }
                         }}
                     >
-                        <Tab label='박물관 개관식' onMouseEnter={() => {setValue2(0)}} onClick={() => {navigate('/seed/open');}}/>
-                        <Tab label='씨앗 나눔' onMouseEnter={() => {setValue2(1)}} onClick={() => {navigate('/seed/sharing');}}/>
-                        <Tab label='슬로푸드' onMouseEnter={() => {setValue2(2)}} onClick={() => {navigate('/seed/slowFood');}}/>
-                        <Tab label='예산을 담은 식탁' onMouseEnter={() => {setValue2(3)}} onClick={() => {navigate('/seed/table');}}/>
-                        <Tab label='축제 / 팜파티' onMouseEnter={() => {setValue2(4)}} onClick={() => {navigate('/seed/festival');}}/>
+                        <Tab label='박물관 개관식' onMouseEnter={() => {setValue2(0)}} onClick={() => {navigate('/open');}}/>
+                        <Tab label='씨앗 나눔' onMouseEnter={() => {setValue2(1)}} onClick={() => {navigate('/sharing');}}/>
+                        <Tab label='슬로푸드' onMouseEnter={() => {setValue2(2)}} onClick={() => {navigate('/slowFood');}}/>
+                        <Tab label='예산을 담은 식탁' onMouseEnter={() => {setValue2(3)}} onClick={() => {navigate('/table');}}/>
+                        <Tab label='축제 / 팜파티' onMouseEnter={() => {setValue2(4)}} onClick={() => {navigate('/festival');}}/>
                     </Tabs>
                 </Box>
             </CustomTabPanel>
@@ -407,10 +407,10 @@ export const Header = () => {
                             }
                         }}
                     >
-                        <Tab label='인사말' onMouseEnter={() => {setValue2(0)}} onClick={() => {navigate('/seed/greetings');}}/>
-                        <Tab label='연혁' onMouseEnter={() => {setValue2(1)}} onClick={() => {navigate('/seed/history');}}/>
-                        <Tab label='시설 소개' onMouseEnter={() => {setValue2(2)}} onClick={() => {navigate('/seed/facilities');}}/>
-                        <Tab label='공지사항' onMouseEnter={() => {setValue2(3)}} onClick={() => {navigate('/seed/notice');}}/>
+                        <Tab label='인사말' onMouseEnter={() => {setValue2(0)}} onClick={() => {navigate('/greetings');}}/>
+                        <Tab label='연혁' onMouseEnter={() => {setValue2(1)}} onClick={() => {navigate('/history');}}/>
+                        <Tab label='시설 소개' onMouseEnter={() => {setValue2(2)}} onClick={() => {navigate('/facilities');}}/>
+                        <Tab label='공지사항' onMouseEnter={() => {setValue2(3)}} onClick={() => {navigate('/notice');}}/>
                     </Tabs>
                 </Box>
             </CustomTabPanel>

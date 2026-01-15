@@ -5,17 +5,17 @@ export const Display = () => {
     const navigate = useNavigate();
 
     const displayInfo1 = [
-        {src: '/display/1.jpg', text1: '상설전시', text2: '상설전시', text3: '', link: '/seed/pdisplay'},
-        {src: '/display/2.jpg', text1: '상설전시', text2: '근대 농기구 전시', text3: '', link: '/seed/fdisplay'},
-        {src: '/display/3.jpg', text1: '상설전시', text2: '박물관 속 박물관', text3: '', link: '/seed/museum'},
-        {src: '/display/4.jpg', text1: '상설전시', text2: '영상관', text3: '', link: '/seed/video'},
-        {src: '/display/5.jpg', text1: '특별전시', text2: '특별전시', text3: '', link: '/seed/sdisplay'},
+        {src: '/display/1.jpg', text1: '상설전시', text2: '상설전시', text3: '', link: '/pdisplay'},
+        {src: '/display/2.jpg', text1: '상설전시', text2: '근대 농기구 전시', text3: '', link: '/fdisplay'},
+        {src: '/display/3.jpg', text1: '상설전시', text2: '박물관 속 박물관', text3: '', link: '/museum'},
+        {src: '/display/4.jpg', text1: '상설전시', text2: '영상관', text3: '', link: '/video'},
+        {src: '/display/5.jpg', text1: '특별전시', text2: '특별전시', text3: '', link: '/sdisplay'},
     ];
 
     const displayInfo2 = [
-        {src: '/display/6.jpg', text1: '체험 프로그램', link: '/seed/experience'},
-        {src: '/display/7.jpg', text1: '사회적 농장 프로그램', link: '/seed/socialFarm'},
-        {src: '/display/8.jpg', text1: '치유 프로그램', link: '/seed/healing'},
+        {src: '/display/6.jpg', text1: '체험 프로그램', link: '/experience'},
+        {src: '/display/7.jpg', text1: '사회적 농장 프로그램', link: '/socialFarm'},
+        {src: '/display/8.jpg', text1: '치유 프로그램', link: '/healing'},
     ];
 
     return (

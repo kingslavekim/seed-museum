@@ -37,36 +37,36 @@ createRoot(document.getElementById('root')!).render(
     <StrictMode>
         <BrowserRouter>
             <Routes>
-                <Route path="/seed/" element={<Main />} />
-                <Route path="/seed/info" element={<Info />} />
-                <Route path="/seed/reservation" element={<Reservation />} />
-                <Route path="/seed/directions" element={<Directions />} />
+                <Route path="/" element={<Main />} />
+                <Route path="/info" element={<Info />} />
+                <Route path="/reservation" element={<Reservation />} />
+                <Route path="/directions" element={<Directions />} />
 
-                <Route path="/seed/pdisplay" element={<Pdisplay />} />
-                <Route path="/seed/sdisplay" element={<Sdisplay />} />
-                <Route path="/seed/fdisplay" element={<Fdisplay />} />
-                <Route path="/seed/museum" element={<Museum />} />
-                <Route path="/seed/video" element={<Video />} />
+                <Route path="/pdisplay" element={<Pdisplay />} />
+                <Route path="/sdisplay" element={<Sdisplay />} />
+                <Route path="/fdisplay" element={<Fdisplay />} />
+                <Route path="/museum" element={<Museum />} />
+                <Route path="/video" element={<Video />} />
 
-                <Route path="/seed/experience" element={<Experience />} />
-                <Route path="/seed/socialFarm" element={<SocialFarm />} />
-                <Route path="/seed/healing" element={<Healing />} />
+                <Route path="/experience" element={<Experience />} />
+                <Route path="/socialFarm" element={<SocialFarm />} />
+                <Route path="/healing" element={<Healing />} />
 
-                <Route path="/seed/seedRelics" element={<SeedRelics />} />
+                <Route path="/seedRelics" element={<SeedRelics />} />
 
-                <Route path="/seed/seedStory" element={<SeedStory />} />
+                <Route path="/seedStory" element={<SeedStory />} />
 
-                <Route path="/seed/open" element={<Open />} />
-                <Route path="/seed/sharing" element={<Sharing />} />
-                <Route path="/seed/slowFood" element={<SlowFood />} />
-                <Route path="/seed/table" element={<Table />} />
-                <Route path="/seed/festival" element={<Festival />} />
+                <Route path="/open" element={<Open />} />
+                <Route path="/sharing" element={<Sharing />} />
+                <Route path="/slowFood" element={<SlowFood />} />
+                <Route path="/table" element={<Table />} />
+                <Route path="/festival" element={<Festival />} />
 
-                <Route path="/seed/greetings" element={<Greetings />} />
-                <Route path="/seed/history" element={<History />} />
-                <Route path="/seed/facilities" element={<Facilities />} />
-                <Route path="/seed/notice" element={<Notice />} />
-                <Route path="/seed/notice/:id" element={<NoticeDetail />} />
+                <Route path="/greetings" element={<Greetings />} />
+                <Route path="/history" element={<History />} />
+                <Route path="/facilities" element={<Facilities />} />
+                <Route path="/notice" element={<Notice />} />
+                <Route path="/notice/:id" element={<NoticeDetail />} />
             </Routes>
         </BrowserRouter>
     </StrictMode>,

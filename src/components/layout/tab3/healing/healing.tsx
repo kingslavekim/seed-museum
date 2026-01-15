@@ -14,7 +14,7 @@ const Healing = () => {
     const navigate = useNavigate();
 
     const breadcrumbs = [
-        <Link underline="hover" key="1" color="inherit" href="/seed/" onClick={() => { navigate('/seed/'); }}>
+        <Link underline="hover" key="1" color="inherit" href="/" onClick={() => { navigate('/'); }}>
             Home
         </Link>,
         <Typography key="2" sx={{ color: 'text.primary' }}>

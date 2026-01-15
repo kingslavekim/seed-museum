@@ -47,7 +47,7 @@ export const MainInfo = () => {
                         variant='contained'
                         color='primary'
                         sx={{ fontWeight: 'bold', fontSize: { xs: 20, sm: 26 }, borderRadius: 4}}
-                        onClick={() => {navigate('/seed/directions');}}
+                        onClick={() => {navigate('/directions');}}
                     >
                         오시는 길
                     </Button>
