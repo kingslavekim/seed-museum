@@ -282,7 +282,7 @@ export const Header = () => {
                         <Tab label='특별 전시' onMouseEnter={() => {setValue2(1)}} onClick={() => {navigate('/sdisplay');}}/>
                         <Tab label='근대 농기구 전시' onMouseEnter={() => {setValue2(2)}} onClick={() => {navigate('/fdisplay');}}/>
                         <Tab label='박물관 속 박물관' onMouseEnter={() => {setValue2(3)}} onClick={() => {navigate('/museum');}}/>
-                        <Tab label='영상관' onMouseEnter={() => {setValue2(4)}} onClick={() => {navigate('/video');}}/>
+                        {/*<Tab label='영상관' onMouseEnter={() => {setValue2(4)}} onClick={() => {navigate('/video');}}/>*/}
                     </Tabs>
                 </Box>
             </CustomTabPanel>
@@ -409,7 +409,7 @@ export const Header = () => {
                     >
                         <Tab label='인사말' onMouseEnter={() => {setValue2(0)}} onClick={() => {navigate('/greetings');}}/>
                         <Tab label='연혁' onMouseEnter={() => {setValue2(1)}} onClick={() => {navigate('/history');}}/>
-                        <Tab label='시설 소개' onMouseEnter={() => {setValue2(2)}} onClick={() => {navigate('/facilities');}}/>
+                        {/*<Tab label='시설 소개' onMouseEnter={() => {setValue2(2)}} onClick={() => {navigate('/facilities');}}/>*/}
                         <Tab label='공지사항' onMouseEnter={() => {setValue2(3)}} onClick={() => {navigate('/notice');}}/>
                     </Tabs>
                 </Box>

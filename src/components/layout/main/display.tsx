@@ -8,7 +8,7 @@ export const Display = () => {
         {src: '/display/1.jpg', text1: '상설전시', text2: '상설전시', text3: '', link: '/pdisplay'},
         {src: '/display/2.jpg', text1: '상설전시', text2: '근대 농기구 전시', text3: '', link: '/fdisplay'},
         {src: '/display/3.jpg', text1: '상설전시', text2: '박물관 속 박물관', text3: '', link: '/museum'},
-        {src: '/display/4.jpg', text1: '상설전시', text2: '영상관', text3: '', link: '/video'},
+        // {src: '/display/4.jpg', text1: '상설전시', text2: '영상관', text3: '', link: '/video'},
         {src: '/display/5.jpg', text1: '특별전시', text2: '특별전시', text3: '', link: '/sdisplay'},
     ];
 
@@ -39,8 +39,8 @@ export const Display = () => {
                             direction="column"
                             spacing={2}
                             sx={{
-                                alignItems: 'center', // 이미지 및 텍스트 가운데 정렬
-                                textAlign: 'center',  // 텍스트 가운데 정렬
+                                alignItems: 'flex-start', // 좌측 정렬로 변경
+                                textAlign: 'left',       // 텍스트 좌측 정렬로 변경
                             }}
                         >
                             <Box
@@ -105,8 +105,8 @@ export const Display = () => {
                             direction="column"
                             spacing={2}
                             sx={{
-                                alignItems: 'center', // 이미지 및 텍스트 가운데 정렬
-                                textAlign: 'center',  // 텍스트 가운데 정렬
+                                alignItems: 'flex-start', // 좌측 정렬로 변경
+                                textAlign: 'left',       // 텍스트 좌측 정렬로 변경
                             }}
                         >
                             <Box
