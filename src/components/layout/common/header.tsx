@@ -475,9 +475,9 @@ export const Header = () => {
                                         width: '100%'
                                     }}
                                 >
-                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>관람 안내</Typography>
-                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>예약 안내</Typography>
-                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>오시는 길</Typography>
+                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}} onClick={() => {navigate('/info');}}>관람 안내</Typography>
+                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}} onClick={() => {navigate('/reservation');}}>예약 안내</Typography>
+                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}} onClick={() => {navigate('/directions');}}>오시는 길</Typography>
                                 </Box>
                             </AccordionDetails>
                         </Accordion>
@@ -493,11 +493,11 @@ export const Header = () => {
                                         width: '100%'
                                     }}
                                 >
-                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>상설 전시</Typography>
-                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>특별 전시</Typography>
-                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>근대 농기구 전시</Typography>
-                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>박물관 속 박물관</Typography>
-                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>영상관</Typography>
+                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}} onClick={() => {navigate('/pdisplay');}}>상설 전시</Typography>
+                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}} onClick={() => {navigate('/sdisplay');}}>특별 전시</Typography>
+                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}} onClick={() => {navigate('/fdisplay');}}>근대 농기구 전시</Typography>
+                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}} onClick={() => {navigate('/museum');}}>박물관 속 박물관</Typography>
+                                    {/*<Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>영상관</Typography>*/}
                                 </Box>
                             </AccordionDetails>
                         </Accordion>
@@ -513,33 +513,20 @@ export const Header = () => {
                                         width: '100%'
                                     }}
                                 >
-                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>체험 프로그램</Typography>
-                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>사회적 농장 프로그램</Typography>
-                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>치유 프로그램</Typography>
-                                </Box>
-                            </AccordionDetails>
-                        </Accordion>
-                        <Accordion sx={{width: '100%'}}>
-                            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                                <Typography sx={{ fontWeight: 'bold', fontSize: 'h5.fontSize'}}>씨앗유물</Typography>
-                            </AccordionSummary>
-                            <AccordionDetails>
-                                <Box
-                                    sx={{
-                                        display: 'flex',
-                                        flexDirection: 'column',
-                                        width: '100%'
-                                    }}
-                                >
-                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>화류</Typography>
-                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>맥류</Typography>
-                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>두류</Typography>
+                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}} onClick={() => {navigate('/experience');}}>체험 프로그램</Typography>
+                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}} onClick={() => {navigate('/socialFarm');}}>사회적 농장 프로그램</Typography>
+                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}} onClick={() => {navigate('/healing');}}>치유 프로그램</Typography>
                                 </Box>
                             </AccordionDetails>
                         </Accordion>
                         <Accordion sx={{width: '100%'}}>
                             <AccordionSummary>
-                                <Typography sx={{ fontWeight: 'bold', fontSize: 'h5.fontSize'}}>씨앗이야기</Typography>
+                                <Typography sx={{ fontWeight: 'bold', fontSize: 'h5.fontSize'}} onClick={() => {navigate('/seedRelics');}}>씨앗유물</Typography>
+                            </AccordionSummary>
+                        </Accordion>
+                        <Accordion sx={{width: '100%'}}>
+                            <AccordionSummary>
+                                <Typography sx={{ fontWeight: 'bold', fontSize: 'h5.fontSize'}} onClick={() => {navigate('/seedStory');}}>씨앗이야기</Typography>
                             </AccordionSummary>
                         </Accordion>
                         <Accordion sx={{width: '100%'}}>
@@ -554,8 +541,12 @@ export const Header = () => {
                                         width: '100%'
                                     }}
                                 >
-                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>씨앗나눔</Typography>
-                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>박/미 주관 행사</Typography>
+                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}} onClick={() => {navigate('/open');}}>박물관 개관식</Typography>
+                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}} onClick={() => {navigate('/sharing');}}>씨앗 나눔</Typography>
+                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}} onClick={() => {navigate('/slowFood');}}>슬로푸드</Typography>
+                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}} onClick={() => {navigate('/table');}}>예산을 담은 식탁</Typography>
+                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}} onClick={() => {navigate('/festival');}}>축제 / 팜파티</Typography>
+
                                 </Box>
                             </AccordionDetails>
                         </Accordion>
@@ -571,10 +562,10 @@ export const Header = () => {
                                         width: '100%'
                                     }}
                                 >
-                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>인사말</Typography>
-                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>연혁</Typography>
-                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>시설 소개</Typography>
-                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>공지사항</Typography>
+                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}} onClick={() => {navigate('/greetings');}}>인사말</Typography>
+                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}} onClick={() => {navigate('/history');}}>연혁</Typography>
+                                    {/*<Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}}>시설 소개</Typography>*/}
+                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}} onClick={() => {navigate('/notice');}}>공지사항</Typography>
                                 </Box>
                             </AccordionDetails>
                         </Accordion>
