@@ -89,7 +89,7 @@ const Healing = () => {
                         </Typography>
                         <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
                             음식 재료와 예술을 결합한 창의적 치유 프로그램입니다.
-                            과일, 채소, 한과 등을 이용해 <strong>‘나의 감정 도시락’</strong>을 꾸미고,
+                            과일, 채소, 들풀 등을 이용해 <strong>‘나의 감정 도시락’</strong>을 꾸미고,
                             맛과 향으로 추억을 회상하며 정서적 안정을 찾습니다.
                         </Typography>
                         <Typography variant="body1" sx={{ mt: 1 }}>
@@ -109,12 +109,12 @@ const Healing = () => {
                             스트레스를 완화하고 마음의 균형을 되찾습니다.
                         </Typography>
                         <Typography variant="body1" sx={{ mt: 1 }}>
-                            주요 활동: 라벤더 향주머니 만들기, 장미 오일 만들기, 허브 미스트 제작
+                            주요 활동: 향주머니 만들기, 아로마 캔들 만들기, 디퓨저 만들기
                         </Typography>
                         <Typography variant="body1">대상: 어르신, 심신의 안정이 필요한 성인</Typography>
                         <Typography variant="body1">운영: 회기당 90분 / 실내외 병행</Typography>
                         <Typography variant="body1">효과: 정서 안정, 기억력 향상, 활력 회복</Typography>
-                        <Typography variant="body1">참여비: 회당 10,000원</Typography>
+                        <Typography variant="body1">참여비: 회당 15,000원</Typography>
                     </Box>
 
                     <Box sx={{ mt: 4, pl: 4 }}>
@@ -164,7 +164,7 @@ const Healing = () => {
                         <Typography variant="body1">대상: 65세 이상 어르신, 경도인지장애(MCI) 어르신</Typography>
                         <Typography variant="body1">운영: 주 1회 / 총 8회 (회당 60~80분)</Typography>
                         <Typography variant="body1">효과: 인지력 유지, 언어 자극, 정서 회복, 사회적 교류</Typography>
-                        <Typography variant="body1">참여비: 회당 8,000원</Typography>
+                        <Typography variant="body1">참여비: 회당 10,000원</Typography>
                     </Box>
                 </Box>
 

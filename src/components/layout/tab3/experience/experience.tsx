@@ -84,10 +84,10 @@ const Experience = () => {
                 </Box>
                 <Box sx={{ ml: 2, mb: 2 }}>
                     <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>
-                        2. 밥 시식 (다섯 가지 토종쌀)
+                        2. 밥 시식 (다섯가지 토종쌀)
                     </Typography>
                     <Typography variant="body2" sx={{ lineHeight: 1.8, mb: 1 }}>
-                        아래 다섯 가지 토종쌀을 천천히 비교하며 감각적으로 체험합니다.
+                        아래 다섯가지 토종쌀로 지은 밥을 천천히 비교하며 감각적으로 체험합니다.
                     </Typography>
                     <ul style={{ paddingLeft: "20px" }}> {/* 리스트 스타일 적용 */}
                         <Typography variant="body2" sx={{ lineHeight: 1.8}}>
@@ -130,12 +130,12 @@ const Experience = () => {
                     📌 체험 정보
                 </Typography>
                 <Stack spacing={1}>
-                    <Typography variant="body2">- 운영 인원: 30명 이하 (소규모 감각 체험 중심)</Typography>
-                    <Typography variant="body2">- 체험 시간: 약 90분</Typography>
-                    <Typography variant="body2">- 체험비: 25,000원 (재료비, 자료, 떡 시식 포함)</Typography>
-                    <Typography variant="body2">- 예약: 사전예약 필수 (현장 참여 불가)</Typography>
-                    <Typography variant="body2">- 대상: 청소년 및 성인 (초등 고학년 이상 권장)</Typography>
-                    <Typography variant="body2">- 제공 자료: 미각 시트, 토종벼 해설 자료, 떡 시식</Typography>
+                    {/*<Typography variant="body2">- 운영 인원: 30명 이하 (소규모 감각 체험 중심)</Typography>*/}
+                    {/*<Typography variant="body2">- 체험 시간: 약 90분</Typography>*/}
+                    <Typography variant="body2">- 체험비: 50,000원 (재료비, 자료, 떡 시식 포함)</Typography>
+                    {/*<Typography variant="body2">- 예약: 사전예약 필수 (현장 참여 불가)</Typography>*/}
+                    <Typography variant="body2">- 대상: 성인</Typography>
+                    <Typography variant="body2">- 제공 자료: 토종벼, 미각 시트, 토종벼 해설 자료</Typography>
                 </Stack>
             </Box>
 
@@ -171,7 +171,7 @@ const Experience = () => {
                     밥 속의 콩, 꼬투리 속의 콩, 그리고 기억 속의 콩까지—이 체험은 <strong>‘콩의 나라, 대한민국’</strong>을 다시 만나는 미각의 여정입니다.
                 </Typography>
                 <Typography variant="body1" sx={{ lineHeight: 1.8 }}>
-                    여섯 가지 토종콩을 이용해 콩밥, 삶은 콩, 볶은 콩, 콩나물, 인절미, 구운 꼬투리 등
+                    여섯 가지 토종콩을 이용해 콩밥, 삶은 콩, 볶은 콩, 콩나물, 떡, 구운 꼬투리 등
                     다양한 방식으로 조리된 콩의 맛을 체험합니다.
                 </Typography>
                 <Typography variant="body1" sx={{ lineHeight: 1.8}}>
@@ -219,10 +219,10 @@ const Experience = () => {
                                 <TableCell>베틀처럼 곧게 자라는 싹, 생명력의 상징</TableCell>
                             </TableRow>
                             <TableRow>
-                                <TableCell>수박태</TableCell>
+                                <TableCell>홀애비밤콩</TableCell>
                                 <TableCell>달콤하고 부드러운 가루콩</TableCell>
-                                <TableCell>인절미</TableCell>
-                                <TableCell>수박무늬 껍질을 닮은 독특한 외형과 달큰한 맛</TableCell>
+                                <TableCell>떡고물</TableCell>
+                                <TableCell>등 틔임이 있는 독특한 외형과 달큰한 맛</TableCell>
                             </TableRow>
                             <TableRow>
                                 <TableCell>야생콩</TableCell>
@@ -253,7 +253,7 @@ const Experience = () => {
                     6가지 콩 미각체험
                 </Typography>
                 <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
-                    - 콩밥 → 삶은 콩 → 볶은 콩 → 콩나물 → 인절미 → 구운 꼬투리 순서로 시식
+                    - 삶은 콩 → 콩밥 → 콩나물 → 볶은 콩 → 떡 → 구운 꼬투리 순서로 시식
                 </Typography>
                 <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
                     - 진행자의 이야기와 함께 각 콩의 맛과 향을 비교
@@ -284,9 +284,9 @@ const Experience = () => {
                 <Stack spacing={1}>
                     <Typography variant="body2">- 운영 인원: 30명 이하 (소규모 감각 체험 중심)</Typography>
                     <Typography variant="body2">- 체험 시간: 약 90분</Typography>
-                    <Typography variant="body2">- 체험비: 25,000원 (재료비 포함)</Typography>
+                    <Typography variant="body2">- 체험비: 50,000원</Typography>
                     <Typography variant="body2">- 예약: 사전예약 필수</Typography>
-                    <Typography variant="body2">- 대상: 청소년 및 성인 (초등 고학년 이상 권장)</Typography>
+                    <Typography variant="body2">- 대상: 성인</Typography>
                     <Typography variant="body2">- 제공 자료: 미각 시트, 콩 해설 자료, 시식용 콩 가공물 등</Typography>
                 </Stack>
             </Box>
@@ -387,7 +387,7 @@ const Experience = () => {
                     - <strong>꾸미기 아이템 40여 종</strong> (산, 나무, 꽃, 동물, 곤충, 채소, 건물 등)
                 </Typography>
                 <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
-                    - <strong>기후위기 카드 5장</strong> (기후변화의 원인과 실천법 학습)
+                    - <strong>기후위기 카드 4장</strong> (기후변화의 원인과 실천법 학습)
                 </Typography>
                 <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
                     - <strong>교육 영상</strong> (기후위기 이해용 영상)
@@ -429,7 +429,7 @@ const Experience = () => {
                         <Typography variant="body2">- 체험 시간: 약 90분</Typography>
                         <Typography variant="body2">- 체험비: 1인 20,000원 (모든 재료 포함)</Typography>
                         <Typography variant="body2">- 대상: 초등학생 (저학년~고학년 모두 참여 가능)</Typography>
-                        <Typography variant="body2">- 제공 자료: 생명의 정원 키트, 색칠 도구, 기후위기 카드 5장, 체험지, 탄소중립 서명서</Typography>
+                        <Typography variant="body2">- 제공 자료: 생명의 정원 키트, 색칠 도구, 기후위기 카드 4장, 체험지, 탄소중립 서명서</Typography>
                     </Stack>
                 </Box>
             </Box>
@@ -511,16 +511,13 @@ const Experience = () => {
                     3️⃣ 씨앗 예술 만들기
                 </Typography>
                 <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
-                    - 준비물: 액자+유리판 세트, 양면테이프, 씨앗 10종 이상, 색칠 도구
+                    - 준비물: 액자+유리판 세트, 씨앗 10종 이상, 색칠 도구
                 </Typography>
                 <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
                     - 제작 과정:
                 </Typography>
                 <Typography variant="body2" sx={{ lineHeight: 1.8, pl: 2 }}>
                     • 배경 그림 그리기
-                </Typography>
-                <Typography variant="body2" sx={{ lineHeight: 1.8, pl: 2 }}>
-                    • 유리판에 양면테이프 부착
                 </Typography>
                 <Typography variant="body2" sx={{ lineHeight: 1.8, pl: 2 }}>
                     • 그림에 어울리는 씨앗 선택 후 부착
@@ -560,7 +557,7 @@ const Experience = () => {
                     <Typography variant="body2">- 체험 시간: 약 60~70분 (관찰 20분 + 제작 40분 + 정리 10분)</Typography>
                     <Typography variant="body2">- 체험비: 1인 15,000원 (재료비 포함)</Typography>
                     <Typography variant="body2">- 대상: 초등학생(저학년~고학년 참여 가능)</Typography>
-                    <Typography variant="body2">- 제공 자료: 씨앗 10종 이상, 루페, 액자 세트, 양면테이프, 색연필 등</Typography>
+                    <Typography variant="body2">- 제공 자료: 씨앗 10종 이상, 루페, 액자 세트, 색연필 등</Typography>
                     <Typography variant="body2">- 완성작품: 개인 씨앗 액자 1점 (선물 포장 가능)</Typography>
                 </Stack>
             </Box>
@@ -604,20 +601,20 @@ const Experience = () => {
                 </Typography>
 
                 <Typography variant="body2" sx={{ fontWeight: 'bold', mt: 1 }}>
-                    1️⃣ 오프닝 – 씨앗 이야기 듣기 (5~10분)
+                    1️⃣ 오프닝 – 씨앗 이야기 듣기
                 </Typography>
                 <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
                     - 토종씨앗은 단순한 식재료가 아닌, 우리 조상의 지혜와 자연의 선물입니다.
                 </Typography>
                 <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
-                    - 사용 씨앗: 서리태, 밤콩, 수박태, 참깨, 팥 등
+                    - 사용 씨앗: 서리태, 팥, 동부, 잣 등
                 </Typography>
                 <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
                     - 씨앗의 쓰임, 모양, 이름 유래를 간단히 소개합니다.
                 </Typography>
 
                 <Typography variant="body2" sx={{ fontWeight: 'bold', mt: 2 }}>
-                    2️⃣ 떡 만들기 체험 (15~20분)
+                    2️⃣ 떡 만들기 체험
                 </Typography>
                 <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
                     - 떡 모듈 틀에 쌀가루 반죽을 넣고 다양한 씨앗으로 나만의 고명을 디자인합니다.
@@ -627,7 +624,7 @@ const Experience = () => {
                 </Typography>
 
                 <Typography variant="body2" sx={{ fontWeight: 'bold', mt: 2 }}>
-                    3️⃣ 찌는 시간 – 씨앗 관찰 활동 (10~15분)
+                    3️⃣ 찌는 시간 – 씨앗 관찰 활동 (20분 ~ 25분)
                 </Typography>
                 <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
                     - 루페와 씨앗 관찰 시트를 이용해 씨앗의 배아, 색, 질감, 크기를 관찰하고 기록합니다.
@@ -637,7 +634,7 @@ const Experience = () => {
                 </Typography>
 
                 <Typography variant="body2" sx={{ fontWeight: 'bold', mt: 2 }}>
-                    4️⃣ 완성된 떡 시식 & 포장 (10~15분)
+                    4️⃣ 완성된 떡 시식 & 포장
                 </Typography>
                 <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
                     - 쪄낸 떡을 시식하거나 개별 포장하며 활동을 마무리합니다.
@@ -674,7 +671,7 @@ const Experience = () => {
                 </Typography>
                 <Stack spacing={1}>
                     <Typography variant="body2">- 운영 인원: 10명 이상 그룹 참여 권장</Typography>
-                    <Typography variant="body2">- 체험 시간: 약 40~60분</Typography>
+                    <Typography variant="body2">- 체험 시간: 60분</Typography>
                     <Typography variant="body2">- 체험비: 15,000원</Typography>
                     <Typography variant="body2">- 대상: 누구나 참여 가능 (가족 단위, 어린이, 청소년 등)</Typography>
                     <Typography variant="body2">- 제공 구성품: 쌀가루, 떡 모듈 틀, 토종씨앗(고명), 포장용기, 루페 등</Typography>
@@ -708,7 +705,7 @@ const Experience = () => {
                 </Typography>
                 <Typography variant="body1" sx={{ lineHeight: 1.8, mt: 2 }}>
                     🏺 신석기 토기에 콩을 담다, 생명을 기르다.
-                    이 체험은 토종 쥐눈이콩을 직접 심고 기르며 씨앗의 성장과 생명의 과정을 체험하는 교육형 프로그램입니다.
+                    이 체험은 토종 나물콩을 활용해 직접 콩나물을 키우면서 씨앗의 성장과 생명의 과정을 체험하는 교육형 프로그램입니다.
                     신석기 토기를 재현한 콩나물 시루를 활용해 역사·과학·예술이 결합된 융합 체험으로,
                     아이들이 ‘생명’과 ‘시간’의 가치를 손끝으로 느낄 수 있도록 구성하였습니다.
                 </Typography>
@@ -728,7 +725,7 @@ const Experience = () => {
                     - 진행자가 들려주는 콩의 역사와 전설
                 </Typography>
                 <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
-                    - 선비잡이콩 이야기, 쥐눈이콩의 유래 등
+                    - 선비잡이콩 이야기, 나물콩의 유래 등
                 </Typography>
                 <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
                     - 콩의 다양성과 상징성을 이해
@@ -753,7 +750,7 @@ const Experience = () => {
                     - 신석기 빗살무늬 토기의 의미를 학습
                 </Typography>
                 <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
-                    - 재현 토기 꾸미기 → 쥐눈이콩 넣기 + 물 주기 + 거름망 덮기
+                    - 재현 토기 꾸미기 → 거름망 넣기 → 나물콩 넣기 → 뚜껑 닫기
                 </Typography>
                 <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
                     - 어둠 속 생장 원리를 배우며 콩을 기르기 시작
@@ -778,7 +775,7 @@ const Experience = () => {
                     - 내가 기른 콩나물 발표 및 공유
                 </Typography>
                 <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
-                    - 쥐눈이콩 요리 소개 (예: 콩나물무침, 국 등)
+                    - 나물콩 요리 소개 (예: 콩나물무침, 국 등)
                 </Typography>
             </Box>
 
@@ -814,7 +811,7 @@ const Experience = () => {
                     <Typography variant="body2">- 체험 시간: 약 60~90분 + 후속 활동(가정 관찰)</Typography>
                     <Typography variant="body2">- 체험비: 20,000원 (재료 포함)</Typography>
                     <Typography variant="body2">- 대상: 초등학생 (10명 이상 단체 진행)</Typography>
-                    <Typography variant="body2">- 제공 구성품: 재현 빗살무늬 토기형 시루, 쥐눈이콩, 거름망, 색펜, 콩 카드, 안내서, 관찰일지</Typography>
+                    <Typography variant="body2">- 제공 구성품: 재현 빗살무늬 토기형 시루, 나물콩, 거름망, 색펜, 콩 카드, 안내서, 관찰일지</Typography>
                 </Stack>
             </Box>
 
