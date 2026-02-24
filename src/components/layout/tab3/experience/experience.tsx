@@ -115,14 +115,14 @@ const Experience = () => {
                         맛과 향에 대한 인상, 밥에 얽힌 추억, 개인적 감정을 기록하는 참여형 활동.
                     </Typography>
                 </Box>
-                <Box sx={{ ml: 2, mb: 2 }}>
-                    <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>
-                        4. 쌀 이야기 & 떡 시식
-                    </Typography>
-                    <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
-                        토종쌀로 만든 떡을 맛보며 지역의 떡 문화와 전통 조리법을 배우고, 이야기를 나눕니다.
-                    </Typography>
-                </Box>
+                {/*<Box sx={{ ml: 2, mb: 2 }}>*/}
+                {/*    <Typography variant="subtitle1" sx={{ fontWeight: 'bold' }}>*/}
+                {/*        4. 쌀 이야기 & 떡 시식*/}
+                {/*    </Typography>*/}
+                {/*    <Typography variant="body2" sx={{ lineHeight: 1.8 }}>*/}
+                {/*        토종쌀로 만든 떡을 맛보며 지역의 떡 문화와 전통 조리법을 배우고, 이야기를 나눕니다.*/}
+                {/*    </Typography>*/}
+                {/*</Box>*/}
             </Box>
 
             <Box sx={{ mt: 4 }}>
@@ -797,7 +797,7 @@ const Experience = () => {
                     - 생명의 순환과 성장 원리를 직접 체득
                 </Typography>
                 <Typography variant="body2" sx={{ lineHeight: 1.8 }}>
-                    - 가정 후속 활동(관찰일지)로 학습 지속 가능
+                    - 가정 후속 활동(관찰일지)으로 학습 지속 가능
                 </Typography>
             </Box>
 
@@ -808,7 +808,7 @@ const Experience = () => {
                 </Typography>
                 <Stack spacing={1}>
                     <Typography variant="body2">- 운영 인원: 10명 이상</Typography>
-                    <Typography variant="body2">- 체험 시간: 약 60~90분 + 후속 활동(가정 관찰)</Typography>
+                    <Typography variant="body2">- 체험 시간: 약 60~ 후속 활동(가정 관찰)</Typography>
                     <Typography variant="body2">- 체험비: 20,000원 (재료 포함)</Typography>
                     <Typography variant="body2">- 대상: 초등학생 (10명 이상 단체 진행)</Typography>
                     <Typography variant="body2">- 제공 구성품: 재현 빗살무늬 토기형 시루, 나물콩, 거름망, 색펜, 콩 카드, 안내서, 관찰일지</Typography>
