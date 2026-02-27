@@ -33,6 +33,8 @@ import SlowFood from './tab6/slowFood/main.tsx'
 import Table from './tab6/table/main.tsx'
 import Festival from './tab6/festival/main.tsx'
 
+import Booth from './tab8/booth/main.tsx'
+
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
         <BrowserRouter>
@@ -67,6 +69,8 @@ createRoot(document.getElementById('root')!).render(
                 <Route path="/facilities" element={<Facilities />} />
                 <Route path="/notice" element={<Notice />} />
                 <Route path="/notice/:id" element={<NoticeDetail />} />
+
+                <Route path="/booth" element={<Booth />} />
             </Routes>
         </BrowserRouter>
     </StrictMode>,
