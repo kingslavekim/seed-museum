@@ -1,8 +1,7 @@
 import {
     Box,
-    Divider,
     Paper,
-    Typography, Pagination,
+    Pagination,
 } from "@mui/material";
 import React, {useEffect, useState} from "react";
 
@@ -29,18 +28,6 @@ const Booth = () => {
 
     return (
         <Box sx={{ p: 2 }}>
-            <Box sx={{ pt: 3 }}>
-                <Typography
-                    variant="h4"
-                    component="h1"
-                    gutterBottom
-                    sx={{ fontWeight: 'bold' }}
-                >
-                    박물관 개관식
-                </Typography>
-                <Divider sx={{ mt: 3, borderBottomWidth: 3, bgcolor: 'black' }} />
-            </Box>
-
             <Box sx={{ mt: 2 }}>
                 <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
                     <Box>
