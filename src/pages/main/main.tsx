@@ -5,7 +5,6 @@ import {Display} from "../../components/layout/main/display.tsx";
 import {MainInfo} from "../../components/layout/main/mainInfo.tsx";
 import {MainInfo2} from "../../components/layout/main/mainInfo2.tsx";
 import {Footer} from "../../components/layout/common/footer.tsx";
-import {Experience} from "../../components/layout/main/experience.tsx";
 
 function Main() {
 
@@ -38,8 +37,6 @@ function Main() {
                 <Divider sx={{ mt: 2, borderBottomWidth: 3, bgcolor: 'black' }}/>
 
                 <Display/>
-
-                <Experience/>
 
                 <MainInfo2/>
 

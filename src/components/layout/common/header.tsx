@@ -316,6 +316,8 @@ export const Header = () => {
                         <Tab label='체험 프로그램' onMouseEnter={() => {setValue2(0)}} onClick={() => {navigate('/experience');}}/>
                         <Tab label='사회적 농장 프로그램' onMouseEnter={() => {setValue2(1)}} onClick={() => {navigate('/socialFarm');}}/>
                         <Tab label='치유 프로그램' onMouseEnter={() => {setValue2(2)}} onClick={() => {navigate('/healing');}}/>
+                        <Tab label='활동 사진' onMouseEnter={() => {setValue2(2)}} onClick={() => {navigate('/experience2');}}/>
+                        
                     </Tabs>
                 </Box>
             </CustomTabPanel>
@@ -516,6 +518,7 @@ export const Header = () => {
                                     <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}} onClick={() => {navigate('/experience');}}>체험 프로그램</Typography>
                                     <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}} onClick={() => {navigate('/socialFarm');}}>사회적 농장 프로그램</Typography>
                                     <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}} onClick={() => {navigate('/healing');}}>치유 프로그램</Typography>
+                                    <Typography sx={{ fontWeight: 'bold',fontSize: 'h6.fontSize', pb: 2, pl: 3}} onClick={() => {navigate('/experience2');}}>활동 사진</Typography>
                                 </Box>
                             </AccordionDetails>
                         </Accordion>

@@ -20,6 +20,7 @@ import Notice from './tab7/notice/main.tsx'
 import NoticeDetail from './tab7/noticeDetail/main.tsx'
 
 import Experience from './tab3/experience/main.tsx'
+import Experience2 from './tab3/experience2/main.tsx'
 import SocialFarm from './tab3/socialFarm/main.tsx'
 import Healing from './tab3/healing/main.tsx'
 
@@ -51,6 +52,7 @@ createRoot(document.getElementById('root')!).render(
                 <Route path="/video" element={<Video />} />
 
                 <Route path="/experience" element={<Experience />} />
+                <Route path="/experience2" element={<Experience2 />} />
                 <Route path="/socialFarm" element={<SocialFarm />} />
                 <Route path="/healing" element={<Healing />} />
 
