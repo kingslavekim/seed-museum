@@ -69,7 +69,21 @@ const Experience2 = () => {
 
                 {/* 이미지 Masonry 레이아웃 */}
                 <Box sx={{ mt: 4 }}>
-                    <Card sx={{ p: 2, py: 0, bgcolor: grey[100], borderRadius: 4 }}>
+                    <Card sx={{ p: 2, bgcolor: grey[100], borderRadius: 4 }}>
+                        <Typography sx={{ textAlign: "center", lineHeight: "2", fontWeight: 600, fontSize: "1.2rem" }}>
+                            한국 토종씨앗 박물관
+                        </Typography>
+                        <Typography sx={{ textAlign: "center", lineHeight: "2", mt: 4 }}>
+                            국내 유일한 토종씨앗 박물관으로
+                        </Typography>
+                        <Typography sx={{ textAlign: "center", lineHeight: "2" }}>
+                            "토종씨앗은 과거가 아니라 우리의 미래다" 라는 슬로건 아래
+                        </Typography>
+                        <Typography sx={{ textAlign: "center", lineHeight: "2", mt: 4 }}>
+                            씨앗관찰, 미각체험 등 다양한 체험활동과 생태학습을 통해 기후위기에 대응하는 미래지향적인 박물관입니다.
+                        </Typography>
+                    </Card>
+                    <Card sx={{ mt: 4, p: 2, py: 0, bgcolor: grey[100], borderRadius: 4 }}>
                         <ImageList
                             variant="masonry"
                             cols={2} // Masonry 열 수
