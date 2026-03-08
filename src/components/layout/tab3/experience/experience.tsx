@@ -138,7 +138,39 @@ const Experience = () => {
                     <Typography variant="body2">- 제공 자료: 토종벼, 미각 시트, 토종벼 해설 자료</Typography>
                 </Stack>
             </Box>
-
+            {/* 체험 사진 */}
+            <Box sx={{ mt: 4 }}>
+                <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2 }}>
+                    📷 체험 사진
+                </Typography>
+                <Box
+                    sx={{
+                        display: "flex",
+                        overflowX: "auto",
+                        gap: 2, // 이미지 간 간격 설정
+                        py: 2, // 위아래 여백
+                    }}
+                >
+                    {/* map으로 이미지 렌더링 */}
+                    {["/experience/1/1.jpeg",
+                        "/experience/1/2.jpeg",
+                        "/experience/1/3.jpeg",
+                        "/experience/1/4.jpeg"
+                    ].map((src, index) => (
+                        <Box
+                            key={index}
+                            component="img"
+                            src={src}
+                            alt={`체험 사진 ${index + 1}`}
+                            sx={{
+                                height: 200,
+                                borderRadius: 2,
+                                boxShadow: 3,
+                            }}
+                        />
+                    ))}
+                </Box>
+            </Box>
             <Box>
                 <Divider sx={{ my: 3 }} />
                 <Typography
@@ -290,7 +322,38 @@ const Experience = () => {
                     <Typography variant="body2">- 제공 자료: 미각 시트, 콩 해설 자료, 시식용 콩 가공물 등</Typography>
                 </Stack>
             </Box>
-
+            {/* 체험 사진 */}
+            <Box sx={{ mt: 4 }}>
+                <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2 }}>
+                    📷 체험 사진
+                </Typography>
+                <Box
+                    sx={{
+                        display: "flex",
+                        overflowX: "auto",
+                        gap: 2, // 이미지 간 간격 설정
+                        py: 2, // 위아래 여백
+                    }}
+                >
+                    {/* map으로 이미지 렌더링 */}
+                    {["/experience/2/1.jpeg",
+                        "/experience/2/2.jpeg",
+                        "/experience/2/3.jpeg"
+                    ].map((src, index) => (
+                        <Box
+                            key={index}
+                            component="img"
+                            src={src}
+                            alt={`체험 사진 ${index + 1}`}
+                            sx={{
+                                height: 200,
+                                borderRadius: 2,
+                                boxShadow: 3,
+                            }}
+                        />
+                    ))}
+                </Box>
+            </Box>
             <Box>
                 <Divider sx={{ my: 3 }} />
                 <Typography
@@ -433,7 +496,39 @@ const Experience = () => {
                     </Stack>
                 </Box>
             </Box>
-
+            {/* 체험 사진 */}
+            <Box sx={{ mt: 4 }}>
+                <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2 }}>
+                    📷 체험 사진
+                </Typography>
+                <Box
+                    sx={{
+                        display: "flex",
+                        overflowX: "auto",
+                        gap: 2, // 이미지 간 간격 설정
+                        py: 2, // 위아래 여백
+                    }}
+                >
+                    {/* map으로 이미지 렌더링 */}
+                    {["/experience/3/1.jpeg",
+                        "/experience/3/2.jpeg",
+                        "/experience/3/3.jpeg",
+                        "/experience/3/4.jpeg"
+                    ].map((src, index) => (
+                        <Box
+                            key={index}
+                            component="img"
+                            src={src}
+                            alt={`체험 사진 ${index + 1}`}
+                            sx={{
+                                height: 200,
+                                borderRadius: 2,
+                                boxShadow: 3,
+                            }}
+                        />
+                    ))}
+                </Box>
+            </Box>
             {/* 마무리 */}
             <Box>
                 <Divider sx={{ my: 3 }} />
@@ -562,6 +657,42 @@ const Experience = () => {
                 </Stack>
             </Box>
 
+            {/* 체험 사진 */}
+            <Box sx={{ mt: 4 }}>
+                <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2 }}>
+                    📷 체험 사진
+                </Typography>
+                <Box
+                    sx={{
+                        display: "flex",
+                        overflowX: "auto",
+                        gap: 2, // 이미지 간 간격 설정
+                        py: 2, // 위아래 여백
+                    }}
+                >
+                    {/* map으로 이미지 렌더링 */}
+                    {["/experience/4/1.jpg",
+                        "/experience/4/2.jpg",
+                        "/experience/4/3.jpg",
+                        "/experience/4/4.jpg",
+                        "/experience/4/5.jpg",
+                        "/experience/4/6.jpg",
+                    ].map((src, index) => (
+                        <Box
+                            key={index}
+                            component="img"
+                            src={src}
+                            alt={`체험 사진 ${index + 1}`}
+                            sx={{
+                                height: 200,
+                                borderRadius: 2,
+                                boxShadow: 3,
+                            }}
+                        />
+                    ))}
+                </Box>
+            </Box>
+
             {/* 마무리 */}
             <Box>
                 <Divider sx={{ my: 3 }} />
@@ -663,7 +794,6 @@ const Experience = () => {
                 </Typography>
             </Box>
 
-
             {/* 체험 정보 */}
             <Box sx={{ mt: 4 }}>
                 <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2 }}>
@@ -676,6 +806,40 @@ const Experience = () => {
                     <Typography variant="body2">- 대상: 누구나 참여 가능 (가족 단위, 어린이, 청소년 등)</Typography>
                     <Typography variant="body2">- 제공 구성품: 쌀가루, 떡 모듈 틀, 토종씨앗(고명), 포장용기, 루페 등</Typography>
                 </Stack>
+            </Box>
+            {/* 체험 사진 */}
+            <Box sx={{ mt: 4 }}>
+                <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2 }}>
+                    📷 체험 사진
+                </Typography>
+                <Box
+                    sx={{
+                        display: "flex",
+                        overflowX: "auto",
+                        gap: 2, // 이미지 간 간격 설정
+                        py: 2, // 위아래 여백
+                    }}
+                >
+                    {/* map으로 이미지 렌더링 */}
+                    {["/experience/5/1.jpg",
+                        "/experience/5/2.jpg",
+                        "/experience/5/3.jpg",
+                        "/experience/5/4.jpg",
+                        "/experience/5/5.jpg"
+                    ].map((src, index) => (
+                        <Box
+                            key={index}
+                            component="img"
+                            src={src}
+                            alt={`체험 사진 ${index + 1}`}
+                            sx={{
+                                height: 200,
+                                borderRadius: 2,
+                                boxShadow: 3,
+                            }}
+                        />
+                    ))}
+                </Box>
             </Box>
 
             {/* 마무리 */}
@@ -813,6 +977,55 @@ const Experience = () => {
                     <Typography variant="body2">- 대상: 초등학생 (10명 이상 단체 진행)</Typography>
                     <Typography variant="body2">- 제공 구성품: 재현 빗살무늬 토기형 시루, 나물콩, 거름망, 색펜, 콩 카드, 안내서, 관찰일지</Typography>
                 </Stack>
+            </Box>
+
+            {/* 체험 정보 */}
+            <Box sx={{ mt: 4 }}>
+                <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2 }}>
+                    📌 체험 정보
+                </Typography>
+                <Stack spacing={1}>
+                    <Typography variant="body2">- 운영 인원: 10명 이상 그룹 참여 권장</Typography>
+                    <Typography variant="body2">- 체험 시간: 60분</Typography>
+                    <Typography variant="body2">- 체험비: 15,000원</Typography>
+                    <Typography variant="body2">- 대상: 누구나 참여 가능 (가족 단위, 어린이, 청소년 등)</Typography>
+                    <Typography variant="body2">- 제공 구성품: 쌀가루, 떡 모듈 틀, 토종씨앗(고명), 포장용기, 루페 등</Typography>
+                </Stack>
+            </Box>
+            {/* 체험 사진 */}
+            <Box sx={{ mt: 4 }}>
+                <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2 }}>
+                    📷 체험 사진
+                </Typography>
+                <Box
+                    sx={{
+                        display: "flex",
+                        overflowX: "auto",
+                        gap: 2, // 이미지 간 간격 설정
+                        py: 2, // 위아래 여백
+                    }}
+                >
+                    {/* map으로 이미지 렌더링 */}
+                    {["/experience/6/1.jpg",
+                        "/experience/6/2.jpg",
+                        "/experience/6/3.jpg",
+                        "/experience/6/4.jpg",
+                        "/experience/6/5.jpeg",
+                        "/experience/6/6.jpeg"
+                    ].map((src, index) => (
+                        <Box
+                            key={index}
+                            component="img"
+                            src={src}
+                            alt={`체험 사진 ${index + 1}`}
+                            sx={{
+                                height: 200,
+                                borderRadius: 2,
+                                boxShadow: 3,
+                            }}
+                        />
+                    ))}
+                </Box>
             </Box>
 
             {/* 마무리 */}
