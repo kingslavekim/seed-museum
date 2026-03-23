@@ -11,11 +11,9 @@ import Pdisplay from './tab2/pdisplay/main.tsx'
 import Sdisplay from './tab2/sdisplay/main.tsx'
 import Fdisplay from './tab2/fdisplay/main.tsx'
 import Museum from './tab2/museum/main.tsx'
-import Video from './tab2/video/main.tsx'
 
 import Greetings from './tab7/greetings/main.tsx'
 import History from './tab7/history/main.tsx'
-import Facilities from './tab7/facilities/main.tsx'
 import Notice from './tab7/notice/main.tsx'
 import NoticeDetail from './tab7/noticeDetail/main.tsx'
 
@@ -49,7 +47,6 @@ createRoot(document.getElementById('root')!).render(
                 <Route path="/sdisplay" element={<Sdisplay />} />
                 <Route path="/fdisplay" element={<Fdisplay />} />
                 <Route path="/museum" element={<Museum />} />
-                <Route path="/video" element={<Video />} />
 
                 <Route path="/experience" element={<Experience />} />
                 <Route path="/experience2" element={<Experience2 />} />
@@ -68,7 +65,6 @@ createRoot(document.getElementById('root')!).render(
 
                 <Route path="/greetings" element={<Greetings />} />
                 <Route path="/history" element={<History />} />
-                <Route path="/facilities" element={<Facilities />} />
                 <Route path="/notice" element={<Notice />} />
                 <Route path="/notice/:id" element={<NoticeDetail />} />
 
