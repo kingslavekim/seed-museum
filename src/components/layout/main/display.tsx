@@ -31,6 +31,7 @@ export const Display = () => {
                         overflowX: { xs: 'visible', md: 'auto' },
                         flexWrap: { sm: 'nowrap' },
                         py: 2,
+                        px: { xs: '10px', sm: 0 },
                     }}
                 >
                     {displayInfo1.map((display, index) => (
@@ -38,29 +39,34 @@ export const Display = () => {
                             key={index}
                             direction="column"
                             spacing={2}
+                            onClick={() => navigate(`${display.link}`)}
                             sx={{
                                 alignItems: { xs: 'center', sm: 'flex-start' },
                                 textAlign: { xs: 'center', sm: 'left' },
+                                width: { xs: '100%', sm: 'auto' },
+                                flexShrink: 0,
+                                cursor: 'pointer',
                             }}
                         >
                             <Box
                                 component='img'
                                 src={display.src}
-                                onClick={() => navigate(`${display.link}`)}
                                 sx={{
-                                    width: 288,
-                                    height: 256,
+                                    width: { xs: '100%', sm: 288 },
+                                    height: { xs: 'auto', sm: 256 },
                                     objectFit: 'fill',
                                     objectPosition: 'center',
-                                    transition: 'transform 0.5s ease-in-out',
-                                    cursor: 'pointer'
+                                    borderRadius: { xs: '8px', sm: 0 },
+                                    transition: 'transform 0.3s ease-in-out',
+                                    '&:hover': { transform: 'scale(1.02)' },
                                 }}
                             />
                             <Stack
                                 direction='row'
                                 spacing={2}
                                 alignItems="center"
-                                justifyContent="center"
+                                justifyContent={{ xs: 'center', sm: 'flex-start' }}
+                                sx={{ width: '100%', px: { xs: 1, sm: 0 } }}
                             >
                                 <Button
                                     variant='contained'
@@ -98,6 +104,7 @@ export const Display = () => {
                         overflowX: { xs: 'visible', md: 'auto' },
                         flexWrap: { sm: 'nowrap' },
                         py: 2,
+                        px: { xs: '10px', sm: 0 },
                     }}
                 >
                     {displayInfo2.map((display, index) => (
@@ -105,29 +112,34 @@ export const Display = () => {
                             key={index}
                             direction="column"
                             spacing={2}
+                            onClick={() => navigate(`${display.link}`)}
                             sx={{
                                 alignItems: { xs: 'center', sm: 'flex-start' },
                                 textAlign: { xs: 'center', sm: 'left' },
+                                width: { xs: '100%', sm: 'auto' },
+                                flexShrink: 0,
+                                cursor: 'pointer',
                             }}
                         >
                             <Box
                                 component='img'
                                 src={display.src}
-                                onClick={() => navigate(`${display.link}`)}
                                 sx={{
-                                    width: 288,
-                                    height: 256,
+                                    width: { xs: '100%', sm: 288 },
+                                    height: { xs: 'auto', sm: 256 },
                                     objectFit: 'fill',
                                     objectPosition: 'center',
-                                    transition: 'transform 0.5s ease-in-out',
-                                    cursor: 'pointer'
+                                    borderRadius: { xs: '8px', sm: 0 },
+                                    transition: 'transform 0.3s ease-in-out',
+                                    '&:hover': { transform: 'scale(1.02)' },
                                 }}
                             />
                             <Stack
                                 direction='row'
                                 spacing={2}
                                 alignItems="center"
-                                justifyContent="center"
+                                justifyContent={{ xs: 'center', sm: 'flex-start' }}
+                                sx={{ width: '100%', px: { xs: 1, sm: 0 } }}
                             >
                                 <Typography
                                     sx={{
