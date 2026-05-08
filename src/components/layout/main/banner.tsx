@@ -10,6 +10,7 @@ export const Banner = () => {
     const navigate = useNavigate();
 
     const bannerImagesXs = [
+        {src: '/banners/m_6.jpg', link: ''},
         {src: '/banners/m_1.jpg', link: ''},
         {src: '/banners/m_2.jpg', link: '/pdisplay'},
         {src: '/banners/m_3.jpg', link: '/fdisplay'},
@@ -18,6 +19,7 @@ export const Banner = () => {
     ];
 
     const bannerImagesDefault = [
+        {src: '/banners/6.jpg', link: ''},
         {src: '/banners/1.jpg', link: ''},
         {src: '/banners/2.jpg', link: '/pdisplay'},
         {src: '/banners/3.jpg', link: '/fdisplay'},
