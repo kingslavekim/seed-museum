@@ -50,7 +50,7 @@ const Sharing = () => {
     }, []);
 
     const Exhibit1 = () => (
-        <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+        <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
             <Box>
                 <Box
                     sx={{
@@ -128,7 +128,7 @@ const Sharing = () => {
     );
 
     const Exhibit2 = () => (
-        <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+        <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
             <Box>
                 <Box
                     sx={{
@@ -206,7 +206,7 @@ const Sharing = () => {
     );
 
     const Exhibit3 = () => (
-        <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+        <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
             <Box>
                 <Box
                     sx={{
@@ -284,7 +284,7 @@ const Sharing = () => {
     );
 
     const Exhibit4 = () => (
-        <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+        <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
             <Box>
                 <Box
                     sx={{
@@ -362,7 +362,7 @@ const Sharing = () => {
     );
 
     const Exhibit5 = () => (
-        <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+        <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
             <Box>
                 <Box
                     sx={{
@@ -440,7 +440,7 @@ const Sharing = () => {
     );
 
     const Exhibit6 = () => (
-        <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+        <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
             <Box>
                 <Box
                     sx={{
@@ -518,7 +518,7 @@ const Sharing = () => {
     );
 
     const Exhibit7 = () => (
-        <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+        <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
             <Box>
                 <Box
                     sx={{
@@ -610,7 +610,7 @@ const Sharing = () => {
     ];
 
     return (
-        <Box sx={{ p: 2 }}>
+        <Box sx={{ p: { xs: 1, md: 2 } }}>
             <Stack spacing={2}>
                 <Breadcrumbs
                     separator={<NavigateNextIcon fontSize="small" />}
@@ -632,7 +632,7 @@ const Sharing = () => {
                 <Divider sx={{ mt: 3, borderBottomWidth: 3, bgcolor: 'black' }} />
             </Box>
 
-            <Box sx={{ p: 3 }}>
+            <Box sx={{ p: { xs: 0, md: 3 } }}>
                 {/* 상위 탭 */}
                 <Tabs value={mainTab} onChange={handleMainTabChange}>
                     <Tab label="2025년" />

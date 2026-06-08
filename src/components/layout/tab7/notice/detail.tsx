@@ -64,7 +64,7 @@ const NoticeDetail = () => {
 
     if (loading) {
         return (
-            <Box sx={{ p: 2 }}>
+            <Box sx={{ p: { xs: 1, md: 2 } }}>
                 <Typography>로딩 중...</Typography>
             </Box>
         );
@@ -86,7 +86,7 @@ const NoticeDetail = () => {
     }
 
     return (
-        <Box sx={{ p: 2 }}>
+        <Box sx={{ p: { xs: 1, md: 2 } }}>
             <Stack spacing={2}>
                 <Breadcrumbs
                     separator={<NavigateNextIcon fontSize="small" />}

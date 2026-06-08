@@ -27,9 +27,9 @@ const Booth = () => {
     }, []);
 
     return (
-        <Box sx={{ p: 2 }}>
+        <Box sx={{ p: { xs: 1, md: 2 } }}>
             <Box sx={{ mt: 2 }}>
-                <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+                <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
                     <Box>
                         <Box
                             sx={{

@@ -190,7 +190,7 @@ const Museum = () => {
     ];
 
     const Exhibit1 = () => (
-        <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+        <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
             <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
                 고대장미 씨앗유물관
             </Typography>
@@ -385,7 +385,7 @@ const Museum = () => {
     );
 
     const Exhibit2 = () => (
-        <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+        <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
             <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
                 세계의 야생장미(野生薔薇, wild roses)
             </Typography>
@@ -574,7 +574,7 @@ const Museum = () => {
     );
 
     const Exhibit3 = () => (
-        <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+        <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
             <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
                 한국의 야생장미
             </Typography>
@@ -753,7 +753,7 @@ const Museum = () => {
                     objectFit: 'fill'
                 }}
             />
-            <Box sx={{ p: 2 }}>
+            <Box sx={{ p: { xs: 1, md: 2 } }}>
                 <Stack spacing={2}>
                     <Breadcrumbs
                         separator={<NavigateNextIcon fontSize="small" />}
@@ -775,7 +775,7 @@ const Museum = () => {
                     <Divider sx={{ mt: 3, borderBottomWidth: 3, bgcolor: 'black' }} />
                 </Box>
 
-                <Box sx={{ p: 3 }}>
+                <Box sx={{ p: { xs: 0, md: 3 } }}>
                     {/* 상위 탭 */}
                     <Tabs value={mainTab} onChange={handleMainTabChange} centered>
                         <Tab label="고대장미의 역사" />

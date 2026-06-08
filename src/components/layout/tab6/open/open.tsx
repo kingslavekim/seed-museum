@@ -47,7 +47,7 @@ const Open = () => {
     ];
 
     return (
-        <Box sx={{ p: 2 }}>
+        <Box sx={{ p: { xs: 1, md: 2 } }}>
             <Stack spacing={2}>
                 <Breadcrumbs
                     separator={<NavigateNextIcon fontSize="small" />}
@@ -70,7 +70,7 @@ const Open = () => {
             </Box>
 
             <Box sx={{ mt: 2 }}>
-                <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+                <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
                     <Box>
                         <Box
                             sx={{

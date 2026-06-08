@@ -44,7 +44,7 @@ const Experience = () => {
     }, []);
 
     const Exhibit1 = () => (
-        <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+        <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
             <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
                 🌾 토종벼 미각체험
             </Typography>
@@ -184,7 +184,7 @@ const Experience = () => {
     );
 
     const Exhibit2 = () => (
-        <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+        <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
             <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
                 토종콩 미각체험
             </Typography>
@@ -367,7 +367,7 @@ const Experience = () => {
     );
 
     const Exhibit3 = () => (
-        <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+        <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
             <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
                 🌱 생명의 정원 키트 꾸미기
             </Typography>
@@ -543,7 +543,7 @@ const Experience = () => {
     );
 
     const Exhibit4 = () => (
-        <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+        <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
             <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
                 🎨 씨앗 예술 체험
             </Typography>
@@ -707,7 +707,7 @@ const Experience = () => {
     );
 
     const Exhibit5 = () => (
-        <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+        <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
             <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
                 🍡 씨앗 떡 만들기 체험
             </Typography>
@@ -856,7 +856,7 @@ const Experience = () => {
     );
 
     const Exhibit6 = () => (
-        <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+        <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
             <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
                 🌱 콩나물 기르기 키트 체험
             </Typography>
@@ -1053,7 +1053,7 @@ const Experience = () => {
                     objectFit: 'fill'
                 }}
             />
-            <Box sx={{ p: 2 }}>
+            <Box sx={{ p: { xs: 1, md: 2 } }}>
                 <Stack spacing={2}>
                     <Breadcrumbs
                         separator={<NavigateNextIcon fontSize="small" />}
@@ -1075,7 +1075,7 @@ const Experience = () => {
                     <Divider sx={{ mt: 3, borderBottomWidth: 3, bgcolor: 'black' }} />
                 </Box>
 
-                <Box sx={{ p: 3 }}>
+                <Box sx={{ p: { xs: 0, md: 3 } }}>
                     {/* 상위 탭 */}
                     <Tabs
                         value={mainTab}

@@ -79,7 +79,7 @@ const Notice = () => {
 
     if (error) {
         return (
-            <Box sx={{p: 2}}>
+            <Box sx={{p: { xs: 1, md: 2 } }}>
                 <Typography color="error" align="center">
                     {error}
                 </Typography>
@@ -88,7 +88,7 @@ const Notice = () => {
     }
 
     return (
-        <Box sx={{p: 2}}>
+        <Box sx={{p: { xs: 1, md: 2 } }}>
             <Stack spacing={2}>
                 <Breadcrumbs
                     separator={<NavigateNextIcon fontSize="small" />}

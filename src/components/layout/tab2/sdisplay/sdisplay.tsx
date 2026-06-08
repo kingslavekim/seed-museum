@@ -38,7 +38,7 @@ const Sdisplay = () => {
     }, []);
 
     const Exhibit1 = () => (
-        <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+        <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
             <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
                 토종, 밥상을 부탁해
             </Typography>
@@ -144,7 +144,7 @@ const Sdisplay = () => {
     );
 
     const Exhibit2 = () => (
-        <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+        <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
             <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
                 콩의 나라 대한민국
             </Typography>
@@ -256,7 +256,7 @@ const Sdisplay = () => {
     );
 
     const Exhibit3 = () => (
-        <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+        <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
             <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
                 토종벼, 천 개의 이름으로 한반도를 노래하다
             </Typography>
@@ -379,7 +379,7 @@ const Sdisplay = () => {
                     objectFit: 'fill'
                 }}
             />
-            <Box sx={{ p: 2 }}>
+            <Box sx={{ p: { xs: 1, md: 2 } }}>
                 <Stack spacing={2}>
                     <Breadcrumbs
                         separator={<NavigateNextIcon fontSize="small" />}
@@ -401,7 +401,7 @@ const Sdisplay = () => {
                     <Divider sx={{ mt: 3, borderBottomWidth: 3, bgcolor: 'black' }} />
                 </Box>
 
-                <Box sx={{ p: 3 }}>
+                <Box sx={{ p: { xs: 0, md: 3 } }}>
                     {/* 상위 탭 */}
                     <Tabs value={mainTab} onChange={handleMainTabChange} centered>
                         <Tab label="토종, 밥상을 부탁해" />

@@ -65,7 +65,7 @@ const Pdisplay = () => {
 
     // 제1관 내용
     const Exhibit1 = () => (
-        <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+        <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
             <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
                 제1관
             </Typography>
@@ -138,7 +138,7 @@ const Pdisplay = () => {
     // 제2관 내용
     const Exhibit2: { [key: number]: () => React.ReactNode } = {
         0: () => (
-            <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+            <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
                 <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
                     야생콩
                 </Typography>
@@ -200,7 +200,7 @@ const Pdisplay = () => {
         ),
 
         1: () => (
-            <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+            <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
                 <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
                     이천여중 기증실
                 </Typography>
@@ -286,7 +286,7 @@ const Pdisplay = () => {
         ),
 
         2: () => (
-            <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+            <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
                 <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold' }}>
                     콩의 나라 대한민국
                 </Typography>
@@ -405,7 +405,7 @@ const Pdisplay = () => {
         ),
 
         3: () => (
-            <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+            <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
                 <Typography variant="h5" gutterBottom sx={{ fontWeight: "bold" }}>
                     토종벼
                 </Typography>
@@ -466,7 +466,7 @@ const Pdisplay = () => {
         ),
 
         4: () => (
-            <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+            <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
                 <Typography variant="h5" gutterBottom sx={{ fontWeight: "bold" }}>
                     토종보리와 앉은뱅이밀
                 </Typography>
@@ -567,7 +567,7 @@ const Pdisplay = () => {
         ),
 
         5: () => (
-            <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+            <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
                 <Typography variant="h5" gutterBottom sx={{ fontWeight: "bold" }}>
                     땅의 다양성이 빚어낸 생명의 곡식들
                 </Typography>
@@ -699,7 +699,7 @@ const Pdisplay = () => {
         ),
 
         6: () => (
-            <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+            <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
                 <Typography variant="h5" gutterBottom sx={{ fontWeight: "bold" }}>
                     동부, 여름과 가을을 잇는 씨앗
                 </Typography>
@@ -791,7 +791,7 @@ const Pdisplay = () => {
         ),
 
         7: () => (
-            <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+            <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
                 <Typography variant="h5" gutterBottom sx={{ fontWeight: "bold" }}>
                     잎으로 피어난 생명의 밥상
                 </Typography>
@@ -876,7 +876,7 @@ const Pdisplay = () => {
         ),
 
         8: () => (
-            <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+            <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
                 <Typography variant="h5" gutterBottom sx={{ fontWeight: "bold" }}>
                     과채·유지·섬유작물 전시관
                 </Typography>
@@ -972,7 +972,7 @@ const Pdisplay = () => {
             const paginatedData = imageList1.slice(startIndex, endIndex); // 해당 페이지의 데이터 슬라이스
 
             return (
-                <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+                <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
                     <Box sx={{ my: 3 }}>
                     <Box
                         sx={{
@@ -1058,7 +1058,7 @@ const Pdisplay = () => {
             const paginatedData = imageList2.slice(startIndex, endIndex); // 해당 페이지의 데이터 슬라이스
 
             return (
-                <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+                <Paper elevation={3} sx={{ p: { xs: 1.5, md: 4 }, borderRadius: 2 }}>
                     <Box sx={{ my: 3 }}>
                         <Box
                             sx={{
@@ -1151,7 +1151,7 @@ const Pdisplay = () => {
                     objectFit: 'fill'
                 }}
             />
-            <Box sx={{ p: 2 }}>
+            <Box sx={{ p: { xs: 1, md: 2 } }}>
                 <Stack spacing={2}>
                     <Breadcrumbs
                         separator={<NavigateNextIcon fontSize="small" />}
@@ -1173,7 +1173,7 @@ const Pdisplay = () => {
                     <Divider sx={{ mt: 3, borderBottomWidth: 3, bgcolor: 'black' }} />
                 </Box>
 
-                <Box sx={{ p: 3 }}>
+                <Box sx={{ p: { xs: 0, md: 3 } }}>
                     {/* 상위 탭 */}
                     <Tabs value={mainTab} onChange={handleMainTabChange} centered>
                         <Tab label="제 1 관" />
