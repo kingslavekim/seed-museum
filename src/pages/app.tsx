@@ -2,6 +2,8 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import { Routes, Route } from 'react-router-dom';
+import { ThemeProvider, CssBaseline } from '@mui/material';
+import theme from '../theme.tsx';
 import Main from './main/main.tsx'
 import Info from './tab1/info/main.tsx'
 import Reservation from './tab1/reservation/main.tsx'
@@ -36,6 +38,8 @@ import Booth from './tab8/booth/main.tsx'
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
+        <ThemeProvider theme={theme}>
+        <CssBaseline />
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Main />} />
@@ -71,5 +75,6 @@ createRoot(document.getElementById('root')!).render(
                 <Route path="/booth" element={<Booth />} />
             </Routes>
         </BrowserRouter>
+        </ThemeProvider>
     </StrictMode>,
 )

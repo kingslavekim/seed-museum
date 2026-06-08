@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc:*)",
+      "Bash(npm run:*)",
+      "Bash(npx vite:*)",
+      "Bash(ls:*)",
+      "Bash(chmod 600 ~/Downloads/LightsailDefaultKey-ap-northeast-2.pem)",
+      "Bash(ssh -o StrictHostKeyChecking=no -i ~/Downloads/LightsailDefaultKey-ap-northeast-2.pem ubuntu@3.36.174.240 \"whoami && pwd && ls\")",
+      "Bash(ssh:*)",
+      "Bash(curl:*)",
+      "Bash(npx kill-port:*)"
+    ]
+  }
+}

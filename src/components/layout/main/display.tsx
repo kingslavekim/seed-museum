@@ -1,160 +1,202 @@
-import {Box, Button, Stack, Typography} from '@mui/material';
+import {Box, Chip, Stack, Typography} from '@mui/material';
 import { useNavigate } from 'react-router-dom';
+
+const SectionTitle = ({ children }: { children: React.ReactNode }) => (
+    <Typography
+        variant="h4"
+        sx={{
+            fontWeight: 700,
+            mb: 3,
+            position: 'relative',
+            '&::after': {
+                content: '""',
+                position: 'absolute',
+                bottom: -8,
+                left: 0,
+                width: 40,
+                height: 3,
+                bgcolor: 'primary.main',
+                borderRadius: 2,
+            }
+        }}
+    >
+        {children}
+    </Typography>
+);
+
+const DisplayCard = ({ src, label, title, link, navigate }: {
+    src: string, label: string, title: string, link: string,
+    navigate: (path: string) => void
+}) => (
+    <Box
+        onClick={() => navigate(link)}
+        sx={{
+            cursor: 'pointer',
+            borderRadius: 3,
+            overflow: 'hidden',
+            position: 'relative',
+            boxShadow: '0 2px 12px rgba(0,0,0,0.08)',
+            transition: 'all 0.3s ease',
+            '&:hover': {
+                transform: 'translateY(-4px)',
+                boxShadow: '0 8px 30px rgba(0,0,0,0.15)',
+            },
+            '&:hover .card-overlay': {
+                opacity: 1,
+            },
+        }}
+    >
+        <Box
+            component="img"
+            src={src}
+            alt={title}
+            loading="lazy"
+            sx={{
+                width: '100%',
+                height: { xs: 200, sm: 220, md: 240 },
+                objectFit: 'cover',
+                display: 'block',
+            }}
+        />
+        <Box
+            className="card-overlay"
+            sx={{
+                position: 'absolute',
+                inset: 0,
+                background: 'linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 50%)',
+                opacity: { xs: 1, md: 0 },
+                transition: 'opacity 0.3s ease',
+            }}
+        />
+        <Box
+            sx={{
+                position: 'absolute',
+                bottom: 0,
+                left: 0,
+                right: 0,
+                p: 2,
+            }}
+        >
+            <Stack direction="row" spacing={1} alignItems="center">
+                <Chip
+                    label={label}
+                    size="small"
+                    sx={{
+                        bgcolor: 'primary.main',
+                        color: '#fff',
+                        fontWeight: 600,
+                        fontSize: '0.75rem',
+                    }}
+                />
+                <Typography sx={{ color: '#fff', fontWeight: 600, fontSize: '0.95rem', textShadow: '0 1px 3px rgba(0,0,0,0.5)' }}>
+                    {title}
+                </Typography>
+            </Stack>
+        </Box>
+    </Box>
+);
+
+const ExperienceCard = ({ src, title, link, navigate }: {
+    src: string, title: string, link: string,
+    navigate: (path: string) => void
+}) => (
+    <Box
+        onClick={() => navigate(link)}
+        sx={{
+            cursor: 'pointer',
+            borderRadius: 3,
+            overflow: 'hidden',
+            position: 'relative',
+            boxShadow: '0 2px 12px rgba(0,0,0,0.08)',
+            transition: 'all 0.3s ease',
+            '&:hover': {
+                transform: 'translateY(-4px)',
+                boxShadow: '0 8px 30px rgba(0,0,0,0.15)',
+            },
+        }}
+    >
+        <Box
+            component="img"
+            src={src}
+            alt={title}
+            loading="lazy"
+            sx={{
+                width: '100%',
+                height: { xs: 200, sm: 220, md: 240 },
+                objectFit: 'cover',
+                display: 'block',
+            }}
+        />
+        <Box
+            sx={{
+                position: 'absolute',
+                inset: 0,
+                background: 'linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 50%)',
+            }}
+        />
+        <Typography
+            sx={{
+                position: 'absolute',
+                bottom: 16,
+                left: 16,
+                color: '#fff',
+                fontWeight: 600,
+                fontSize: '1rem',
+                textShadow: '0 1px 3px rgba(0,0,0,0.5)',
+            }}
+        >
+            {title}
+        </Typography>
+    </Box>
+);
 
 export const Display = () => {
     const navigate = useNavigate();
 
     const displayInfo1 = [
-        {src: '/display/1.jpg', text1: '상설전시', text2: '상설전시', text3: '', link: '/pdisplay'},
-        {src: '/display/2.jpg', text1: '상설전시', text2: '근대 농기구 전시', text3: '', link: '/fdisplay'},
-        {src: '/display/3.jpg', text1: '상설전시', text2: '박물관 속 박물관', text3: '', link: '/museum'},
-        {src: '/display/5.jpg', text1: '특별전시', text2: '특별전시', text3: '', link: '/sdisplay'},
+        {src: '/display/1.jpg', label: '상설전시', title: '상설전시', link: '/pdisplay'},
+        {src: '/display/2.jpg', label: '상설전시', title: '근대 농기구 전시', link: '/fdisplay'},
+        {src: '/display/3.jpg', label: '상설전시', title: '박물관 속 박물관', link: '/museum'},
+        {src: '/display/5.jpg', label: '특별전시', title: '특별전시', link: '/sdisplay'},
     ];
 
     const displayInfo2 = [
-        {src: '/display/6.jpg', text1: '체험 프로그램', link: '/experience'},
-        {src: '/display/7.jpg', text1: '사회적 농장 프로그램', link: '/socialFarm'},
-        {src: '/display/8.jpg', text1: '치유 프로그램', link: '/healing'},
+        {src: '/display/6.jpg', title: '체험 프로그램', link: '/experience'},
+        {src: '/display/7.jpg', title: '사회적 농장 프로그램', link: '/socialFarm'},
+        {src: '/display/8.jpg', title: '치유 프로그램', link: '/healing'},
     ];
 
     return (
-        <Box sx={{ mt: 5 }}>
-            <Box>
-                <Typography sx={{ fontWeight: 'bold', fontSize: 'h4.fontSize', pl: '10px'}}>전시</Typography>
-                <Box
-                    sx={{
-                        mt: 2,
-                        display: 'flex',
-                        flexDirection: { xs: 'column', sm: 'row' },
-                        alignItems: { xs: 'center', sm: 'flex-start' },
-                        gap: 3,
-                        overflowX: { xs: 'visible', md: 'auto' },
-                        flexWrap: { sm: 'nowrap' },
-                        py: 2,
-                        px: { xs: '10px', sm: 0 },
-                    }}
-                >
-                    {displayInfo1.map((display, index) => (
-                        <Stack
-                            key={index}
-                            direction="column"
-                            spacing={2}
-                            onClick={() => navigate(`${display.link}`)}
-                            sx={{
-                                alignItems: { xs: 'center', sm: 'flex-start' },
-                                textAlign: { xs: 'center', sm: 'left' },
-                                width: { xs: '100%', sm: 'auto' },
-                                flexShrink: 0,
-                                cursor: 'pointer',
-                            }}
-                        >
-                            <Box
-                                component='img'
-                                src={display.src}
-                                sx={{
-                                    width: { xs: '100%', sm: 288 },
-                                    height: { xs: 'auto', sm: 256 },
-                                    objectFit: 'fill',
-                                    objectPosition: 'center',
-                                    borderRadius: { xs: '8px', sm: 0 },
-                                    transition: 'transform 0.3s ease-in-out',
-                                    '&:hover': { transform: 'scale(1.02)' },
-                                }}
-                            />
-                            <Stack
-                                direction='row'
-                                spacing={2}
-                                alignItems="center"
-                                justifyContent={{ xs: 'center', sm: 'flex-start' }}
-                                sx={{ width: '100%', px: { xs: 1, sm: 0 } }}
-                            >
-                                <Button
-                                    variant='contained'
-                                    sx={{
-                                        fontSize: 'body1.fontSize',
-                                        p: '2px',
-                                        width: 90,
-                                        backgroundColor: 'black',
-                                    }}
-                                >
-                                    {display.text1}
-                                </Button>
-                                <Typography
-                                    sx={{
-                                        fontWeight: 'bold',
-                                        fontSize: 'body1.fontSize',
-                                    }}
-                                >
-                                    {display.text2}
-                                </Typography>
-                            </Stack>
-                        </Stack>
-                    ))}
-                </Box>
+        <Box>
+            <SectionTitle>전시</SectionTitle>
+            <Box
+                sx={{
+                    mt: 4,
+                    display: 'grid',
+                    gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)', md: 'repeat(4, 1fr)' },
+                    gap: { xs: 2, md: 3 },
+                }}
+            >
+                {displayInfo1.map((display, index) => (
+                    <DisplayCard key={index} {...display} navigate={navigate} />
+                ))}
             </Box>
-            <Box sx={{ mt: 5 }}>
-                <Typography sx={{ fontWeight: 'bold', fontSize: 'h4.fontSize', pl: '10px'}}>체험</Typography>
+
+            <Box sx={{ mt: { xs: 5, md: 6 } }}>
+                <SectionTitle>체험</SectionTitle>
                 <Box
                     sx={{
-                        mt: 2,
-                        display: 'flex',
-                        flexDirection: { xs: 'column', sm: 'row' },
-                        alignItems: { xs: 'center', sm: 'flex-start' },
-                        gap: 3,
-                        overflowX: { xs: 'visible', md: 'auto' },
-                        flexWrap: { sm: 'nowrap' },
-                        py: 2,
-                        px: { xs: '10px', sm: 0 },
+                        mt: 4,
+                        display: 'grid',
+                        gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)' },
+                        gap: { xs: 2, md: 3 },
                     }}
                 >
                     {displayInfo2.map((display, index) => (
-                        <Stack
-                            key={index}
-                            direction="column"
-                            spacing={2}
-                            onClick={() => navigate(`${display.link}`)}
-                            sx={{
-                                alignItems: { xs: 'center', sm: 'flex-start' },
-                                textAlign: { xs: 'center', sm: 'left' },
-                                width: { xs: '100%', sm: 'auto' },
-                                flexShrink: 0,
-                                cursor: 'pointer',
-                            }}
-                        >
-                            <Box
-                                component='img'
-                                src={display.src}
-                                sx={{
-                                    width: { xs: '100%', sm: 288 },
-                                    height: { xs: 'auto', sm: 256 },
-                                    objectFit: 'fill',
-                                    objectPosition: 'center',
-                                    borderRadius: { xs: '8px', sm: 0 },
-                                    transition: 'transform 0.3s ease-in-out',
-                                    '&:hover': { transform: 'scale(1.02)' },
-                                }}
-                            />
-                            <Stack
-                                direction='row'
-                                spacing={2}
-                                alignItems="center"
-                                justifyContent={{ xs: 'center', sm: 'flex-start' }}
-                                sx={{ width: '100%', px: { xs: 1, sm: 0 } }}
-                            >
-                                <Typography
-                                    sx={{
-                                        fontWeight: 'bold',
-                                        fontSize: 'body1.fontSize',
-                                    }}
-                                >
-                                    {display.text1}
-                                </Typography>
-                            </Stack>
-                        </Stack>
+                        <ExperienceCard key={index} {...display} navigate={navigate} />
                     ))}
                 </Box>
             </Box>
         </Box>
-
     );
 };
