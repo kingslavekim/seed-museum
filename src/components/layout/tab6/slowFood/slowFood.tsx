@@ -61,7 +61,7 @@ const SlowFood = () => {
                                     display: 'flex',
                                     flexDirection: 'column',
                                     alignItems: 'center',
-                                    width: 280,
+                                    width: "100%",
                                 }}
                             >
                                 <Box
@@ -70,7 +70,7 @@ const SlowFood = () => {
                                         display: 'flex',
                                         flexDirection: 'column',
                                         alignItems: 'center',
-                                        width: 280,
+                                        width: "100%",
                                     }}
                                 >
                                     {/* 이미지 */}
@@ -78,14 +78,14 @@ const SlowFood = () => {
                                         href={`/event/슬로푸드/2018/${src}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        style={{ textDecoration: 'none' }}
+                                        style={{ textDecoration: 'none', display: 'block', width: '100%' }}
                                     >
                                         <img
                                             src={`/event/슬로푸드/2018/${src}`}
                                             alt={src}
                                             loading="lazy"
                                             style={{
-                                                width: 280,
+                                                width: "100%",
                                                 height: 280,
                                                 objectFit: 'cover',
                                                 borderRadius: 8,
@@ -139,7 +139,7 @@ const SlowFood = () => {
                                     display: 'flex',
                                     flexDirection: 'column',
                                     alignItems: 'center',
-                                    width: 280,
+                                    width: "100%",
                                 }}
                             >
                                 <Box
@@ -148,7 +148,7 @@ const SlowFood = () => {
                                         display: 'flex',
                                         flexDirection: 'column',
                                         alignItems: 'center',
-                                        width: 280,
+                                        width: "100%",
                                     }}
                                 >
                                     {/* 이미지 */}
@@ -156,14 +156,14 @@ const SlowFood = () => {
                                         href={`/event/슬로푸드/2017/${src}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        style={{ textDecoration: 'none' }}
+                                        style={{ textDecoration: 'none', display: 'block', width: '100%' }}
                                     >
                                         <img
                                             src={`/event/슬로푸드/2017/${src}`}
                                             alt={src}
                                             loading="lazy"
                                             style={{
-                                                width: 280,
+                                                width: "100%",
                                                 height: 280,
                                                 objectFit: 'cover',
                                                 borderRadius: 8,

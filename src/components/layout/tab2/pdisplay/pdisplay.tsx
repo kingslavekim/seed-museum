@@ -995,13 +995,13 @@ const Pdisplay = () => {
                                         display: 'flex', // 세로로 배치 (flex column)
                                         flexDirection: 'column',
                                         alignItems: 'center', // 중앙 정렬
-                                        width: 280,
+                                        width: "100%",
                                     }}
                                 >
                                     {/* 이미지 */}
                                     <Box
                                         sx={{
-                                            width: 280,
+                                            width: "100%",
                                             height: 280,
                                             backgroundImage: `url("/pdisplay/endowment/${src}")`,
                                             backgroundSize: 'cover',

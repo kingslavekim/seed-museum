@@ -88,7 +88,7 @@ const Sharing = () => {
                                         href={`/event/씨앗나눔/2025/${src}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        style={{ textDecoration: 'none' }}
+                                        style={{ textDecoration: 'none', display: 'block', width: '100%' }}
                                     >
                                         <img
                                             src={`/event/씨앗나눔/2025/${src}`}
@@ -149,7 +149,7 @@ const Sharing = () => {
                                     display: 'flex',
                                     flexDirection: 'column',
                                     alignItems: 'center',
-                                    width: 280,
+                                    width: "100%",
                                 }}
                             >
                                 <Box
@@ -158,7 +158,7 @@ const Sharing = () => {
                                         display: 'flex',
                                         flexDirection: 'column',
                                         alignItems: 'center',
-                                        width: 280,
+                                        width: "100%",
                                     }}
                                 >
                                     {/* 이미지 */}
@@ -166,14 +166,14 @@ const Sharing = () => {
                                         href={`/event/씨앗나눔/2024/${src}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        style={{ textDecoration: 'none' }}
+                                        style={{ textDecoration: 'none', display: 'block', width: '100%' }}
                                     >
                                         <img
                                             src={`/event/씨앗나눔/2024/${src}`}
                                             alt={src}
                                             loading="lazy"
                                             style={{
-                                                width: 280,
+                                                width: "100%",
                                                 height: 280,
                                                 objectFit: 'cover',
                                                 borderRadius: 8,
@@ -227,7 +227,7 @@ const Sharing = () => {
                                     display: 'flex',
                                     flexDirection: 'column',
                                     alignItems: 'center',
-                                    width: 280,
+                                    width: "100%",
                                 }}
                             >
                                 <Box
@@ -236,7 +236,7 @@ const Sharing = () => {
                                         display: 'flex',
                                         flexDirection: 'column',
                                         alignItems: 'center',
-                                        width: 280,
+                                        width: "100%",
                                     }}
                                 >
                                     {/* 이미지 */}
@@ -244,14 +244,14 @@ const Sharing = () => {
                                         href={`/event/씨앗나눔/2022/${src}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        style={{ textDecoration: 'none' }}
+                                        style={{ textDecoration: 'none', display: 'block', width: '100%' }}
                                     >
                                         <img
                                             src={`/event/씨앗나눔/2022/${src}`}
                                             alt={src}
                                             loading="lazy"
                                             style={{
-                                                width: 280,
+                                                width: "100%",
                                                 height: 280,
                                                 objectFit: 'cover',
                                                 borderRadius: 8,
@@ -305,7 +305,7 @@ const Sharing = () => {
                                     display: 'flex',
                                     flexDirection: 'column',
                                     alignItems: 'center',
-                                    width: 280,
+                                    width: "100%",
                                 }}
                             >
                                 <Box
@@ -314,7 +314,7 @@ const Sharing = () => {
                                         display: 'flex',
                                         flexDirection: 'column',
                                         alignItems: 'center',
-                                        width: 280,
+                                        width: "100%",
                                     }}
                                 >
                                     {/* 이미지 */}
@@ -322,14 +322,14 @@ const Sharing = () => {
                                         href={`/event/씨앗나눔/2021/${src}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        style={{ textDecoration: 'none' }}
+                                        style={{ textDecoration: 'none', display: 'block', width: '100%' }}
                                     >
                                         <img
                                             src={`/event/씨앗나눔/2021/${src}`}
                                             alt={src}
                                             loading="lazy"
                                             style={{
-                                                width: 280,
+                                                width: "100%",
                                                 height: 280,
                                                 objectFit: 'cover',
                                                 borderRadius: 8,
@@ -383,7 +383,7 @@ const Sharing = () => {
                                     display: 'flex',
                                     flexDirection: 'column',
                                     alignItems: 'center',
-                                    width: 280,
+                                    width: "100%",
                                 }}
                             >
                                 <Box
@@ -392,7 +392,7 @@ const Sharing = () => {
                                         display: 'flex',
                                         flexDirection: 'column',
                                         alignItems: 'center',
-                                        width: 280,
+                                        width: "100%",
                                     }}
                                 >
                                     {/* 이미지 */}
@@ -400,14 +400,14 @@ const Sharing = () => {
                                         href={`/event/씨앗나눔/2019/${src}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        style={{ textDecoration: 'none' }}
+                                        style={{ textDecoration: 'none', display: 'block', width: '100%' }}
                                     >
                                         <img
                                             src={`/event/씨앗나눔/2019/${src}`}
                                             alt={src}
                                             loading="lazy"
                                             style={{
-                                                width: 280,
+                                                width: "100%",
                                                 height: 280,
                                                 objectFit: 'cover',
                                                 borderRadius: 8,
@@ -461,7 +461,7 @@ const Sharing = () => {
                                     display: 'flex',
                                     flexDirection: 'column',
                                     alignItems: 'center',
-                                    width: 280,
+                                    width: "100%",
                                 }}
                             >
                                 <Box
@@ -470,7 +470,7 @@ const Sharing = () => {
                                         display: 'flex',
                                         flexDirection: 'column',
                                         alignItems: 'center',
-                                        width: 280,
+                                        width: "100%",
                                     }}
                                 >
                                     {/* 이미지 */}
@@ -478,14 +478,14 @@ const Sharing = () => {
                                         href={`/event/씨앗나눔/2018/${src}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        style={{ textDecoration: 'none' }}
+                                        style={{ textDecoration: 'none', display: 'block', width: '100%' }}
                                     >
                                         <img
                                             src={`/event/씨앗나눔/2018/${src}`}
                                             alt={src}
                                             loading="lazy"
                                             style={{
-                                                width: 280,
+                                                width: "100%",
                                                 height: 280,
                                                 objectFit: 'cover',
                                                 borderRadius: 8,
@@ -539,7 +539,7 @@ const Sharing = () => {
                                     display: 'flex',
                                     flexDirection: 'column',
                                     alignItems: 'center',
-                                    width: 280,
+                                    width: "100%",
                                 }}
                             >
                                 <Box
@@ -548,7 +548,7 @@ const Sharing = () => {
                                         display: 'flex',
                                         flexDirection: 'column',
                                         alignItems: 'center',
-                                        width: 280,
+                                        width: "100%",
                                     }}
                                 >
                                     {/* 이미지 */}
@@ -556,14 +556,14 @@ const Sharing = () => {
                                         href={`/event/씨앗나눔/2017/${src}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        style={{ textDecoration: 'none' }}
+                                        style={{ textDecoration: 'none', display: 'block', width: '100%' }}
                                     >
                                         <img
                                             src={`/event/씨앗나눔/2017/${src}`}
                                             alt={src}
                                             loading="lazy"
                                             style={{
-                                                width: 280,
+                                                width: "100%",
                                                 height: 280,
                                                 objectFit: 'cover',
                                                 borderRadius: 8,

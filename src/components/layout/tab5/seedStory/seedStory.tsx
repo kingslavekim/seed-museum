@@ -265,7 +265,7 @@ const SeedStory = () => {
                                                     href={`/seedStory/pic/${title}/${image}`} // 원본 이미지 경로
                                                     target="_blank" // 새 탭에서 열기
                                                     rel="noopener noreferrer" // 보안 속성 추가
-                                                    style={{ textDecoration: 'none' }} // 기본 링크 스타일 제거
+                                                    style={{ textDecoration: 'none', display: 'block', width: '100%' }} // 기본 링크 스타일 제거
                                                 >
                                                     <Box
                                                         component="img"
