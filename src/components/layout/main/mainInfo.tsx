@@ -57,7 +57,7 @@ export const MainInfo = () => {
             <Box
                 sx={{
                     display: 'grid',
-                    gridTemplateColumns: { xs: 'repeat(2, 1fr)', sm: 'repeat(2, 1fr)', md: 'repeat(4, 1fr)' },
+                    gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)', md: 'repeat(4, 1fr)' },
                     gap: { xs: 1, sm: 1.5, md: 2 },
                 }}
             >
@@ -88,7 +88,7 @@ export const MainInfo = () => {
                         py: { xs: 1.5, md: 0 },
                         fontSize: { xs: 14, md: 18 },
                         borderRadius: { xs: 2, md: 3 },
-                        gridColumn: { xs: 'span 2', md: 'auto' },
+                        gridColumn: { xs: 'span 1', sm: 'span 2', md: 'auto' },
                         whiteSpace: 'nowrap',
                     }}
                 >
