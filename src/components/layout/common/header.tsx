@@ -120,6 +120,8 @@ export const Header = () => {
         <>
             {/* Desktop Header */}
             <Box
+                component="nav"
+                aria-label="메인 네비게이션"
                 ref={headerRef}
                 onMouseLeave={handleHeaderLeave}
                 sx={{

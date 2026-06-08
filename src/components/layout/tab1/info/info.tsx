@@ -59,7 +59,7 @@ const Info = () => {
                     <Divider sx={{ mt: 3, borderBottomWidth: 2, bgcolor: 'primary.main' }}/>
                 </Box>
 
-                <Box sx={{ pt: 5, minHeight: { xs: 0, sm: 800 }}}>
+                <Box sx={{ pt: 5, minHeight: { xs: 'auto', md: 600 }}}>
                     <TableContainer>
                         <Table>
                             <TableBody>
@@ -69,8 +69,8 @@ const Info = () => {
                                             sx={{
                                                 fontWeight: 'bold',
                                                 fontSize: {
-                                                    xs: 'body2.fontSize',
-                                                    sm: 'h5.fontSize'
+                                                    xs: '0.875rem',
+                                                    sm: '1.25rem'
                                                 }
                                             }}
                                         >
@@ -97,8 +97,8 @@ const Info = () => {
                                             sx={{
                                                 fontWeight: 'bold',
                                                 fontSize: {
-                                                    xs: 'body2.fontSize',
-                                                    sm: 'h5.fontSize'
+                                                    xs: '0.875rem',
+                                                    sm: '1.25rem'
                                                 }
                                             }}
                                         >
@@ -122,8 +122,8 @@ const Info = () => {
                                             sx={{
                                                 fontWeight: 'bold',
                                                 fontSize: {
-                                                    xs: 'body2.fontSize',
-                                                    sm: 'h5.fontSize'
+                                                    xs: '0.875rem',
+                                                    sm: '1.25rem'
                                                 }
                                             }}
                                         >

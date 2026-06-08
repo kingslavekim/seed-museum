@@ -142,7 +142,7 @@ const SeedStory = () => {
                                     expandIcon={<NavigateNextIcon />}
                                     aria-controls={`panel${index}-content`}
                                     id={`panel${index}-header`}
-                                    onClick={() => window.open(`/seedStory/${story.body}`, '_blank')}
+                                    onClick={() => window.open(`/seedStory/${story.body}`, '_blank', 'noopener,noreferrer')}
                                 >
                                     <Typography>{story.title}</Typography>
                                 </AccordionSummary>
@@ -191,7 +191,7 @@ const SeedStory = () => {
                                     expandIcon={<NavigateNextIcon />}
                                     aria-controls={`panel${index}-content`}
                                     id={`panel${index}-header`}
-                                    onClick={() => window.open(`/seedStory/${story.body}`, '_blank')}
+                                    onClick={() => window.open(`/seedStory/${story.body}`, '_blank', 'noopener,noreferrer')}
                                 >
                                     <Typography>{story.title}</Typography>
                                 </AccordionSummary>

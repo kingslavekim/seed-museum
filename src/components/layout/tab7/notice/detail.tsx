@@ -72,7 +72,7 @@ const NoticeDetail = () => {
 
     if (error || !notice) {
         return (
-            <Box sx={{ pt: 5, minHeight: { xs: 0, sm: 800 }}}>
+            <Box sx={{ pt: 5, minHeight: { xs: 'auto', md: 600 }}}>
                 <Typography color="error">{error || '공지사항을 찾을 수 없습니다.'}</Typography>
                 <Button
                     variant="contained"
@@ -103,7 +103,7 @@ const NoticeDetail = () => {
                 <Divider sx={{ mt: 3, borderBottomWidth: 2, bgcolor: 'primary.main' }}/>
             </Box>
 
-            <Box sx={{ pt: 5, minHeight: { xs: 0, sm: 800 }}}>
+            <Box sx={{ pt: 5, minHeight: { xs: 'auto', md: 600 }}}>
                 <Box sx={{
                     bgcolor: '#f5f5f5',
                     p: 3,

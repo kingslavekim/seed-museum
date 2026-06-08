@@ -97,7 +97,7 @@ const History = () => {
                 <Divider sx={{ mt: 3, borderBottomWidth: 2, bgcolor: 'primary.main' }}/>
             </Box>
 
-            <Box sx={{ pt: 5, minHeight: { xs: 0, sm: 800 }}}>
+            <Box sx={{ pt: 5, minHeight: { xs: 'auto', md: 600 }}}>
                 <TableContainer >
                     <Table>
                         <TableBody>

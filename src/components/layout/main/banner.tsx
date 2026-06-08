@@ -9,21 +9,21 @@ export const Banner = () => {
     const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
     const bannerImagesXs = [
-        {src: '/banners/m_6.jpg', link: ''},
-        {src: '/banners/m_1.jpg', link: ''},
-        {src: '/banners/m_2.jpg', link: '/pdisplay'},
-        {src: '/banners/m_3.jpg', link: '/fdisplay'},
-        {src: '/banners/m_4.jpg', link: '/museum'},
-        {src: '/banners/m_5.jpg', link: '/experience'},
+        {src: '/banners/m_6.jpg', link: '', alt: '예산 순회전시 안내'},
+        {src: '/banners/m_1.jpg', link: '', alt: '한국토종씨앗박물관'},
+        {src: '/banners/m_2.jpg', link: '/pdisplay', alt: '상설전시 안내'},
+        {src: '/banners/m_3.jpg', link: '/fdisplay', alt: '근대 농기구 전시'},
+        {src: '/banners/m_4.jpg', link: '/museum', alt: '박물관 속 박물관'},
+        {src: '/banners/m_5.jpg', link: '/experience', alt: '체험 프로그램 안내'},
     ];
 
     const bannerImagesDefault = [
-        {src: '/banners/6.jpg', link: ''},
-        {src: '/banners/1.jpg', link: ''},
-        {src: '/banners/2.jpg', link: '/pdisplay'},
-        {src: '/banners/3.jpg', link: '/fdisplay'},
-        {src: '/banners/4.jpg', link: '/museum'},
-        {src: '/banners/5.jpg', link: '/experience'},
+        {src: '/banners/6.jpg', link: '', alt: '예산 순회전시 안내'},
+        {src: '/banners/1.jpg', link: '', alt: '한국토종씨앗박물관'},
+        {src: '/banners/2.jpg', link: '/pdisplay', alt: '상설전시 안내'},
+        {src: '/banners/3.jpg', link: '/fdisplay', alt: '근대 농기구 전시'},
+        {src: '/banners/4.jpg', link: '/museum', alt: '박물관 속 박물관'},
+        {src: '/banners/5.jpg', link: '/experience', alt: '체험 프로그램 안내'},
     ];
 
     const bannerImages = isMobile ? bannerImagesXs : bannerImagesDefault;
@@ -86,7 +86,7 @@ export const Banner = () => {
                             component="img"
                             src={image.src}
                             onClick={() => image.link && navigate(image.link)}
-                            alt={`배너 ${index + 1}`}
+                            alt={image.alt}
                             sx={{
                                 width: '100%',
                                 maxWidth: 1400,
