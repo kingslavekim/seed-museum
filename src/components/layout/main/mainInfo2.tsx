@@ -15,14 +15,15 @@ const SectionTitle = ({ children }: { children: React.ReactNode }) => (
         variant="h4"
         sx={{
             fontWeight: 700,
-            mb: 3,
+            fontSize: { xs: '1.3rem', sm: '1.6rem', md: '2rem' },
+            mb: { xs: 2, md: 3 },
             position: 'relative',
             '&::after': {
                 content: '""',
                 position: 'absolute',
-                bottom: -8,
+                bottom: -6,
                 left: 0,
-                width: 40,
+                width: { xs: 30, md: 40 },
                 height: 3,
                 bgcolor: 'primary.main',
                 borderRadius: 2,
@@ -125,9 +126,9 @@ export const MainInfo2 = () => {
                 <Paper
                     elevation={0}
                     sx={{
-                        mt: 4,
+                        mt: { xs: 3, md: 4 },
                         border: '1px solid #eee',
-                        borderRadius: 3,
+                        borderRadius: { xs: 2, md: 3 },
                         overflow: 'hidden',
                     }}
                 >
@@ -142,8 +143,8 @@ export const MainInfo2 = () => {
                                     key={row.id}
                                     onClick={() => navigate(`/notice/${row.id}`)}
                                     sx={{
-                                        py: 1.5,
-                                        px: 2.5,
+                                        py: { xs: 1.2, md: 1.5 },
+                                        px: { xs: 1.5, md: 2.5 },
                                         borderBottom: index < Math.min(rows.length, 6) - 1 ? '1px solid #f0f0f0' : 'none',
                                         '&:hover': {
                                             bgcolor: '#f9f8f5',
@@ -174,7 +175,7 @@ export const MainInfo2 = () => {
             {/* 블로그 */}
             <Box sx={{ flex: { xs: 1, md: '0 0 340px' } }}>
                 <SectionTitle>블로그</SectionTitle>
-                <Stack spacing={2} sx={{ mt: 4 }}>
+                <Stack spacing={1.5} sx={{ mt: { xs: 3, md: 4 } }}>
                     <BlogCard
                         title="공식 블로그 바로가기"
                         subtitle="한국토종씨앗박물관"

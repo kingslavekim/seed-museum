@@ -8,7 +8,7 @@ import {Footer} from "../../components/layout/common/footer.tsx";
 
 const Section = ({ children, bgcolor = 'transparent', ...props }: { children: React.ReactNode, bgcolor?: string, [key: string]: unknown }) => (
     <Box sx={{ bgcolor, width: '100%', display: 'flex', justifyContent: 'center' }} {...props}>
-        <Box sx={{ width: { xs: '100%', xl: 1400 }, px: { xs: 2, sm: 3, md: 4 } }}>
+        <Box sx={{ width: { xs: '100%', xl: 1400 }, px: { xs: 1.5, sm: 2.5, md: 4 } }}>
             {children}
         </Box>
     </Box>
@@ -39,31 +39,32 @@ function Main() {
             </Section>
 
             <Section bgcolor="#f7f5f0">
-                <Box sx={{ py: { xs: 4, md: 6 } }}>
+                <Box sx={{ py: { xs: 3, md: 6 } }}>
                     <Display/>
                 </Box>
             </Section>
 
             <Section bgcolor="#fff">
-                <Box sx={{ py: { xs: 4, md: 6 } }}>
+                <Box sx={{ py: { xs: 3, md: 6 } }}>
                     <MainInfo2/>
                 </Box>
             </Section>
 
             <Section bgcolor="#f7f5f0">
-                <Box sx={{ py: { xs: 4, md: 6 } }}>
+                <Box sx={{ py: { xs: 3, md: 6 } }}>
                     <Typography
                         variant="h4"
                         sx={{
                             fontWeight: 700,
-                            mb: 3,
+                            fontSize: { xs: '1.3rem', sm: '1.6rem', md: '2rem' },
+                            mb: { xs: 2, md: 3 },
                             position: 'relative',
                             '&::after': {
                                 content: '""',
                                 position: 'absolute',
-                                bottom: -8,
+                                bottom: -6,
                                 left: 0,
-                                width: 40,
+                                width: { xs: 30, md: 40 },
                                 height: 3,
                                 bgcolor: 'primary.main',
                                 borderRadius: 2,

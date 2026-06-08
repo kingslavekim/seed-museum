@@ -6,14 +6,15 @@ const SectionTitle = ({ children }: { children: React.ReactNode }) => (
         variant="h4"
         sx={{
             fontWeight: 700,
-            mb: 3,
+            fontSize: { xs: '1.3rem', sm: '1.6rem', md: '2rem' },
+            mb: { xs: 2, md: 3 },
             position: 'relative',
             '&::after': {
                 content: '""',
                 position: 'absolute',
-                bottom: -8,
+                bottom: -6,
                 left: 0,
-                width: 40,
+                width: { xs: 30, md: 40 },
                 height: 3,
                 bgcolor: 'primary.main',
                 borderRadius: 2,
@@ -53,7 +54,7 @@ const DisplayCard = ({ src, label, title, link, navigate }: {
             loading="lazy"
             sx={{
                 width: '100%',
-                height: { xs: 200, sm: 220, md: 240 },
+                height: { xs: 180, sm: 200, md: 240 },
                 objectFit: 'cover',
                 display: 'block',
             }}
@@ -122,7 +123,7 @@ const ExperienceCard = ({ src, title, link, navigate }: {
             loading="lazy"
             sx={{
                 width: '100%',
-                height: { xs: 200, sm: 220, md: 240 },
+                height: { xs: 180, sm: 200, md: 240 },
                 objectFit: 'cover',
                 display: 'block',
             }}
@@ -171,7 +172,7 @@ export const Display = () => {
             <SectionTitle>전시</SectionTitle>
             <Box
                 sx={{
-                    mt: 4,
+                    mt: { xs: 2, md: 4 },
                     display: 'grid',
                     gridTemplateColumns: { xs: '1fr', sm: 'repeat(2, 1fr)', md: 'repeat(4, 1fr)' },
                     gap: { xs: 2, md: 3 },
