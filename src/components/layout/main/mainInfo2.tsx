@@ -64,14 +64,11 @@ export const MainInfo2 = () => {
     return (
         <Box sx={{ mt: 5 }}>
             <Stack
-                direction={{ xs: 'column', sm: 'row' }}
+                direction={{ xs: 'column', md: 'row' }}
                 columnGap={2}
-                rowGap={5}
+                rowGap={3}
             >
-                <Box sx={{
-                    flex: '1 1 50%',
-                    minWidth: { xs: '100%', sm: '45%' }
-                }}>
+                <Box sx={{ flex: '1 1 0%', minWidth: 0 }}>
                     <Typography sx={{ fontWeight: 'bold', fontSize: 'h4.fontSize', mb: 2, pl: '10px'}}>공지사항</Typography>
                     <DataGrid
                         rows={rows}
@@ -100,54 +97,51 @@ export const MainInfo2 = () => {
                         }}
                     />
                 </Box>
-                <Box sx={{
-                    flex: '1 1 50%',
-                    minWidth: { xs: '100%', sm: '45%' }
-                }}>
+                <Box sx={{ flex: '0 0 auto' }}>
                     <Typography sx={{ fontWeight: 'bold', fontSize: 'h4.fontSize', mb: 2, pl: '10px'}}>블로그</Typography>
-                    <Stack direction="row" spacing={2}>
-                        <Box
-                            component='img'
-                            src={'/main/blog.jpg'}
-                            sx={{
-                                flex: 1,
-                                height: 370,
-                                objectFit: 'fill',
-                                objectPosition: 'center',
-                                transition: 'transform 0.5s ease-in-out',
-                                cursor: 'pointer',
-                                borderRadius: 1
-                            }}
-                            onClick={() => {window.open('https://blog.naver.com/fsac', '_blank', 'noopener,noreferrer');}}
-                        />
-                        <Box
-                            sx={{
-                                flex: 1,
-                                height: 370,
-                                background: 'linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%)',
-                                borderRadius: 1,
-                                display: 'flex',
-                                flexDirection: 'column',
-                                justifyContent: 'center',
-                                alignItems: 'center',
-                                cursor: 'pointer',
-                                transition: 'transform 0.3s ease-in-out',
-                                '&:hover': { transform: 'scale(1.02)' },
-                                px: 3
-                            }}
-                            onClick={() => {window.open('https://m.blog.naver.com/sisan347', '_blank', 'noopener,noreferrer');}}
-                        >
-                            <Typography sx={{ color: '#fff', fontFamily: 'serif', fontSize: '1rem', mb: 1, opacity: 0.9 }}>
-                                한국토종씨앗박물관
-                            </Typography>
-                            <Typography sx={{ color: '#fff', fontWeight: 'bold', fontSize: '2rem', mb: 2 }}>
-                                Blog
-                            </Typography>
-                            <Typography sx={{ color: '#fff', fontSize: '0.95rem', opacity: 0.85 }}>
-                                씨앗박물관 블로그 바로가기 &gt;
-                            </Typography>
-                        </Box>
-                    </Stack>
+                    <Box
+                        component='img'
+                        src={'/main/blog.jpg'}
+                        sx={{
+                            width: { xs: '100%', md: 250 },
+                            height: 370,
+                            objectFit: 'fill',
+                            objectPosition: 'center',
+                            cursor: 'pointer',
+                            borderRadius: 1
+                        }}
+                        onClick={() => {window.open('https://blog.naver.com/fsac', '_blank', 'noopener,noreferrer');}}
+                    />
+                </Box>
+                <Box sx={{ flex: '0 0 auto' }}>
+                    <Typography sx={{ fontWeight: 'bold', fontSize: 'h4.fontSize', mb: 2, pl: '10px', visibility: { xs: 'visible', md: 'hidden' } }}>블로그</Typography>
+                    <Box
+                        sx={{
+                            width: { xs: '100%', md: 250 },
+                            height: 370,
+                            background: 'linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%)',
+                            borderRadius: 1,
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            cursor: 'pointer',
+                            transition: 'transform 0.3s ease-in-out',
+                            '&:hover': { transform: 'scale(1.02)' },
+                            px: 3
+                        }}
+                        onClick={() => {window.open('https://m.blog.naver.com/sisan347', '_blank', 'noopener,noreferrer');}}
+                    >
+                        <Typography sx={{ color: '#fff', fontFamily: 'serif', fontSize: '1rem', mb: 1, opacity: 0.9 }}>
+                            한국토종씨앗박물관
+                        </Typography>
+                        <Typography sx={{ color: '#fff', fontWeight: 'bold', fontSize: '2rem', mb: 2 }}>
+                            Blog
+                        </Typography>
+                        <Typography sx={{ color: '#fff', fontSize: '0.95rem', opacity: 0.85 }}>
+                            씨앗박물관 블로그 바로가기 &gt;
+                        </Typography>
+                    </Box>
                 </Box>
             </Stack>
         </Box>
