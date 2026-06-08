@@ -66,7 +66,7 @@ const Open = () => {
                 >
                     박물관 개관식
                 </Typography>
-                <Divider sx={{ mt: 3, borderBottomWidth: 3, bgcolor: 'black' }} />
+                <Divider sx={{ mt: 3, borderBottomWidth: 2, bgcolor: 'primary.main' }} />
             </Box>
 
             <Box sx={{ mt: 2 }}>

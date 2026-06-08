@@ -28,10 +28,10 @@ const SocialFarm = () => {
                 component="img"
                 src="/main/9.jpg"
                 sx={{
-                    display: {xs: 'none', sm: 'none', md: 'flex'},
+                    display: { xs: 'none', md: 'flex' },
                     width: '100%',
                     height: 400,
-                    objectFit: 'fill'
+                    objectFit: 'cover'
                 }}
             />
             <Box sx={{ p: { xs: 1, md: 2 } }}>
@@ -53,7 +53,7 @@ const SocialFarm = () => {
                     >
                         사회적 농장 프로그램
                     </Typography>
-                    <Divider sx={{ mt: 3, borderBottomWidth: 3, bgcolor: 'black' }} />
+                    <Divider sx={{ mt: 3, borderBottomWidth: 2, bgcolor: 'primary.main' }} />
                 </Box>
 
                 {/* 본문 섹션 */}

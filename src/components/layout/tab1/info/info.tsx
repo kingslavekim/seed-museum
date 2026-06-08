@@ -34,10 +34,10 @@ const Info = () => {
                 component="img"
                 src="/main/1.jpg"
                 sx={{
-                    display: {xs: 'none', sm: 'none', md: 'flex'},
+                    display: { xs: 'none', md: 'flex' },
                     width: '100%',
                     height: 400,
-                    objectFit: 'fill'
+                    objectFit: 'cover'
                 }}
             />
 
@@ -56,7 +56,7 @@ const Info = () => {
                     <Typography variant="h4" component="h1" gutterBottom sx={{ fontWeight: 'bold' }}>
                         관람 안내
                     </Typography>
-                    <Divider sx={{ mt: 3, borderBottomWidth: 3, bgcolor: 'black' }}/>
+                    <Divider sx={{ mt: 3, borderBottomWidth: 2, bgcolor: 'primary.main' }}/>
                 </Box>
 
                 <Box sx={{ pt: 5, minHeight: { xs: 0, sm: 800 }}}>
@@ -69,7 +69,7 @@ const Info = () => {
                                             sx={{
                                                 fontWeight: 'bold',
                                                 fontSize: {
-                                                    xs: 'h7.fontSize',
+                                                    xs: 'body2.fontSize',
                                                     sm: 'h5.fontSize'
                                                 }
                                             }}
@@ -97,7 +97,7 @@ const Info = () => {
                                             sx={{
                                                 fontWeight: 'bold',
                                                 fontSize: {
-                                                    xs: 'h7.fontSize',
+                                                    xs: 'body2.fontSize',
                                                     sm: 'h5.fontSize'
                                                 }
                                             }}
@@ -122,7 +122,7 @@ const Info = () => {
                                             sx={{
                                                 fontWeight: 'bold',
                                                 fontSize: {
-                                                    xs: 'h7.fontSize',
+                                                    xs: 'body2.fontSize',
                                                     sm: 'h5.fontSize'
                                                 }
                                             }}

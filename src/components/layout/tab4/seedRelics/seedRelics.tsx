@@ -130,7 +130,7 @@ const SeedRelics = () => {
                 >
                     씨앗유물
                 </Typography>
-                <Divider sx={{ mt: 3, borderBottomWidth: 3, bgcolor: 'black' }} />
+                <Divider sx={{ mt: 3, borderBottomWidth: 2, bgcolor: 'primary.main' }} />
             </Box>
 
             <Box sx={{ mt: 3, display: 'flex', flexDirection: { xs: 'column', md: 'column' }, alignItems: 'start', justifyContent: 'space-between' }}>
@@ -190,7 +190,7 @@ const SeedRelics = () => {
                 <Typography variant="h6" sx={{pl: 0.5}}>점의 유물정보가 있습니다.</Typography>
             </Box>
 
-            <Divider sx={{ mt: 2, borderBottomWidth: 2, bgcolor: 'black' }} />
+            <Divider sx={{ mt: 2, borderBottomWidth: 2, bgcolor: 'primary.main' }} />
 
             <Box sx={{ my: 3 }}>
                 <Box

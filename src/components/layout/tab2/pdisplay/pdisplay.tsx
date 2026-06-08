@@ -1145,10 +1145,10 @@ const Pdisplay = () => {
                 component="img"
                 src="/main/4.jpg"
                 sx={{
-                    display: {xs: 'none', sm: 'none', md: 'flex'},
+                    display: { xs: 'none', md: 'flex' },
                     width: '100%',
                     height: 400,
-                    objectFit: 'fill'
+                    objectFit: 'cover'
                 }}
             />
             <Box sx={{ p: { xs: 1, md: 2 } }}>
@@ -1170,7 +1170,7 @@ const Pdisplay = () => {
                     >
                         상설 전시
                     </Typography>
-                    <Divider sx={{ mt: 3, borderBottomWidth: 3, bgcolor: 'black' }} />
+                    <Divider sx={{ mt: 3, borderBottomWidth: 2, bgcolor: 'primary.main' }} />
                 </Box>
 
                 <Box sx={{ p: { xs: 0, md: 3 } }}>

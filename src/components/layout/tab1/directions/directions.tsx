@@ -49,7 +49,7 @@ const Directions = () => {
                 <Typography variant="h4" component="h1" gutterBottom sx={{ fontWeight: 'bold' }}>
                     오시는 길
                 </Typography>
-                <Divider sx={{ mt: 3, borderBottomWidth: 3, bgcolor: 'black' }} />
+                <Divider sx={{ mt: 3, borderBottomWidth: 2, bgcolor: 'primary.main' }} />
             </Box>
 
             <Box sx={{ pt: 5, minHeight: { xs: 0, sm: 800 } }}>

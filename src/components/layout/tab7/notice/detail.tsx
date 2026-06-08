@@ -100,7 +100,7 @@ const NoticeDetail = () => {
                 <Typography variant="h4" component="h1" gutterBottom sx={{ fontWeight: 'bold' }}>
                     공지사항
                 </Typography>
-                <Divider sx={{ mt: 3, borderBottomWidth: 3, bgcolor: 'black' }}/>
+                <Divider sx={{ mt: 3, borderBottomWidth: 2, bgcolor: 'primary.main' }}/>
             </Box>
 
             <Box sx={{ pt: 5, minHeight: { xs: 0, sm: 800 }}}>
@@ -142,9 +142,9 @@ const NoticeDetail = () => {
                         onClick={() => navigate('/notice')}
                         sx={{
                             minWidth: '120px',
-                            bgcolor: '#333',
+                            bgcolor: 'primary.main',
                             '&:hover': {
-                                bgcolor: '#555'
+                                bgcolor: 'primary.dark'
                             }
                         }}
                     >

@@ -309,7 +309,7 @@ const Table = () => {
                 >
                     예산을 담은 식탁
                 </Typography>
-                <Divider sx={{ mt: 3, borderBottomWidth: 3, bgcolor: 'black' }} />
+                <Divider sx={{ mt: 3, borderBottomWidth: 2, bgcolor: 'primary.main' }} />
             </Box>
 
             <Box sx={{ p: { xs: 0, md: 3 } }}>

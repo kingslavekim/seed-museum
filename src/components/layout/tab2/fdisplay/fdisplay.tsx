@@ -217,10 +217,10 @@ const Fdisplay = () => {
                 component="img"
                 src="/main/6.jpg"
                 sx={{
-                    display: {xs: 'none', sm: 'none', md: 'flex'},
+                    display: { xs: 'none', md: 'flex' },
                     width: '100%',
                     height: 400,
-                    objectFit: 'fill'
+                    objectFit: 'cover'
                 }}
             />
             <Box sx={{ p: { xs: 1, md: 2 } }}>
@@ -242,7 +242,7 @@ const Fdisplay = () => {
                     >
                         근대 농기구 전시
                     </Typography>
-                    <Divider sx={{ mt: 3, borderBottomWidth: 3, bgcolor: 'black' }} />
+                    <Divider sx={{ mt: 3, borderBottomWidth: 2, bgcolor: 'primary.main' }} />
                 </Box>
 
                 <Box sx={{ p: { xs: 0, md: 3 } }}>
