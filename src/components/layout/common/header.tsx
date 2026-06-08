@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
     Box, Typography, IconButton, Drawer, List, ListItemButton,
@@ -71,15 +71,8 @@ export const Header = () => {
     const [activeMenu, setActiveMenu] = useState<number | null>(null);
     const [drawerOpen, setDrawerOpen] = useState(false);
     const [mobileExpanded, setMobileExpanded] = useState<number | null>(null);
-    const [isScrolled, setIsScrolled] = useState(false);
     const headerRef = useRef<HTMLDivElement>(null);
     const dropdownRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const handleScroll = () => setIsScrolled(window.scrollY > 80);
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
 
     const handleNavClick = (path: string) => {
         navigate(path);
@@ -131,24 +124,20 @@ export const Header = () => {
                 onMouseLeave={handleHeaderLeave}
                 sx={{
                     display: { xs: 'none', md: 'block' },
-                    position: isScrolled ? 'sticky' : 'relative',
-                    top: 0,
+                    position: 'relative',
                     zIndex: 1100,
                     bgcolor: '#fff',
-                    transition: 'box-shadow 0.3s ease',
-                    boxShadow: isScrolled ? '0 2px 20px rgba(0,0,0,0.08)' : 'none',
                 }}
             >
                 {/* Logo */}
-                <Box sx={{ display: 'flex', justifyContent: 'center', py: isScrolled ? 1 : 2 }}>
+                <Box sx={{ display: 'flex', justifyContent: 'center', py: 2 }}>
                     <Box
                         component="img"
                         src="/common/seedLogo.jpg"
                         alt="한국토종씨앗박물관"
                         onClick={() => handleNavClick('/')}
                         sx={{
-                            maxWidth: isScrolled ? 300 : 500,
-                            transition: 'max-width 0.3s ease',
+                            maxWidth: 500,
                             cursor: 'pointer',
                         }}
                     />
@@ -261,13 +250,9 @@ export const Header = () => {
                     display: { xs: 'flex', md: 'none' },
                     alignItems: 'center',
                     justifyContent: 'space-between',
-                    position: 'sticky',
-                    top: 0,
-                    zIndex: 1100,
                     bgcolor: '#fff',
                     px: 2,
                     py: 1,
-                    boxShadow: '0 1px 8px rgba(0,0,0,0.06)',
                 }}
             >
                 <Box
